@@ -1,0 +1,885 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB6C7B7A-F916-42AA-BA36-5E8175C01617}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CruceroDelNorte</RootNamespace>
+    <AssemblyName>CruceroDelNorte</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.3.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data, Version=5.2.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="analytics.aspx" />
+    <Content Include="Angular.aspx" />
+    <Content Include="assets\css\actualizacion27-5.css" />
+    <Content Include="assets\css\angular.css" />
+    <Content Include="assets\css\animate.css" />
+    <Content Include="assets\css\aos.css" />
+    <Content Include="assets\css\bootstrap-datepicker.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\csharp.css" />
+    <Content Include="assets\css\data-analytics.css" />
+    <Content Include="assets\css\data-science.css" />
+    <Content Include="assets\css\desarrolloweb.css" />
+    <Content Include="assets\css\diseñoux-ui.css" />
+    <Content Include="assets\css\figma.css" />
+    <Content Include="assets\css\fl-bigmug-line.css" />
+    <Content Include="assets\css\form-inscripcion.css" />
+    <Content Include="assets\css\html-css.css" />
+    <Content Include="assets\css\jquery-ui.css" />
+    <Content Include="assets\css\jquery.ui.core.css" />
+    <Content Include="assets\css\jquery.ui.resizable.css" />
+    <Content Include="assets\css\jquery.ui.theme.css" />
+    <Content Include="assets\css\js-full-stack.css" />
+    <Content Include="assets\css\js-principiantes.css" />
+    <Content Include="assets\css\js.css" />
+    <Content Include="assets\css\magnific-popup.css" />
+    <Content Include="assets\css\mediaelementplayer.css" />
+    <Content Include="assets\css\ml.css" />
+    <Content Include="assets\css\navbar.css" />
+    <Content Include="assets\css\nodejs.css" />
+    <Content Include="assets\css\owl.carousel.min.css" />
+    <Content Include="assets\css\owl.theme.default.min.css" />
+    <Content Include="assets\css\progress-bar.css" />
+    <Content Include="assets\css\reactjs.css" />
+    <Content Include="assets\css\sql.css" />
+    <Content Include="assets\css\style-cursos.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\sweetalert.css" />
+    <Content Include="assets\demo\demo.css" />
+    <Content Include="assets\demo\demo.js" />
+    <Content Include="assets\fonts\bigmug-line\fl-bigmug-line.svg" />
+    <Content Include="assets\fonts\flaticon-2\backup.txt" />
+    <Content Include="assets\fonts\flaticon-2\font\flaticon.css" />
+    <Content Include="assets\fonts\flaticon-2\font\flaticon.html" />
+    <Content Include="assets\fonts\flaticon-2\font\Flaticon.svg" />
+    <Content Include="assets\fonts\flaticon-2\font\_flaticon.css" />
+    <Content Include="assets\fonts\flaticon\backup.txt" />
+    <Content Include="assets\fonts\flaticon\font\flaticon.css" />
+    <Content Include="assets\fonts\flaticon\font\flaticon.html" />
+    <Content Include="assets\fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="assets\fonts\flaticon\font\_flaticon.css" />
+    <Content Include="assets\fonts\icomoon\demo-files\demo.css" />
+    <Content Include="assets\fonts\icomoon\demo-files\demo.js" />
+    <Content Include="assets\fonts\icomoon\demo.html" />
+    <Content Include="assets\fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="assets\fonts\icomoon\Read Me.txt" />
+    <Content Include="assets\fonts\icomoon\style.css" />
+    <Content Include="assets\images\3f.png" />
+    <Content Include="assets\images\about.jpg" />
+    <Content Include="assets\images\banner\banner-angular-responsive.png" />
+    <Content Include="assets\images\banner\banner-angular-sm.png" />
+    <Content Include="assets\images\banner\banner-angular-xl.png" />
+    <Content Include="assets\images\banner\banner-angular-xxl.png" />
+    <Content Include="assets\images\banner\banner-angular.png" />
+    <Content Include="assets\images\banner\banner-csharp-responsive.png" />
+    <Content Include="assets\images\banner\banner-csharp-xl.png" />
+    <Content Include="assets\images\banner\banner-csharp-xxl.png" />
+    <Content Include="assets\images\banner\banner-csharp.png" />
+    <Content Include="assets\images\banner\banner-data-analytics-responsive.png" />
+    <Content Include="assets\images\banner\banner-data-science-responsive.png" />
+    <Content Include="assets\images\banner\banner-data-science-xl-1.png" />
+    <Content Include="assets\images\banner\banner-data-science-xl.png" />
+    <Content Include="assets\images\banner\banner-data-science-xxl.png" />
+    <Content Include="assets\images\banner\banner-data-science.png" />
+    <Content Include="assets\images\banner\banner-data-xl.png" />
+    <Content Include="assets\images\banner\banner-data-xxl.png" />
+    <Content Include="assets\images\banner\banner-data.png" />
+    <Content Include="assets\images\banner\banner-desarrolloweb-responsive.png" />
+    <Content Include="assets\images\banner\banner-desarrolloweb-xl.png" />
+    <Content Include="assets\images\banner\banner-desarrolloweb-xxl.png" />
+    <Content Include="assets\images\banner\banner-desarrolloweb.png" />
+    <Content Include="assets\images\banner\banner-disenoux.png" />
+    <Content Include="assets\images\banner\banner-diseñoux-responsive.png" />
+    <Content Include="assets\images\banner\banner-diseñoux-xl.png" />
+    <Content Include="assets\images\banner\banner-diseñoux-xxl.png" />
+    <Content Include="assets\images\banner\banner-diseñoux.png" />
+    <Content Include="assets\images\banner\banner-figma-responsive.png" />
+    <Content Include="assets\images\banner\banner-figma-xl.png" />
+    <Content Include="assets\images\banner\banner-figma-xxl.png" />
+    <Content Include="assets\images\banner\banner-figma.png" />
+    <Content Include="assets\images\banner\banner-fullstack-js-responsive.png" />
+    <Content Include="assets\images\banner\banner-fullstack-js-xl.png" />
+    <Content Include="assets\images\banner\banner-fullstack-js-xxl.png" />
+    <Content Include="assets\images\banner\banner-fullstack-js.png" />
+    <Content Include="assets\images\banner\banner-html-responsive.png" />
+    <Content Include="assets\images\banner\banner-html-xl.png" />
+    <Content Include="assets\images\banner\banner-html-xxl.png" />
+    <Content Include="assets\images\banner\banner-html.png" />
+    <Content Include="assets\images\banner\banner-js-responsive.png" />
+    <Content Include="assets\images\banner\banner-js-xl.png" />
+    <Content Include="assets\images\banner\banner-js-xxl.png" />
+    <Content Include="assets\images\banner\banner-js.png" />
+    <Content Include="assets\images\banner\banner-jsprincipiante-responsive.png" />
+    <Content Include="assets\images\banner\banner-jsprincipiante-xl.png" />
+    <Content Include="assets\images\banner\banner-jsprincipiante-xxl.png" />
+    <Content Include="assets\images\banner\banner-jsprincipiante.png" />
+    <Content Include="assets\images\banner\banner-machine-learning-responsive.png" />
+    <Content Include="assets\images\banner\banner-ml-xl.png" />
+    <Content Include="assets\images\banner\banner-ml-xxl.png" />
+    <Content Include="assets\images\banner\banner-ml.png" />
+    <Content Include="assets\images\banner\banner-nodejs-responsive.png" />
+    <Content Include="assets\images\banner\banner-nodejs-xl.png" />
+    <Content Include="assets\images\banner\banner-nodejs-xxl.png" />
+    <Content Include="assets\images\banner\banner-nodejs.png" />
+    <Content Include="assets\images\banner\banner-reactjs-responsive.png" />
+    <Content Include="assets\images\banner\banner-reactjs-xl.png" />
+    <Content Include="assets\images\banner\banner-reactjs-xxl.png" />
+    <Content Include="assets\images\banner\banner-reactjs.png" />
+    <Content Include="assets\images\banner\banner-sql-responsive.png" />
+    <Content Include="assets\images\banner\banner-sql-xl.png" />
+    <Content Include="assets\images\banner\banner-sql-xxl.png" />
+    <Content Include="assets\images\banner\banner-sql.png" />
+    <Content Include="assets\images\barba.jpeg" />
+    <Content Include="assets\images\basededatos-slideresponsive.png" />
+    <Content Include="assets\images\browser.png" />
+    <Content Include="assets\images\browserkk.png" />
+    <Content Include="assets\images\cancel.png" />
+    <Content Include="assets\images\capacitacion_header.jpg" />
+    <Content Include="assets\images\card-js-index.jpg" />
+    <Content Include="assets\images\card_js_index.png" />
+    <Content Include="assets\images\celular.png" />
+    <Content Include="assets\images\character 7.svg" />
+    <Content Include="assets\images\ciencia-datos-ilustracion-persona-e-iconos_1124-392.jpeg" />
+    <Content Include="assets\images\ciudad.png" />
+    <Content Include="assets\images\concepto-ceremonia-graduacion-virtual_23-2148573423 1.png" />
+    <Content Include="assets\images\concepto-ceremonia-graduacion-virtual_23-2148573423.jpeg" />
+    <Content Include="assets\images\Copia de 20944142.jpg" />
+    <Content Include="assets\images\Copia de 8454.jpg" />
+    <Content Include="assets\images\Copia de character 20.svg" />
+    <Content Include="assets\images\Copia de character 22.svg" />
+    <Content Include="assets\images\Copia de images %285%29.jpeg" />
+    <Content Include="assets\images\cursos.jpg" />
+    <Content Include="assets\images\data-analytics-programa.jpg" />
+    <Content Include="assets\images\data-analytics.jpg" />
+    <Content Include="assets\images\datos-slideresponsive.png" />
+    <Content Include="assets\images\datos.png" />
+    <Content Include="assets\images\descarga %282%29.jpeg" />
+    <Content Include="assets\images\developers-slideresponsive.png" />
+    <Content Include="assets\images\DevTech.png" />
+    <Content Include="assets\images\diseño-slideresponsive.png" />
+    <Content Include="assets\images\dw.png" />
+    <Content Include="assets\images\dw1.jpg" />
+    <Content Include="assets\images\EDUCACIÓN Y DESARROLLO.png" />
+    <Content Include="assets\images\egresado-csharp.jpg" />
+    <Content Include="assets\images\egresados.jpg" />
+    <Content Include="assets\images\ensenianza.png" />
+    <Content Include="assets\images\fasta.png" />
+    <Content Include="assets\images\favicon.ico" />
+    <Content Include="assets\images\favicon2.ico" />
+    <Content Include="assets\images\fiuba.png" />
+    <Content Include="assets\images\frame 3.jpg" />
+    <Content Include="assets\images\frame 3.png" />
+    <Content Include="assets\images\frame 4.png" />
+    <Content Include="assets\images\frame 5.png" />
+    <Content Include="assets\images\franja_codigo.jpg" />
+    <Content Include="assets\images\hero_bg_1.jpg" />
+    <Content Include="assets\images\hero_bg_2.jpg" />
+    <Content Include="assets\images\hero_bg_3.jpg" />
+    <Content Include="assets\images\hero_bg_4.jpg" />
+    <Content Include="assets\images\htmlbrowser.png" />
+    <Content Include="assets\images\icon-card\duracion.png" />
+    <Content Include="assets\images\icon-card\grupo.png" />
+    <Content Include="assets\images\icon-card\mentor.png" />
+    <Content Include="assets\images\icon-card\modalidad.png" />
+    <Content Include="assets\images\icons-cursos\Adobe_Illustrator.png" />
+    <Content Include="assets\images\icons-cursos\adobe_xd.png" />
+    <Content Include="assets\images\icons-cursos\angular-icon.svg" />
+    <Content Include="assets\images\icons-cursos\Csharp_Logo.png" />
+    <Content Include="assets\images\icons-cursos\css.svg" />
+    <Content Include="assets\images\icons-cursos\database.svg" />
+    <Content Include="assets\images\icons-cursos\figma.svg" />
+    <Content Include="assets\images\icons-cursos\graduado.jpg" />
+    <Content Include="assets\images\icons-cursos\html.svg" />
+    <Content Include="assets\images\icons-cursos\java-4.svg" />
+    <Content Include="assets\images\icons-cursos\logo-javascript.svg" />
+    <Content Include="assets\images\icons-cursos\nodejs-1.svg" />
+    <Content Include="assets\images\icons-cursos\nodejs.svg" />
+    <Content Include="assets\images\icons-cursos\react-2.svg" />
+    <Content Include="assets\images\icons-cursos\sql-server.svg" />
+    <Content Include="assets\images\icons-cursos\sql.svg" />
+    <Content Include="assets\images\ic_round-cancel-presentation.png" />
+    <Content Include="assets\images\illustration\5db02225dc21baff5f2243a28a80fe98-cutout.png" />
+    <Content Include="assets\images\illustration\5db02225dc21baff5f2243a28a80fe98.png" />
+    <Content Include="assets\images\illustration\concepto-ilustracion-contratacion-contratacion-personajes_269730-148.jpeg" />
+    <Content Include="assets\images\illustration\entrevista.jpeg" />
+    <Content Include="assets\images\illustration\illustration.contact.cortada.jpg" />
+    <Content Include="assets\images\illustration\illustration.contact.jpg" />
+    <Content Include="assets\images\illustration\ilustracion-concepto-recursos-humanos_132971-74.jpeg" />
+    <Content Include="assets\images\illustration\images %281%29.jpeg" />
+    <Content Include="assets\images\illustration\images.jpeg" />
+    <Content Include="assets\images\illustration\it-lab_4x.png" />
+    <Content Include="assets\images\illustration\programing.jpeg" />
+    <Content Include="assets\images\illustration\programming.jpeg" />
+    <Content Include="assets\images\ilustracionProfesionales.png" />
+    <Content Include="assets\images\ilustracion_barba.jpeg" />
+    <Content Include="assets\images\images %285%29.jpeg" />
+    <Content Include="assets\images\img_1.jpg" />
+    <Content Include="assets\images\img_2.jpg" />
+    <Content Include="assets\images\img_3.jpg" />
+    <Content Include="assets\images\img_4.jpg" />
+    <Content Include="assets\images\img_5.jpg" />
+    <Content Include="assets\images\img_6.jpg" />
+    <Content Include="assets\images\img_7.jpg" />
+    <Content Include="assets\images\img_8.jpg" />
+    <Content Include="assets\images\js.jpg" />
+    <Content Include="assets\images\laboratorio.png" />
+    <Content Include="assets\images\loader.gif" />
+    <Content Include="assets\images\logo-alta.jpg" />
+    <Content Include="assets\images\logo-dev-place-trasnparente.png" />
+    <Content Include="assets\images\logo-dev-place.svg" />
+    <Content Include="assets\images\logo.svg" />
+    <Content Include="assets\images\logo_web.png" />
+    <Content Include="assets\images\peregrina.png" />
+    <Content Include="assets\images\personas.png" />
+    <Content Include="assets\images\person_1.jpg" />
+    <Content Include="assets\images\person_2.jpg" />
+    <Content Include="assets\images\person_3.jpg" />
+    <Content Include="assets\images\person_4.jpg" />
+    <Content Include="assets\images\person_5.jpg" />
+    <Content Include="assets\images\programacionbasica-responsive.png" />
+    <Content Include="assets\images\programacionbasica-slideresponsive.png" />
+    <Content Include="assets\images\programas.png" />
+    <Content Include="assets\images\responsive-browser.png" />
+    <Content Include="assets\images\sale.svg" />
+    <Content Include="assets\images\Slide 16_9 - 2.png" />
+    <Content Include="assets\images\Slide 16_9 - 4.png" />
+    <Content Include="assets\images\slide-datos.png" />
+    <Content Include="assets\images\slide-diseno.png" />
+    <Content Include="assets\images\slide-diseño.png" />
+    <Content Include="assets\images\slide-programacionbasica.png" />
+    <Content Include="assets\images\slide1.png" />
+    <Content Include="assets\images\slide2.png" />
+    <Content Include="assets\images\slide4.png" />
+    <Content Include="assets\images\slideBasedeDatos.png" />
+    <Content Include="assets\images\slideDevelopers.png" />
+    <Content Include="assets\images\slider1.png" />
+    <Content Include="assets\images\slide\comprimida.jpeg" />
+    <Content Include="assets\images\slide\gratisography-laptop-colorful-keys.jpeg" />
+    <Content Include="assets\images\slide\gratisography-laptop-colorful-keys.png" />
+    <Content Include="assets\images\slide\pexels-tranmautritam-326502.jpeg" />
+    <Content Include="assets\images\slide\pexels-tranmautritam-326503.jpeg" />
+    <Content Include="assets\images\sql.jpg" />
+    <Content Include="assets\images\sta.png" />
+    <Content Include="assets\images\two-men-stand-pc-explain-information-girl_81522-1559.jpeg" />
+    <Content Include="assets\images\uca.png" />
+    <Content Include="assets\images\icons-cursos\vuejs.svg" />
+    <Content Include="assets\images\uxui.jpg" />
+    <Content Include="assets\images\What-makes-a-good-team.jpeg" />
+    <Content Include="assets\images\whatsapp.png" />
+    <Content Include="assets\images\whatsapp.svg" />
+    <Content Include="assets\images\workplace.jpg" />
+    <Content Include="assets\js\aos.js" />
+    <Content Include="assets\js\bootstrap-datepicker.min.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\circleaudioplayer.js" />
+    <Content Include="assets\js\jquery-3.3.1.min.js" />
+    <Content Include="assets\js\jquery-migrate-3.0.1.min.js" />
+    <Content Include="assets\js\jquery-ui.js" />
+    <Content Include="assets\js\jquery.countdown.min.js" />
+    <Content Include="assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="assets\js\jquery.stellar.min.js" />
+    <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\mediaelement-and-player.min.js" />
+    <Content Include="assets\js\owl.carousel.min.js" />
+    <Content Include="assets\js\player.js" />
+    <Content Include="assets\js\popper.min.js" />
+    <Content Include="assets\js\slick.min.js" />
+    <Content Include="assets\js\sweetalert.min.js" />
+    <Content Include="BackendJs.aspx" />
+    <Content Include="BasicDevs.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="ContactForm.aspx" />
+    <Content Include="csharp.aspx" />
+    <Content Include="cursos.aspx" />
+    <Content Include="DataBase.aspx" />
+    <Content Include="datascience.aspx" />
+    <Content Include="Datos.aspx" />
+    <Content Include="Diseno.aspx" />
+    <Content Include="Faq.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Figma.aspx" />
+    <Content Include="ProgramaDesarrolloWeb.aspx" />
+    <Content Include="ProgramaFullStack.aspx" />
+    <Content Include="ProgramsBasics.aspx" />
+    <Content Include="ProgramsDevs.aspx" />
+    <Content Include="prueba.aspx" />
+    <Content Include="Templates\CurseFees.txt" />
+    <Content Include="Templates\form-aplica.txt" />
+    <Content Include="html-css.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="js-basico.aspx" />
+    <Content Include="js.aspx" />
+    <Content Include="Legales.aspx" />
+    <Content Include="Templates\menu.txt" />
+    <Content Include="Templates\footer.txt" />
+    <Content Include="NodeJs.aspx" />
+    <Content Include="ReactJs.aspx" />
+    <Content Include="sql.aspx" />
+    <Content Include="Templates\EmptyListCurseItem.txt" />
+    <Content Include="Templates\ListCurseItem.txt" />
+    <Content Include="ux-ui.aspx" />
+    <Content Include="vendor\bootstrap\css\bootstrap.css" />
+    <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="vendor\bootstrap\js\bootstrap.js" />
+    <Content Include="vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="vendor\font-awesome\css\font-awesome.css" />
+    <Content Include="vendor\font-awesome\css\font-awesome.min.css" />
+    <Content Include="vendor\jquery\jquery.js" />
+    <Content Include="vendor\jquery\jquery.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="analytics.aspx.cs">
+      <DependentUpon>analytics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="analytics.aspx.designer.cs">
+      <DependentUpon>analytics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Angular.aspx.cs">
+      <DependentUpon>Angular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Angular.aspx.designer.cs">
+      <DependentUpon>Angular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BackendJs.aspx.cs">
+      <DependentUpon>BackendJs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BackendJs.aspx.designer.cs">
+      <DependentUpon>BackendJs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasicDevs.aspx.cs">
+      <DependentUpon>BasicDevs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasicDevs.aspx.designer.cs">
+      <DependentUpon>BasicDevs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactForm.aspx.cs">
+      <DependentUpon>ContactForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactForm.aspx.designer.cs">
+      <DependentUpon>ContactForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="csharp.aspx.cs">
+      <DependentUpon>csharp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="csharp.aspx.designer.cs">
+      <DependentUpon>csharp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cursos.aspx.cs">
+      <DependentUpon>cursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cursos.aspx.designer.cs">
+      <DependentUpon>cursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase.aspx.cs">
+      <DependentUpon>DataBase.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBase.aspx.designer.cs">
+      <DependentUpon>DataBase.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="datascience.aspx.cs">
+      <DependentUpon>datascience.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="datascience.aspx.designer.cs">
+      <DependentUpon>datascience.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Datos.aspx.cs">
+      <DependentUpon>Datos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Datos.aspx.designer.cs">
+      <DependentUpon>Datos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Diseno.aspx.cs">
+      <DependentUpon>Diseno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Diseno.aspx.designer.cs">
+      <DependentUpon>Diseno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Enum\EnumTechnology.cs" />
+    <Compile Include="Faq.aspx.cs">
+      <DependentUpon>Faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faq.aspx.designer.cs">
+      <DependentUpon>Faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Figma.aspx.cs">
+      <DependentUpon>Figma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Figma.aspx.designer.cs">
+      <DependentUpon>Figma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="html-css.aspx.cs">
+      <DependentUpon>html-css.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="html-css.aspx.designer.cs">
+      <DependentUpon>html-css.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="js-basico.aspx.cs">
+      <DependentUpon>js-basico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="js-basico.aspx.designer.cs">
+      <DependentUpon>js-basico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="js.aspx.cs">
+      <DependentUpon>js.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="js.aspx.designer.cs">
+      <DependentUpon>js.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Legales.aspx.cs">
+      <DependentUpon>Legales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Legales.aspx.designer.cs">
+      <DependentUpon>Legales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\Applicant.cs" />
+    <Compile Include="Negocio\Cartero.cs" />
+    <Compile Include="Negocio\ContactFormData.cs" />
+    <Compile Include="Negocio\CurseFee.cs" />
+    <Compile Include="Negocio\CurseItem.cs" />
+    <Compile Include="Negocio\DataManagment.cs" />
+    <Compile Include="Negocio\DevPlaceFormApply.cs" />
+    <Compile Include="Negocio\DevPlacePage.cs" />
+    <Compile Include="Negocio\DevPlaceSection.cs" />
+    <Compile Include="Negocio\MisFunciones.cs" />
+    <Compile Include="Index.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\Persistor.cs" />
+    <Compile Include="NodeJs.aspx.cs">
+      <DependentUpon>NodeJs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NodeJs.aspx.designer.cs">
+      <DependentUpon>NodeJs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramaDesarrolloWeb.aspx.cs">
+      <DependentUpon>ProgramaDesarrolloWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramaDesarrolloWeb.aspx.designer.cs">
+      <DependentUpon>ProgramaDesarrolloWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramaFullStack.aspx.cs">
+      <DependentUpon>ProgramaFullStack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramaFullStack.aspx.designer.cs">
+      <DependentUpon>ProgramaFullStack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramsBasics.aspx.cs">
+      <DependentUpon>ProgramsBasics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramsBasics.aspx.designer.cs">
+      <DependentUpon>ProgramsBasics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramsDevs.aspx.cs">
+      <DependentUpon>ProgramsDevs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProgramsDevs.aspx.designer.cs">
+      <DependentUpon>ProgramsDevs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReactJs.aspx.cs">
+      <DependentUpon>ReactJs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReactJs.aspx.designer.cs">
+      <DependentUpon>ReactJs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sql.aspx.cs">
+      <DependentUpon>sql.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sql.aspx.designer.cs">
+      <DependentUpon>sql.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ux-ui.aspx.cs">
+      <DependentUpon>ux-ui.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ux-ui.aspx.designer.cs">
+      <DependentUpon>ux-ui.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\scss\blk-design-system.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_alert.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_badge.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_buttons.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_caret.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_float.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_forms.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_gradients.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_grid.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_hover.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_image.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_list-group.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_lists.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_pagination.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_resize.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_size.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_table-row.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_transition.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\mixins\_visibility.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_align.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_background.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_borders.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_display.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_embed.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_flex.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_float.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_position.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_shadows.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_sizing.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_spacing.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_text.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\utilities\_visibility.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_alert.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_badge.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_breadcrumb.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_button-group.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_buttons.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_card.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_carousel.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_close.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_code.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_custom-forms.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_dropdown.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_forms.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_functions.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_grid.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_images.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_input-group.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_jumbotron.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_list-group.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_media.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_mixins.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_modal.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_nav.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_navbar.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_pagination.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_popover.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_print.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_progress.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_reboot.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_root.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_tables.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_tooltip.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_transitions.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_type.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_utilities.scss" />
+    <Content Include="assets\scss\blk-design-system\bootstrap\_variables.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\cards\_card-chart.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\cards\_card-map.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\cards\_card-plain.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\cards\_card-register.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\cards\_card-stats.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\cards\_card-task.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\cards\_card-user.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\opacity.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\_alert.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\_background-variant.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\_badges.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\_buttons.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\_dropdown.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\_forms.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\_icon.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\_inputs.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\_modals.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\_page-header.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\_popovers.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\_vendor-prefixes.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\mixins\_wizard.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\sections\_blogs.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\sections\_contactus.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\sections\_features.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\sections\_headers.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\sections\_pricing.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\sections\_projects.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\sections\_social-subscribe-lines.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\sections\_team.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\sections\_testimonials.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\utilities\_backgrounds.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\utilities\_floating.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\utilities\_helper.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\utilities\_position.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\utilities\_shadows.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\utilities\_sizing.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\utilities\_spacing.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\utilities\_text.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\utilities\_transform.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\vendor\_plugin-animate-bootstrap-notify.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\vendor\_plugin-bootstrap-switch.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\vendor\_plugin-datetimepicker.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\vendor\_plugin-nouislider.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\vendor\_plugin-perfect-scrollbar.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_alerts.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_badge.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_buttons.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_card.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_checkboxes-radio.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_dropdown.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_example-pages.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_fixed-plugin.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_footer.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_forms.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_functions.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_icons.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_images.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_info-areas.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_input-group.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_misc.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_mixins.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_modal.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_navbar.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_pagination.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_pills.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_progress.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_rtl.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_sections.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_tables.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_tabs.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_type.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_utilities.scss" />
+    <Content Include="assets\scss\blk-design-system\custom\_variables.scss" />
+    <Content Include="assets\fonts\bigmug-line\.DS_Store" />
+    <Content Include="assets\fonts\bigmug-line\fl-bigmug-line.eot" />
+    <Content Include="assets\fonts\bigmug-line\fl-bigmug-line.ttf" />
+    <Content Include="assets\fonts\bigmug-line\fl-bigmug-line.woff" />
+    <Content Include="assets\fonts\flaticon-2\.DS_Store" />
+    <Content Include="assets\fonts\flaticon-2\font\Flaticon.eot" />
+    <Content Include="assets\fonts\flaticon-2\font\Flaticon.ttf" />
+    <Content Include="assets\fonts\flaticon-2\font\Flaticon.woff" />
+    <Content Include="assets\fonts\flaticon-2\font\_flaticon.scss" />
+    <Content Include="assets\fonts\flaticon-2\license\license.pdf" />
+    <Content Include="assets\fonts\flaticon\font\Flaticon.eot" />
+    <Content Include="assets\fonts\flaticon\font\Flaticon.ttf" />
+    <Content Include="assets\fonts\flaticon\font\Flaticon.woff" />
+    <Content Include="assets\fonts\flaticon\font\_flaticon.scss" />
+    <Content Include="assets\fonts\flaticon\license\license.pdf" />
+    <Content Include="assets\fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="assets\fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="assets\fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="assets\fonts\icomoon\selection.json" />
+    <Content Include="assets\images\illustration\.DS_Store" />
+    <Content Include="assets\images\slide\.DS_Store" />
+    <Content Include="assets\images\Reserva Rent A Car.pdf" />
+    <Content Include="assets\images\icon-card\.DS_Store" />
+    <Content Include="assets\images\banner\.DS_Store" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="vendor\font-awesome\fonts\fontawesome-webfont.eot" />
+    <None Include="vendor\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="vendor\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <None Include="vendor\font-awesome\fonts\fontawesome-webfont.woff" />
+    <None Include="vendor\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="vendor\font-awesome\fonts\FontAwesome.otf" />
+    <None Include="vendor\font-awesome\less\animated.less" />
+    <None Include="vendor\font-awesome\less\bordered-pulled.less" />
+    <None Include="vendor\font-awesome\less\core.less" />
+    <None Include="vendor\font-awesome\less\fixed-width.less" />
+    <None Include="vendor\font-awesome\less\font-awesome.less" />
+    <None Include="vendor\font-awesome\less\icons.less" />
+    <None Include="vendor\font-awesome\less\larger.less" />
+    <None Include="vendor\font-awesome\less\list.less" />
+    <None Include="vendor\font-awesome\less\mixins.less" />
+    <None Include="vendor\font-awesome\less\path.less" />
+    <None Include="vendor\font-awesome\less\rotated-flipped.less" />
+    <None Include="vendor\font-awesome\less\screen-reader.less" />
+    <None Include="vendor\font-awesome\less\stacked.less" />
+    <None Include="vendor\font-awesome\less\variables.less" />
+    <None Include="vendor\font-awesome\scss\font-awesome.scss" />
+    <None Include="vendor\font-awesome\scss\_animated.scss" />
+    <None Include="vendor\font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="vendor\font-awesome\scss\_core.scss" />
+    <None Include="vendor\font-awesome\scss\_fixed-width.scss" />
+    <None Include="vendor\font-awesome\scss\_icons.scss" />
+    <None Include="vendor\font-awesome\scss\_larger.scss" />
+    <None Include="vendor\font-awesome\scss\_list.scss" />
+    <None Include="vendor\font-awesome\scss\_mixins.scss" />
+    <None Include="vendor\font-awesome\scss\_path.scss" />
+    <None Include="vendor\font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="vendor\font-awesome\scss\_screen-reader.scss" />
+    <None Include="vendor\font-awesome\scss\_stacked.scss" />
+    <None Include="vendor\font-awesome\scss\_variables.scss" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58158</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

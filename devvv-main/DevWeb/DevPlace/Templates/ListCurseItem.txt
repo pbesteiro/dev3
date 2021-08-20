@@ -1,0 +1,21 @@
+﻿<div class="row pt-1 color-card mb-2">
+    <div class="col-sm-11 col-md-2 mt-3 mb-4 text-center">
+        <h6>@@DIAS_A_REEMPLAZAR@@</h6>
+        <p>@@MESES_A_REEMPLAZAR@@</p>
+    </div>
+    <div class="col-sm-11 col-md-2 mt-3 mb-4 text-center">
+        <h6>Horario</h6>
+        <p>@@HORA_A_REEMPLAZAR@@.</p>
+    </div>
+    <div class="col-sm-11 col-md-2 mt-3 mb-4 text-center">
+        <h6>Modalidad</h6>
+        <p>Online en vivo</p>
+    </div>
+    <div class="col-sm-11 col-md-2 mt-3 mb-4 text-center">
+        <h6>Profesor</h6>
+        <p>@@MENTOR_A_REEMPLAZAR@@</p>
+    </div>
+    <div class="col-sm-11 col-md-3 mt-3 mb-4 text-center">
+        <button type="button"class="btn btn-primary promocion-button-card" onclick="location.href='ContactForm.aspx?curseItem=@@CURSE_ITEM_ID@@';">Inscribirme</button>
+    </div>
+</div>

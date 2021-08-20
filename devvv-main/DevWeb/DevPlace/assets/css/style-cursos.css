@@ -1,0 +1,1685 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+b {
+  color: black;
+}
+
+small {
+  color: rgba(255, 255, 255, 0.719);
+  font-weight: bold;
+}
+p {
+  margin-bottom: 0;
+}
+h6 {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+  
+
+/* ---------------DATA ANALYTICS------------------ */
+.carousel-data-analytics {
+  background-image: url(../images/banner/banner-data.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-data-analytics {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1000px);
+  grid-template-rows: repeat(6, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+    margin-left: 8rem;
+}
+.div1 h3 {
+  font-size: 40px;
+  margin-top: 30px;
+}
+.div1 .p-text-data {
+  font-size: 15px;
+  width: 80%;
+}
+.div1-text1 {
+  font-size: 15px;
+  width: 95%;
+  margin-top: 20px;
+  align-self: center;
+}
+
+.text-analytics {
+  display: flex;
+  flex-direction: column;
+  width: 89%;
+  margin-top: 5vh;
+}
+
+.div2 {
+  grid-area: 2 / 1 / 3 / 2;
+  margin-left: 6rem;
+
+  margin-top: 50px;
+}
+.div2 p {
+  font-size: 15px;
+  width: 80%;
+  margin-top: 19px;
+  margin-bottom: 30px;
+}
+
+.div2 h3 {
+  font-size: 35px;
+  margin-top: 30px;
+}
+
+.div3 {
+  grid-area: 3 / 1 / 4 / 2;
+  margin-left: 6rem;
+}
+.div3 p {
+  font-size: 15px;
+  width: 80%;
+  margin-top: 19px;
+}
+
+.div3 h3 {
+  font-size: 35px;
+  margin-top: 30px;
+}
+.div3 ul {
+  margin-left: 2rem;
+}
+
+.div4 {
+  grid-area: 4 / 1 / 5 / 2;
+  margin-left: 6rem;
+}
+.div4 p {
+  font-size: 15px;
+  width: 80%;
+  margin-top: 19px;
+}
+
+.div4 ul {
+  width: 80%;
+}
+
+/* *********************PROXIMAS FECHAS*********************** */
+
+.div5 {
+  grid-area: 5 / 1 / 6 / 2;
+  margin-left: 6rem;
+}
+
+#proximas-fechas {
+  font-size: 35px;
+
+  margin-bottom: 30px;
+}
+
+#proximas-fechas {
+  width: max-content;
+}
+
+.container-grid-proximas-fechas {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(5, 150px);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  -webkit-box-align: center;
+}
+
+.line-fechas {
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: auto;
+  width: 57%;
+  background-color: #5d009b;
+}
+.button-fechas {
+  color: white;
+  text-decoration: none;
+  background-color: #5d009b;
+  width: 8rem;
+  height: 3rem;
+  border: solid #5d009b;
+  border-radius: 2px;
+}
+.button-fechas{
+  color: white;
+  text-decoration: none;
+}
+
+.button-fechas a:hover {
+  text-decoration: none;
+  color: white;
+  width: 100rem;
+}
+.button-fechas:hover {
+  background-color: #5d009b8a;
+  border: none;
+}
+
+/* ******************************************** */
+
+.div6 {
+  grid-area: 6 / 1 / 7 / 2;
+  margin-left: 6rem;
+  margin-top: 80px;
+}
+.div6 ul {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* CARD PRECIO COLUMN  */
+.div7 {
+  grid-area: 1 / 2 / 2 / 3;
+  width: 0px;
+}
+.card-cursos {
+  background-color: #ff9c40;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 3.5vh;
+}
+
+.contenido-card {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+.button-card {
+    border: solid 2px white;
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 45px;
+    border-radius: 2px;
+    align-self: left;
+}
+.button-card:hover {
+  background-color: rgba(255, 255, 255, 0.507);
+}
+
+.button-card a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 20px;
+}
+.p-numero {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    margin-left: 85px;
+}
+.card-title {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0;
+}
+.p-info-descuentos {
+  font-size: 18px;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+
+
+.parent-card {
+  display: grid;
+  grid-template-columns: 0.2fr 301px;
+  grid-template-rows: repeat(4, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 2px;
+}
+
+.div1-card {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2-card {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.div3-card {
+  grid-area: 3 / 1 / 4 / 2;
+}
+.div4-card {
+  grid-area: 4 / 1 / 5 / 2;
+}
+.flex-egresado {
+  display: flex;
+  flex-direction: row;
+}
+.div5-card {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div6-card {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.div7-card {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.div8-card {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.title-card-data {
+  margin: 0;
+  color: white;
+}
+
+.container-button-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* margin: 20px; */
+}
+
+.small-card {
+  font-size: 14px;
+  margin-left: 10px;
+  color: white;
+}
+
+.img1-data {
+  width: 20rem;
+  height: 20rem;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.perfil-egresado-img {
+  width: 480px;
+  height: 250px;
+  margin-top: -58px;
+}
+
+.objetivos-programa-img {
+  width: 400px;
+  height: 250px;
+  margin-top: -48px;
+}
+/* ---------------nodejs------------------ */
+
+.carousel-nodejs {
+  background-image: url(../images/banner/banner-nodejs.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-nodejs {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.card-cursos-nodejs {
+  background-color: #9599e5;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 0.5vh;
+}
+.objetivos-programa-img-nodejs {
+  width: 400px;
+  height: 250px;
+
+  margin-top: -48px;
+}
+.perfil-egresado-img-nodejs {
+  width: 480px;
+  height: 250px;
+ 
+  margin-top: -58px;
+}
+
+/* ---------------SQL------------------ */
+
+.carousel-sql {
+  background-image: url(../images/banner/banner-sql.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-sql {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.parent-sql {
+  display: grid;
+  grid-template-columns: 58em;
+  grid-template-rows: repeat(7, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.div2 {
+  grid-area: 2 / 1 / 3 / 2;
+  margin-left: 6rem;
+}
+
+.perfil-egresado-img-sql {
+  width: 480px;
+  height: 250px;
+
+  margin-top: 20px;
+}
+
+.div1-text1-sql {
+  font-size: 15px;
+  width: 83%;
+  margin-top: 20px;
+}
+.card-cursos-sql {
+  background-color: #ff9c40;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-left: 3.5vh;
+}
+
+/* ---------------HTML - CSS------------------ */
+
+.parent-html {
+  display: grid;
+  grid-template-columns: 58em;
+  grid-template-rows: repeat(7, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.carousel-html {
+  background-image: url(../images/banner/banner-html.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-html {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+
+.list-div1-html {
+  list-style: decimal;
+
+}
+.img1-html {
+  width: 30rem;
+  height: 20rem;
+  margin-left: 16px;
+  margin-top: 20px;
+}
+
+.text-html {
+  display: flex;
+  flex-direction: column;
+  width: 86%;
+}
+
+.text2-html {
+  margin-left: 20px;
+  margin-top: 2rem;
+}
+
+.card-cursos-html {
+  background-color: #5564eb;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.perfil-egresado-img-html {
+  width: 480px;
+  height: 250px;
+  margin-right: 132px;
+  margin-top: -58px;
+}
+/* ---------------HTML - CSS------------------ */
+
+/* ---------------ANGULAR------------------ */
+.parent-angular {
+  display: grid;
+  grid-template-columns: repeat(2, 1000px);
+  grid-template-rows: repeat(6, auto);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.flex-egresado-angular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-egresado-angular img {
+  margin-top: auto;
+}
+.carousel-angular {
+  background-image: url(../images/banner/banner-angular.png);
+  height: 388px;
+  width: 100vw;
+  padding: 20px;
+}
+.carousel-title-angular {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.card-cursos-angular {
+  background-color: #9599e5;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.img1-angular {
+  width: 28rem;
+  height: 21rem;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.div2-angular {
+  grid-area: 3 / 1 / 4 / 2;
+  margin-left: 2vh;
+  margin-top: 31px;
+}
+.div2-angular h3 {
+  font-size: 31px;
+  margin-top: 30px;
+}
+.div2-angular p {
+  font-size: 15px;
+  width: 53vh;
+  margin-top: 19px;
+  margin-bottom: 30px;
+}
+
+.div3-angular ul {
+  margin-left: 2rem;
+}
+.div3-angular {
+  grid-area: 4 / 1 / 5 / 2;
+  margin-left: 3vh;
+}
+.div3-angular p {
+  font-size: 15px;
+  width: 52vh;
+  margin-top: 19px;
+}
+
+.div4-angular {
+  grid-area: 5 / 1 / 6 / 2;
+  margin-left: 3vh;
+  margin-top: 8vh;
+}
+.div1-text1-angular {
+  font-size: 15px;
+  width: 95%;
+  margin-top: 20px;
+  align-self: center;
+}
+.objetivos-programa-img-angular {
+  width: 400px;
+  height: 250px;
+  
+  margin-top: -48px;
+}
+.perfil-egresado-img-angular {
+  width: 480px;
+  height: 250px;
+  
+  margin-top: -58px;
+}
+/* ---------------ANGULAR------------------ */
+/* ---------------DATA SCIENCE------------------ */
+
+.parent-data-science {
+    display: grid;
+    grid-template-columns: repeat(2, 1000px);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.carousel-data-science {
+  background-image: url(../images/banner/banner-data-science.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-data-science {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.card-cursos-data-science {
+  background-color: #ff9c40;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.img1-data-science {
+  width: 25rem;
+  height: 20rem;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+/* ---------------c#------------------ */
+
+.parent-csharp {
+    display: grid;
+    grid-template-columns: repeat(2, 1000px);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.carousel-csharp {
+  background-image: url(../images/banner/banner-csharp.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-csharp {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.card-cursos-csharp {
+  background-color: #9599e5;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.div1-text1-csharp {
+  font-size: 15px;
+  width: 95%;
+  margin-top: 20px;
+  align-self: center;
+}
+.objetivos-programa-img-csharp {
+  width: 400px;
+  height: 250px;
+  
+  margin-top: -48px;
+}
+.img1-scharp {
+  width: 20rem;
+  height: 20rem;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+/* ---------------reactjs------------------ */
+.parent-reactjs {
+    display: grid;
+    grid-template-columns: repeat(2, 1000px);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.carousel-reactjs {
+  background-image: url(../images/banner/banner-reactjs.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-reactjs {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.card-cursos-reactjs {
+  background-color: #9599e5;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.div1-text1-reactjs {
+  font-size: 15px;
+  width: 95%;
+  margin-top: 20px;
+  align-self: center;
+}
+/* ---------------js ------------------ */
+.parent-js {
+    display: grid;
+    grid-template-columns: repeat(2, 1000px);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.carousel-js {
+  background-image: url(../images/banner/banner-js.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-js {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.card-cursos-js {
+  background-color: #9599e5;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.text-js {
+  display: flex;
+  flex-direction: row;
+  width: 89%;
+  /* margin-top: 5vh; */
+  height: 206px;
+}
+
+.div1 .p-text-js {
+  font-size: 15px;
+  width: 80%;
+  width: 53%;
+}
+.div1-text1-js {
+  font-size: 15px;
+  width: 95%;
+  margin-top: 20px;
+  align-self: center;
+}
+.perfil-egresado-img-js {
+  width: 480px;
+  height: 250px;
+  
+}
+
+.list-egresado-js {
+  margin-bottom: 1em !important;
+}
+/* ---------------ml ------------------ */
+.parent-ml {
+    display: grid;
+    grid-template-columns: repeat(2, 1000px);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.carousel-ml {
+  background-image: url(../images/banner/banner-ml.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-ml {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.card-cursos-ml {
+  background-color: #ff9c40;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+/* ---------------js principiante------------------ */
+.parent-jsprincipiante {
+    display: grid;
+    grid-template-columns: repeat(2, 1000px);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.carousel-jsprincipiante {
+  background-image: url(../images/banner/banner-jsprincipiante.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-jsprincipiante {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.card-cursos-jsprincipiante {
+  background-color: #5564eb;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.flex-egresado-jsprincipiante {
+  flex-direction: row;
+}
+
+.objetivos-programa-img-jsprincipiante {
+  width: 400px;
+  height: 250px;
+ 
+  margin-top: -5px;
+}
+.text-jsprincipiante {
+  display: flex;
+  flex-direction: row;
+  width: 89%;
+ 
+}
+.perfil-egresado-img-jsprincipiante {
+  width: 480px;
+  height: 250px;
+  margin-right: 132px;
+  margin-top: -58px;
+}
+/* ---------------figma------------------ */
+.parent-figma {
+    display: grid;
+    grid-template-columns: repeat(2, 1000px);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.carousel-figma {
+  background-image: url(../images/banner/banner-figma.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-figma {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.card-cursos-figma {
+  background-color: #b21ef2;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+/* ---------------diseñoux------------------ */
+.parent-diseñoux {
+    display: grid;
+    grid-template-columns: repeat(2, 1000px);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.carousel-diseñoux {
+  background-image: url(../images/banner/banner-disenoux.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-diseñoux {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.card-cursos-diseñoux {
+  background-color: #b21ef2;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+} /* ---------------dw------------------ */
+.parent-dw {
+    display: grid;
+    grid-template-columns: repeat(2, 1000px);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.carousel-dw {
+  background-image: url(../images/banner/banner-desarrolloweb.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-dw {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.card-cursos-dw {
+  background-color: #5564eb;
+  width: 23rem;
+  height: 30rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.flex-egresado-dw {
+  display: flex;
+  flex-direction: column;
+}
+.perfil-egresado-img-dw {
+  width: 480px;
+  height: 250px;
+  margin-right: 132px;
+  margin-top: 9px;
+}
+.objetivos-programa-img-dw {
+  width: 400px;
+  height: 250px;
+  
+  margin-top: 2px;
+}
+.title-top {
+  margin-top: 1em;
+}
+.line-fechas-dw {
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: auto;
+  
+  background-color: #5d009b;
+}
+/* ---------------fullstackjs------------------ */
+.parent-fullstackjs {
+    display: grid;
+    grid-template-columns: repeat(2, 1000px);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.carousel-fullstackjs {
+  background-image: url(../images/banner/banner-fullstack-js.png);
+  height: 388px;
+  width: 1425px;
+  padding: 20px;
+}
+.carousel-title-fullstackjs {
+  margin: 19rem auto 10rem 10rem;
+  padding: 0px 0px;
+  position: relative;
+  max-width: 1068px;
+  display: block;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 4rem;
+}
+.card-cursos-fullstackjs {
+  background-color: #5564eb;
+  width: 23rem;
+  height: 35rem;
+  padding-top: 15px;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.line-fechas-fullstack {
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: auto;
+  width: 57%;
+  background-color: #5d009b;
+}
+
+/* ---------------MEDIA QUERY------------------ */
+
+@media only screen 
+   and (min-width : 320px) {
+    @media only screen and (min-width:300px) and (max-width:800px){
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+    
+      .div1 {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      .div2 {
+        grid-area: 3 / 1 / 4 / 2;
+      }
+      .div3 {
+        grid-area: 4 / 1 / 5 / 2;
+      }
+      .div4 {
+        grid-area: 5 / 1 / 6 / 2;
+      }
+      .div5 {
+        grid-area: 6 / 1 / 7 / 2;
+      }
+      .div6 {
+        grid-area: 7 / 1 / 8 / 2;
+      }
+      .div7 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+    
+      .carousel-data-analytics {
+        background-image: url(../images/banner/banner-data-analytics-responsive.png);
+      }
+      .carousel-title-data-analytics {
+        margin: 19rem auto 10rem 1rem;
+      }
+    
+      /* ---------------DATA ANALYTICS------------------ */
+      /* ---------------SQL------------------ */
+    
+      .perfil-egresado-img-sql {
+        width: 355px;
+        height: 250px;
+        
+        margin-top: auto;
+      }
+    
+      .div4-sql {
+        grid-area: 5 / 1 / 6 / 2;
+        margin-left: 3vh;
+        margin-top: auto;
+      }
+    
+      .div4-sql h3 {
+        width: auto;
+      }
+      .div4-sql ul {
+        width: auto;
+      }
+      .div3-p-sql {
+        width: auto !important;
+      }
+      .div4-h3-sql {
+        width: auto !important;
+        margin-top: 5vh;
+      }
+      .div4-ul-sql {
+        width: auto !important;
+      }
+      .div1-text1-sql {
+        width: auto;
+      }
+    
+      .div2-sql {
+        width: 47vh !important;
+      }
+        .parent-sql {
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(6, auto);
+        }
+    
+      .carousel-title-sql {
+        margin: 19rem auto 10rem 1rem;
+      }
+      .carousel-sql {
+        background-image: url(../images/banner/banner-sql-responsive.png);
+      }
+      .carousel-title-sql {
+        margin: 16rem auto 10rem 1rem;
+      }
+      .div6-sql {
+        width: auto !important;
+      }
+      .card-cursos-sql {
+        margin-left: 3.5vh;
+      }
+      /* ---------------SQL------------------ */
+    
+      /* ---------------html - css------------------ */
+    
+      .carousel-html {
+        background-image: url(../images/banner/banner-html-responsive.png);
+      }
+      .carousel-title-html {
+        margin: 19rem auto 10rem 1rem;
+      }
+
+        .parent-html {
+            display: grid;
+            grid-template-columns: 7em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+      .list-div1-html {
+        width: 48vh;
+    
+      }
+    
+      .img1-html {
+        width: 22rem;
+        height: 16rem;
+        margin-left: 0px;
+        margin-top: 20px;
+      }
+    
+      .egresado-html {
+        width: 40vh;
+      }
+    
+      .perfil-egresado-img-html {
+        width: 325px;
+        height: 250px;
+      
+        margin-top: -58px;
+      }
+      .div2-html{
+        height: 29em;
+      }
+     
+      /* ---------------Angular------------------ */
+
+        .parent-angular {
+            display: grid;
+            grid-template-columns: 7em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+      .carousel-angular {
+        background-image: url(../images/banner/banner-angular-responsive.png);
+      }
+      .carousel-title-angular {
+        margin: 19rem auto 10rem 1rem;
+      }
+    
+      .img1-angular {
+        width: 21rem;
+        height: 14rem;
+        margin-left: 6px;
+        margin-top: 20px;
+      }
+    
+      .div4-angular {
+        width: 33vh;
+        margin: 4vh;
+      }
+      .div4-angular p {
+        width: 53vh;
+        padding: 2vh;
+      }
+      .div4-angular ul {
+        width: 53vh;
+        margin-bottom: 15vh;
+      }
+      .div2-angular-list {
+        width: 47vh;
+        margin-left: 5vh;
+      }
+      .div3-list-angular {
+        width: 20em;
+      }
+      .div6-faq-angular {
+        width: 51vh !important;
+    
+        margin-left: 1vh !important;
+        margin-top: 0 !important;
+      }
+      .card-cursos-angular {
+        margin-left: 3.5vh;
+      }
+      .div1-text1-angular {
+        width: 41vh;
+    }
+    
+    
+      .objetivos-programa-img-angular {
+        margin-right: 0;
+      }
+    
+      .flex-egresado-angular img {
+        margin-right: 0 !important;
+      }
+    
+      /* ---------------DATA science------------------ */
+        .parent-data-science {
+            display: grid;
+            grid-template-columns: 7em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+      .carousel-data-science {
+        background-image: url(../images/banner/banner-data-science-responsive.png);
+      }
+      .carousel-title-data-science {
+        margin: 19rem auto 10rem 1rem;
+      }
+      .img1-data-science {
+        margin-left: 0;
+        margin-top: 0;
+      }
+      .card-cursos-data-science {
+        margin-left: 3.5vh;
+      }
+      /* ---------------c sharp------------------ */
+    
+      .carousel-csharp {
+        background-image: url(../images/banner/banner-csharp-responsive.png);
+      }
+      .carousel-title-csharp {
+        margin: 19rem auto 10rem 1rem;
+      }
+      .card-cursos-csharp {
+        margin-left: 0.5vh;
+      }
+      .div1-text1-csharp {
+        width: 25em;
+        margin-left: 1em;
+      }
+        .parent-csharp {
+            display: grid;
+            grid-template-columns: 21em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+      .objetivos-programa-img-csharp {
+        width: 331px;
+        height: 232px;
+        margin-right: 0;
+        margin-top: -16px;
+      }
+      .img1-scharp {
+        margin-left: 0;
+        width: 16rem;
+        height: 15rem;
+      }
+      /* ---------------js-principiantes------------------ */
+        .parent-jsprincipiante {
+            display: grid;
+            grid-template-columns: 21em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+      .carousel-jsprincipiante {
+        background-image: url(../images/banner/banner-jsprincipiante-responsive.png);
+      }
+      .carousel-title-jsprincipiante {
+        margin: 19rem auto 10rem 1rem;
+      }
+      .perfil-egresado-img-jsprincipiante {
+        width: 22em;
+      }
+      .card-cursos-jsprincipiante {
+        margin-left: 3.5vh;
+      }
+      .objetivos-programa-img-jsprincipiante {
+        margin: 0 !important;
+        margin-top: -5px;
+        width: 17em;
+        height: 200px;
+    }
+      .text-jsprincipiante {
+        flex-direction: column;
+      }
+      .text-jsprincipiante-div2{
+    width: 41vh !important;
+      }
+      .text-div4-jsprincipiante{
+        width: 39vh !important;
+      }
+      .perfil-egresado-img {
+        width: 22em !important;
+        margin-right: 0;
+        height: 13em;
+    
+      }
+      /* ---------------ml ------------------ */
+        .parent-ml {
+            display: grid;
+            grid-template-columns: 21em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+      .carousel-ml {
+        background-image: url(../images/banner/banner-machine-learning-responsive.png);
+      }
+      .carousel-title-ml {
+        margin: 19rem auto 10rem 1rem;
+      }
+      .card-cursos-ml {
+        margin-left: 3.5vh;
+      }
+      /* ---------------js ------------------ */
+        .parent-js {
+            display: grid;
+            grid-template-columns: 21em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+      .carousel-js {
+        background-image: url(../images/banner/banner-js-responsive.png);
+      }
+      .carousel-title-js {
+        margin: 19rem auto 10rem 1rem;
+      }
+      .card-cursos-js {
+        margin-left: 3.5vh;
+      }
+      .div1 .p-text-js {
+        font-size: 15px;
+        width: 80%;
+        width: 100%;
+        margin-top: 100%;
+        margin-left: 1em;
+      }
+      .text-js {
+        flex-direction: column;
+    
+        /* margin-top: 5vh; */
+        height: 206px;
+      }
+      .div1-text1-js {
+        font-size: 15px;
+        width: 24em;
+        margin-top: 20px;
+        margin-left: 7em;
+      }
+      .perfil-egresado-img-js {
+        width: 388px;
+        height: 250px;
+       
+        margin-top: 0;
+      }
+      .perfil-egresado-img-angular {
+        width: 20em !important;
+      }
+      /* ---------------nodejs------------------ */
+        .parent-nodejs {
+            display: grid;
+            grid-template-columns: 21em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+    
+      .carousel-nodejs {
+        background-image: url(../images/banner/banner-nodejs-responsive.png);
+      }
+      .carousel-title-nodejs {
+        margin: 19rem auto 10rem 1rem;
+      }
+    
+      .perfil-egresado-img {
+        width: 25em !important;
+        margin-right: 0;
+      }
+      .objetivos-programa-img-nodejs {
+      
+          width: 305px;
+          height: 250px;
+       
+          margin-top: -24px;
+      }
+      
+     .list-egresado-nodejs{
+       margin-bottom: 0 !important;
+     }
+     .perfil-egresado-img-nodejs {
+      width: 20em;
+        margin-right: 0;
+        margin-top: 3px;
+    }
+    
+        
+      /* 
+      ---------------reactjs------------------ */
+    
+      .carousel-reactjs {
+        background-image: url(../images/banner/banner-reactjs-responsive.png);
+      }
+      .carousel-title-reactjs {
+        margin: 19rem auto 10rem 1rem;
+      }
+      .card-cursos-reactjs {
+        margin-left: 3.5vh;
+      }
+      .div1-text1-reactjs {
+        width: 25em;
+        margin-left: 1em;
+      }
+        .parent-reactjs {
+            display: grid;
+            grid-template-columns: 21em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+    
+      /* ---------------figma------------------ */
+        .parent-figma {
+            display: grid;
+            grid-template-columns: 21em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+    
+      .carousel-figma {
+        background-image: url(../images/banner/banner-figma-responsive.png);
+      }
+      .carousel-title-figma {
+        margin: 19rem auto 10rem 1rem;
+      }
+    
+      /* ---------------diseñoux------------------ */
+        .parent-diseñoux {
+            display: grid;
+            grid-template-columns: 21em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+    
+      .carousel-diseñoux {
+        background-image: url(../images/banner/banner-disenoux-responsive.png);
+      }
+      .carousel-title-diseñoux {
+        margin: 19rem auto 10rem 1rem;
+      }
+      /* ---------------dw------------------ */
+        .parent-dw {
+            display: grid;
+            grid-template-columns: 21em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+    
+      .carousel-dw {
+        background-image: url(../images/banner/banner-desarrolloweb-responsive.png);
+      }
+      .carousel-title-dw {
+        margin: 19rem auto 10rem 1rem;
+      }
+    
+      .perfil-egresado-img-dw {
+        width: 378px;
+        height: 250px;
+        margin-right: 0;
+        margin-top: 9px;
+      }
+      .objetivos-programa-img-dw {
+        width: 361px;
+        height: 250px;
+        margin-right: 0;
+        margin-top: 2px;
+      }
+      /* ---------------fullstackjs------------------ */
+        .parent-fullstackjs {
+            display: grid;
+            grid-template-columns: 21em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+    
+      .carousel-fullstackjs {
+        background-image: url(../images/banner/banner-fullstack-js-responsive.png);
+      }
+      .carousel-title-fullstackjs {
+        margin: 19rem auto 10rem 1rem;
+      }
+      .text-responsive-fsj {
+        width: 40vh !important;
+      }
+      .objetivos-programa-img-dw {
+        width: 298px;
+      }
+      .line-fechas-fullstack {
+        width: 38vh;
+      }
+      .faq-fullstack {
+        width: 36vh !important;
+      }
+        .parent {
+            display: grid;
+            grid-template-columns: 21em;
+            grid-template-rows: repeat(7, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+        }
+    
+      .div1 {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      .div1 h3 {
+        font-size: 29px;
+        margin-top: 30px;
+      }
+      .div1-text1 {
+        font-size: 15px;
+        margin: 0%;
+        width: 40vh;
+        margin-top: 20px;
+        text-align: left;
+      }
+      .div1 .p-text-data {
+        font-size: 15px;
+        margin: 0%;
+        width: 40vh;
+        margin-top: 20px;
+        text-align: left;
+      }
+      .text-analytics {
+        flex-direction: column;
+      }
+      .flex-egresado {
+        flex-direction: column;
+      }
+    
+      .card-cursos {
+        margin-left: 3.5vh;
+      }
+      .div2 {
+        grid-area: 3 / 1 / 4 / 2;
+        margin-left: 2vh;
+        margin-top: 31px;
+      }
+      .div2 h3 {
+        font-size: 31px;
+        margin-top: 30px;
+      }
+      .div2 p {
+        font-size: 15px;
+        width: 53vh;
+        margin-top: 19px;
+        margin-bottom: 30px;
+      }
+      .div3 {
+        grid-area: 4 / 1 / 5 / 2;
+        margin-left: 3vh;
+      }
+      .div3 p {
+        font-size: 15px;
+        width: 52vh;
+        margin-top: 19px;
+      }
+      .div4 {
+        grid-area: 5 / 1 / 6 / 2;
+        margin-left: 3vh;
+        margin-top: 8vh;
+      }
+      .div4 p {
+        width: 53vh;
+      }
+      .div4 ul {
+        width: 53vh;
+        margin-bottom: 15vh;
+      }
+      .div5 {
+        grid-area: 6 / 1 / 7 / 2;
+        margin-left: 4vh;
+      }
+    
+      .div6 {
+        grid-area: 7 / 1 / 8 / 2;
+        margin-left: 4vh;
+        margin-top: 5vh;
+      }
+      .div6 ul {
+        width: 51vh;
+      }
+      .div7 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+    
+      .img1-data {
+        margin-left: 0;
+      }
+      .perfil-egresado-img {
+        
+        margin-top: 5px;
+        width: auto;
+      }
+      .objetivos-programa-img {
+        width: 23em;
+      }
+    
+      .container-grid-proximas-fechas-data {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 150px);
+        margin-bottom: 20px;
+        margin-top: 20px;
+        -webkit-box-align: center;
+        column-gap: 2rem;
+        row-gap: 2rem;
+      }
+      .line-fechas-data {
+        width: 51vh;
+      }
+    
+      
+      
+    }
+}
+@media only screen 
+   and (min-width : 768px) {
+    
+   }  
+@media only screen 
+   and (min-width : 1200px) {
+   /* Styles here */
+}
+@media only screen 
+   and (min-width : 1600px) {
+   /* Styles here */
+}

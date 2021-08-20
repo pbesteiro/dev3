@@ -1,0 +1,78 @@
+﻿  <div class="container">
+            <div class="row">
+                <div style="flex: 0 0 15%;" class="col-sm-12 col-md-6">
+                    <a href="index.aspx">
+                        <h6>Home</h6>
+                    </a>
+
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Cursos</h6>
+                    <ul class="footer-links">
+                        <li><a href="DataBase.aspx">Base de Datos</a></li>
+                        <li><a href="backendjs.aspx">Para Developers</a></li>
+                        <li><a href="BasicDevs.aspx">Programación Básica</a></li>
+                        <!--li><a href="Diseno.aspx">Herramientas para Diseñadores</a></li-->
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Programas</h6>
+                    <ul class="footer-links">
+                        <li><a href="Datos.aspx">Datos</a></li>
+                        <li><a href="ProgramsDevs.aspx">Para Developers</a></li>
+                        <li><a href="ProgramsBasics.aspx">Programación Básica</a></li>
+                        <!--li><a href="#">Diseño</a></li-->
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="about.aspx">
+                        <h6>Para Empresas</h6>
+                    </a>
+
+                </div>
+            </div>
+
+            <hr>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p style="color: white;">Av Olazabal 1280, Belgrano CABA</p>
+                    <p class="copyright-text">
+                        Copyright &copy; 2021 Todos los derechos reservados by
+                        <a class="devtech-footer" href="https://devtechnologies.com.ar/">Devtechnologies S.A</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li>
+                            <a class="facebook" href="https://www.facebook.com/DevPlaceCom">
+                                <img src="https://s2.svgbox.net/materialui.svg?ic=facebook&color=5d00b9" width="32"
+                                     height="32">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="twitter" href="https://twitter.com/DevPlace_com">
+                                <img src="https://s2.svgbox.net/social.svg?ic=twitter&color=5d00b9" width="22"
+                                     height="22">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dribbble" href="https://www.instagram.com/devplace_com/">
+                                <img src="https://s2.svgbox.net/social.svg?ic=instagram&color=5d00b9" width="22"
+                                     height="22">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="linkedin" href="https://www.linkedin.com/company/devplace-com/about/">
+                                <img src="https://s2.svgbox.net/social.svg?ic=linkedin&color=5d00b9" width="22"
+                                     height="22">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>

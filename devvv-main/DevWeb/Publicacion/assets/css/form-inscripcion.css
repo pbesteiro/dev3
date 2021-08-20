@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.body-form{
+    background-color: #fafafa;
+}
+
+.select-form {
+    margin-top: 0.5em;
+    width: 20em;
+    height: 1.8em;
+    color: grey;
+}
+
+.section-form {
+    border-radius: 4px;
+    background-color: #fff;
+    width: 50em;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: auto;
+    padding-left: 4px;
+    padding-bottom: 5px;
+}
+.banner-form{
+    background-color: #5d00b9;
+ color: white;
+ margin: 0;
+ padding: 1em;
+}
+
+.asterisk{
+    color: #5d00b9;
+ 
+}
+.input-apellido{
+    margin-left: 1em";
+}
+form{
+    margin: auto;
+    padding: 0.5em 2em 2em 2em;
+}
+input{
+    border: 1px solid rgba(157, 157, 157, 0.651);
+    border-radius: 3px;
+    margin-top: 0.5em;
+
+}
+select{
+    border: 1px solid rgba(157, 157, 157, 0.651);
+    border-radius: 3px;
+}
+
+.datos-personales-form{
+    padding: 2em;
+}
+
+.line-form{
+    border-bottom: solid 2px #5d00b9;
+    width: 40em;
+    
+}
+
+::placeholder{
+    padding-left: 0.5em;
+}
+.div-form{
+    margin-left: 1em;
+    margin-bottom: 2em;
+   
+}
+.div-form-calendar{
+    margin-left: 1em;
+    margin-bottom: 2em;
+    margin-top: 3em;
+}
+
+
+#nac-select{
+    margin-left: 1em;
+    width: 5em;
+    height: 1.8em;
+
+}
+#nac-select-dondevivis{
+  margin-top: 0.5em;
+    width:20em;
+    height: 1.8em;
+color: grey;
+}
+
+.select-number-code{
+    margin-top: 0.5em;
+}
+.div-form-number{
+  
+    margin-bottom: 2em;
+   
+}
+
+.div-form-number p{
+    margin-left: 1em;
+}
+
+.info-academica-form{
+    padding:1em;
+}
+
+.line-form-academica{
+    border-bottom: solid 2px #5d00b9;
+    width: 40em;
+    
+}
+
+.text-aclaracion-form{
+    margin-top: 2em;
+}
+
+.form-check-label{
+    margin: 0;
+}
+
+.container-button-form{
+    text-align-last: center;
+
+}
+.btn-form-inscripcion{
+    width: 8em;
+    height: 3em;
+    color: white;
+    background-color: #5d00b9;
+    border: #5d00b9 solid 1px;
+    border-radius: 2px;
+    text-align-last: center;
+}
+
+.btn-form-inscripcion a{
+    color: white;
+
+}
+
+
+@media (max-width:600px){
+    .section-form {
+        width: auto;
+        height: auto;
+    }
+    .line-form{
+        width: auto;
+    }
+    .line-form-academica{
+        width: auto;
+        
+    }
+    .input-apellido{
+        margin-left:0 ;
+    }
+    .input-telefono{
+        width: 14em;
+    }
+
+
+    .select-form {
+        margin-top: 0.5em;
+        width: 13em;
+        height: 1.8em;
+        color: grey;
+    }
+
+}

@@ -1,0 +1,26 @@
+﻿
+   <div class="container-grid-proximas-fechas">
+    <div>
+        <h4 style="color: #5c00b99c;">@@MESES_A_REEMPLAZAR@@</h4>
+        <p>@@DIAS_A_REEMPLAZAR@@</p>
+    </div>
+    <div>
+        <h4> Horario</h4>
+        <p>@@HORA_A_REEMPLAZAR@@ </p>
+    </div>
+    <div>
+        <h4>Modalidad</h4>
+        <p>Online - En vivo</p>
+    </div>
+    <div>
+        <h4>Profesor</h4>
+        <p>@@MENTOR_A_REEMPLAZAR@@</p>
+    </div>
+    <div> <button type='button'
+                  style="text-transform: uppercase; border-radius: 5px"
+                  class="button-fechas" onclick="location.href='ContactForm.aspx?curseItem=@@CURSE_ITEM_ID@@';">
+         Aplica
+    </button>
+</div>
+</div>
+<div class="line-fechas-data"></div>

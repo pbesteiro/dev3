@@ -1,0 +1,6 @@
+﻿
+
+        <div class="container-grid-proximas-fechas-data">
+        <br /><br />
+<p>Sin Cursos Disponibles </p>
+ </div>
