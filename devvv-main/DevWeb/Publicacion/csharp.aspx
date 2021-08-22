@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/fonts//flaticon/font/flaticon.css" />
     <link rel="stylesheet" href="assets/css/fl-bigmug-line.css" />
+    <link rel="stylesheet" href="assets/css/sweetalert.css" type="text/css" />
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="assets/css/aos.css" />
@@ -93,126 +94,143 @@
                 <div class="carousel-item active carousel">
                     <div class="carousel-title">
                         <div class="container-grid-developer-btn">
-                            <button class="btn-aplica-slide" type="button">
-                                <a href="#proximas-fechas" class="btn-aplica-scroll">Aplica</a>
-                            </button>
+
+                            <div class="container colorwhite">        
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 pd-120" >
+                                        <h4><u>CURSOS</u> > <u>PARA DEVELOPERS </u> > <u>BACK END</u> > C#</h4>
+                                        <h4 class="pt-3">MODALIDAD ONLINE <b>EN VIVO</b></h4>
+                                        <h1 class="pt-1">C#</h1>
+                                        <h4 class="pt-5"><i class="fas fa-check"></i> Duracíon 9 semanas</h4>
+                                        <h4><i class="fas fa-check"></i> 2 sesiones por semana</h4>
+                                        <h4><i class="fas fa-check"></i> 2 horas por sesión</h4>
+                            
+                                         <div class="row pt-3">
+                                            <div class="col-sm-12 col-md-12 col-xl-5">                                               
+                                                    <button type="button" id="btnContact" class="btn btn-primary head-button-card head-button-card-white">Consultar</button>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <a href="assets/programas/csharp.pdf" target="_blank"><button type="button" class="btn btn-primary head-button-card head-button-card-tans">Descargar Programa</button> </a>
+                                            </div>
+                                         </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                    </div>
+                                </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </div>
-        <div class="parent">
-            <div class="div1">
-                <div>
-                    <h3 class="title-general">¿Qué vas a aprender?</h3>
-                    <p>El‌ ‌curso‌ ‌tiene‌ ‌como‌ ‌meta‌ ‌lograr‌ ‌que‌ te ‌interiorice‌s en ‌las‌ ‌buenas‌ ‌prácticas‌ ‌en‌ desarrollo‌ 
-                        ‌y‌ ‌profundice‌s ‌tus ‌conocimientos‌ ‌en‌ ‌el‌ ‌lenguaje‌ ‌C#.‌‌</p>
-                    <div>
-                        <img width="350vw" height="250vw" src="assets/images/dw1.jpg" alt="" />
 
+        <div class="container card-desc" id ="curso">        
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card shadow" >
+                      <div class="card-body">
 
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <h6 class="card-subtitle mb-2 text-muted title-card-new">C#</h6>
+                                <p class="card-text">Para developers </p>
+                                <p class="card-text promocion-card">Tecnología con alta demanda en el mercado laboral IT</p>
+                                <a href="#proximos"><button type="button" class="btn btn-primary promocion-button-card">Inscribirme</button></a>                   
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <p class="card-text">Grupos reducidos</p>
+                                <p class="card-text pt-4">Clases Personalizadas</p>
+                                <p class="card-text pt-4">Capacidad de 15 alumnos</p>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <p class="card-text">Certificado al aprobar el proyecto final</p>
+                                <p class="card-text pt-4">Mentor profesional experto en desarrollo de software en C#</p>                        
+                            </div>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    
+        <div class="container pt-5 pb-5">        
+            <div class="row m-4">
+                <div class="col-sm-7">
+                     <h3>¿Que vas a aprender?</h3>
+                    <p class="">
+                    El‌ ‌curso‌ ‌tiene‌ ‌como‌ ‌meta‌ ‌lograr‌ ‌que‌ te ‌interiorice‌s en ‌las‌ ‌buenas‌ ‌prácticas‌ ‌en‌ desarrollo‌ ‌y‌ ‌profundice‌s ‌tus ‌conocimientos‌ ‌en‌ ‌el‌ ‌lenguaje‌ ‌C#.‌‌
+                    </p>        
+               </div>
+                <div class="col-sm-5">
+                    <image src="assets/images/front1.png" width="100%" ></image>
+                </div>
+            </div>
+            <div class="row pt-5  m-4">
+                <div class="col-sm-5">
+                   <image src="assets/images/front2.png" width="100%" ></image> 
+                </div>
+                <div class="col-sm-6">
+                    <h3>¿A quién va dirigido?</h3>
+                    <p>El curso está dirigido a estudiantes de la carrera de sistemas o afines (siendo en universidad o tecnicaturas) o profesionales de la industria que tengan experiencia mínima de 6 meses desarrollando algún lenguaje de programación.</p>
+                    <div class="row pt-5">
+                        <div class="col-sm-12">
+                            <h3>Requisitos</h3>
+                            <p>
+                                <i class="fas fa-check"></i> Familiaridad con la plataforma .NET y Windows 10.<br />
+                                <i class="fas fa-check"></i> Conocimientos básicos de Visual Studio.<br />
+                                <i class="fas fa-check"></i> Conocimientos básicos de ANSI SQL y SQL Server.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+              <div class="row pt-5  m-4">
+                <div class="col-sm-7">
+                    <h3>Proyecto final</h3>
+                    <p>El proyecto final e integrador que se realiza durante la cursada, será aquel que en caso de estar aprobado, la institución (DEV PLACE) emitirá un certificado de aprobación del curso. En todas las clases, el mentor dispondrá de los primeros 10 minutos en concepto de "daily" para que los alumnos puedan mostrar avances y evacuar dudas. Al terminar el curso se hará una clase extra donde los alumnos tendrán que exponer el proyecto y defenderlo. Finalizada la exposición, el alumno tendrá que entregar el proyecto para que el mentor lo corrija según las rúbricas de evaluación dispuestas por DEV PLACE. Posteriormente el mentor le alcanzará una devolución al alumno donde se considerará si el proyecto está "aprobado" o se debe "volver a hacer".</p>
+                    <h3 class="pt-5">Perfil de egresado</h4>
+                    <p>El egresado será capaz de :<br /><br />
+                    ● Armar una API RestFul completa de punta a punta.<br />
+                    ● Realizar el deploy en un Servidor.<br />
+                    ● Realizar un desarrollo en C# utilizando las mejores prácticas del lenguaje.<br />
+                    ● Aumentar su capacidad analítica para la correcta toma de decisiones en la realización de un proyecto Backend.<br />
+                    ● Utilizar las herramientas y librerías más demandadas del mercado del framework .NET Core.</p>
+
+                </div>
+                <div class="col-sm-5">
+                    <image src="assets/images/front3.png" width="100%" ></image>
+                </div>
+            </div>          
+
+        </div>
+
+        <div class="container card-desc pt-5" id="proximos">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card-body" id="proximas-fechas">
                     </div>
                 </div>
             </div>
-
-            <div class="div2">
-                <div class="card-cursos">
-                    <div class="contenido-card" id="precios">
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="div3">
-                <h3 class="title-general">¿A quién va dirigido?</h3>
-                <p>
-                    El curso está dirigido a estudiantes de la carrera de sistemas o afines (siendo en universidad o
-      tecnicaturas) o profesionales de la industria que tengan experiencia mínima de 6 meses desarrollando algún
-      lenguaje de programación.
-   
-                </p>
-                <img width="350vw" height="250vw" src="assets/images/data-analytics-programa.jpg" alt="">
-                <h3 class="title-general">Requisitos</h3>
-                <ul>
-                    <li>● Familiaridad con la plataforma .NET y Windows 10. </li>
-                    <li>● Conocimientos básicos de Visual Studio. </li>
-                    <li>● Conocimientos básicos de ANSI SQL y SQL Server.</li>
-
-                </ul>
-                <h4 class="title-general">Herramientas de Desarrollo</h4>
-                <ul>
-                    <li>● Cuenta de correo electrónico Microsoft (<a href="http://outlook.live.com">@outlook, @hotmail</a>)</li>
-                    <li>● Visual Studio 2019 Community (<a href="https://visualstudio.microsoft.com/es/vs/community/">Descarga</a>).</li>
-                    <li>● .NET Core 3.1 (<a href="https://dotnet.microsoft.com/download/dotnet/3.1"> Descarga</a>).</li>
-                    <li>● SQL Server Management Studio - Express Edition (<a href="https://www.microsoft.com/es-ar/download/details.aspx?id=8961"> Descarga</a>).</li>
-                    <li>● Descargar e instalar Postman (<a href="https://www.postman.com/downloads/">Descarga</a>).</li>
-                    <li>● Github (<a href="https://github.com/">https://github.com/</a>).</li>
-                </ul>
-            </div>
-
-            <div class="div4">
-               
-                <h3 class="title-general">Proyecto final</h3>
-
-               <p>
-                    El proyecto final e integrador que se realiza durante la cursada, será aquel que en caso de estar aprobado, 
-                    la institución (DEV PLACE) emitirá un certificado de aprobación del curso. En todas las clases, 
-                    el mentor dispondrá de los primeros 10 minutos en concepto de "daily" para que los alumnos puedan mostrar avances 
-                    y evacuar dudas. Al terminar el curso se hará una clase extra donde los alumnos tendrán que exponer el proyecto y defenderlo. 
-                    Finalizada la exposición, el alumno tendrá que entregar el proyecto para que el mentor lo corrija según las 
-                    rúbricas de evaluación dispuestas por DEV PLACE. 
-                    Posteriormente el mentor le alcanzará una devolución al alumno donde se considerará si el proyecto está 
-                    "aprobado" o se debe "volver a hacer".
-                </p>
-               
-            </div>
-
-            <div class="div5">
-
-                <h3 class="title-general">Perfil del Egresado</h3>
-                <ul class="div4-ul-sql">
-                    <li>El egresado será capaz de :</li>
-                    <li>● Armar una API RestFul completa de punta a punta.</li>
-                    <li>● Realizar el deploy en un Servidor. </li>
-                    <li>● Realizar un desarrollo en C# utilizando las mejores prácticas del lenguaje. </li>
-                    <li>● Aumentar su capacidad analítica para la correcta toma de decisiones en la realización de un proyecto Backend. </li>
-                    <li>● Utilizar las herramientas y librerías más demandadas del mercado del framework .NET Core.</li>
-                </ul>
-
-            </div>
-            <div class="div6">
-                <section id="proximas-fechas">
-                </section>
-            </div>
-
-
         </div>
+                               
 
         <!--************** MODAL - POP UP - FORM CORTO  ****************** -->
-        <%--<div id="open-modal-aplica" class="modal-window-fechas">
-        </div>--%>
-
-
-        <!-- MENUS DE POP UPS -->
-        <!-- C# -->
-        <div class="modal fade" id="modal-aplica" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header justify-content-center">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            <i class="tim-icons icon-simple-remove">
-                                <img src="assets/images/cancel.png" alt="" width="17" height="17" />
-                            </i>
-                        </button>
-
-                        <h4 class="title title-up"><strong>
-                            <font color="#5d009b"> BOOTCAMP DE C#</font>
-                        </strong></h4>
-                    </div>
-                    <div class="modal-body" style="text-align: -webkit-center; margin-bottom: 4rem;" id="open-modal-aplica">
-                    </div>
-                </div>
+        <!-- Modal-->
+        <div class="modal fade " id="popup_cursos" tabindex="-1" role="dialog" aria-labelledby="popup_cursosLabel" aria-hidden="true">
+          <div class="modal-dialog popup_cursos" role="document">
+            <div class="modal-content">
+              <div class="modal-body" id="contactModal">
+             
+              </div>
+              <div class="modal-footer">
+                
+              </div>
             </div>
+          </div>
         </div>
 
     </form>
@@ -233,6 +251,7 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/aos.js"></script>
+    <script src="assets/js/sweetalert.min.js" type="text/javascript"></script>
 
     <script src="assets/js/main.js"></script>
 
@@ -279,7 +298,8 @@
                                 $('#header').html(data.Menu);
                                 $('#footer').html(data.Footer);
                                 $("#proximas-fechas").html(data.CursesItems);
-                                $("#precios").html(data.CurseFees);
+                                $("#contactModal").html(data.ContactModal);
+                                $("#btnContact").on('click', function () { $("#popup_cursos").modal('show'); });
 
                                 //initialice menu
                                 $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function (event) {
@@ -302,6 +322,51 @@
                 alert(err);
             }
         }
+
+        function enviarEmailContacto() {
+            try {
+
+                var name = $('#ContactModalName').val();
+                var email = $('#ContactModalEmail').val();
+                var tel = $('#ContactModalCel').val();
+                var termCond = $('#chkContactModalTermyCond').prop('checked');
+
+                if (name.length < 1) {
+                    swal("Ingrese tu nombre", "", "info");
+                    return;
+                }
+
+                if (email.length < 1) {
+                    swal("Ingrese su correo electrónico", "", "info");
+                    return;
+                }
+
+                if (tel.length < 1) {
+                    swal("Ingrese su correo teléfono", "", "info");
+                    return;
+                }
+
+                if (!termCond) {
+                    swal("Por favor acepte los términos y condiciones", "", "info");
+                    return;
+                }
+
+                PageMethods.SendContactEmail
+                    (name, email, tel,
+                        function () {
+                            swal("¡Tus datos fueron enviados!", "Solo te queda esperar a que te contactemos.", "success");
+                            $('#ContactModalName').val('');
+                            $('#ContactModalEmail').val('');
+                            $('#ContactModalCel').val('');
+                            $("#popup_cursos").modal('hide'); 
+                        },
+                        fnLlamadaError
+                    );
+            } catch (err) {
+                alert(err);
+            }
+        }
+
 
 
         function fnLlamadaError(excepcion) {

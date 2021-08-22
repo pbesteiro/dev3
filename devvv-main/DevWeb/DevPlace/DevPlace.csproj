@@ -387,6 +387,7 @@
     <Content Include="ProgramsBasics.aspx" />
     <Content Include="ProgramsDevs.aspx" />
     <Content Include="prueba.aspx" />
+    <Content Include="Templates\ContactModal.txt" />
     <Content Include="Templates\CurseFees.txt" />
     <Content Include="Templates\form-aplica.txt" />
     <Content Include="html-css.aspx" />
@@ -555,7 +556,7 @@
     <Compile Include="Negocio\CurseFee.cs" />
     <Compile Include="Negocio\CurseItem.cs" />
     <Compile Include="Negocio\DataManagment.cs" />
-    <Compile Include="Negocio\DevPlaceFormApply.cs" />
+    <Compile Include="Negocio\DevPlaceModalData.cs" />
     <Compile Include="Negocio\DevPlacePage.cs" />
     <Compile Include="Negocio\DevPlaceSection.cs" />
     <Compile Include="Negocio\MisFunciones.cs" />

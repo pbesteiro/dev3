@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/fonts//flaticon/font/flaticon.css" />
     <link rel="stylesheet" href="assets/css/fl-bigmug-line.css" />
+    <link rel="stylesheet" href="assets/css/sweetalert.css" type="text/css" />
     <link
         rel="shortcut icon"
         href="assets/images/favicon.ico"
@@ -99,115 +100,147 @@
         <header id="header">
         </header>
 
-        <div
-            id="carouselExampleSlidesOnly"
-            class="carousel slide"
-            data-ride="carousel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active carousel">
                     <div class="carousel-title">
                         <div class="container-grid-developer-btn">
-                            <button class="btn-aplica-slide" type="button">
-                                <a href="#proximas-fechas" class="btn-aplica-scroll">Aplica</a>
-                            </button>
+
+                            <div class="container colorwhite">        
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 pd-120" >
+                                        <h4><u>CURSOS</u> > <u>PROGRAMACION BASICA</u> > JAVASCRIPT</h4>
+                                        <h4 class="pt-3">MODALIDAD ONLINE <b>EN VIVO</b></h4>
+                                        <h1 class="pt-1">JAVASCRIPT BASICO</h1>
+                                        <h4 class="pt-5"><i class="fas fa-check"></i> Duración 9 semanas</h4>
+                                        <h4><i class="fas fa-check"></i> 2 sesiones por semana</h4>
+                                        <h4><i class="fas fa-check"></i> 2 horas por sesión</h4>
+                            
+                                         <div class="row pt-3">
+                                            <div class="col-sm-12 col-md-12 col-xl-5">                                               
+                                                 <button type="button" id="btnContact" class="btn btn-primary head-button-card head-button-card-white">Consultar</button>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <a href="assets/programas/javascript.pdf" target="_blank"><button type="button" class="btn btn-primary head-button-card head-button-card-tans">Descargar Programa</button></a> 
+                                            </div>
+                                         </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                    </div>
+                                </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="parent">
-            <div class="div1">
-                <div class="text-analytics">
-                    <h3 class="title-general">¿Qué vas a aprender?</h3>
-                    <div>
-                        <p>Aprender JavaScript hoy en día es una necesidad de cualquier desarrollador Front End que inclusive puede expandirse al Back End y desarrollo móvil. JavaScript es uno de los lenguajes más demandados en la industria y saberlo utilizar es fundamental para ser competitivo en el mercado laboral. </p>
-                        <p>El objetivo principal del curso es introducirte al mundo de la programación JavaScript, empezando de cero hasta llevarte a un nivel intermedio, necesario para que puedas ingresar sin problemas a capacitaciones en lenguajes más avanzados. Si querés ser un programador con bases sólidas para continuar aumentando tus conocimientos, este curso es para vos! </p>
-                    </div>
-                    <div>
-                        <img
-                            width="250vw"
-                            height="250vw"
-                            src="assets/images/dw1.jpg"
-                            alt="" />
-                    </div>                  
-                </div>
-            </div>            
-            <div class="div2">
-                <div class="card-cursos">
-                    <div class="contenido-card" id="precios">
-                        
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="div3">
-                <h3 class="title-general">¿A quién va dirigido?</h3>
-                <p>El curso está dirigido a personas con experiencia mínima o nula en programación.</p>   
-                <img
-                    width="250vw"
-                    height="250vw"
-                    src=" assets/images/data-analytics-programa.jpg"
-                    alt="" />
-
-                <h4 class="title-general">Requisitos</h4>
-                <ul>
-                    <li>● Conocimiento básico de HTML (recomendable, pero no requerido).</li>
-                </ul>
-                <h4 class="title-general">Herramientas de desarrollo</h4>
-                <ul>
-                    <li>● Visual Studio Code (<a href="https://code.visualstudio.com/download" >Descarga</a>).</li>
-                    <li>● Google Chrome (<a href="https://www.google.com/intl/es/chrome/?brand=UUXU&gclid=EAIaIQobChMI7tGaleiP8gIV9Al9Ch1o3Q5cEAAYASAAEgJeCvD_BwE&gclsrc=aw.ds">Descarga</a>).</li>
-                    <li>● Github (<a href="https://github.com/">https://github.com/</a>).</li>
-                </ul>
-            </div>
-            <div class="div4">     
-                       
-                <h3 class="title-general">Proyecto final</h3>
-                 <p>
-                    El proyecto final e integrador que se realiza durante la cursada, será aquel que en caso de estar aprobado, 
-                    la institución (DEV PLACE) emitirá un certificado de aprobación del curso. En todas las clases, 
-                    el mentor dispondrá de los primeros 10 minutos en concepto de "daily" para que los alumnos puedan mostrar avances 
-                    y evacuar dudas. Al terminar el curso se hará una clase extra donde los alumnos tendrán que exponer el proyecto y defenderlo. 
-                    Finalizada la exposición, el alumno tendrá que entregar el proyecto para que el mentor lo corrija según las 
-                    rúbricas de evaluación dispuestas por DEV PLACE. 
-                    Posteriormente el mentor le alcanzará una devolución al alumno donde se considerará si el proyecto está 
-                    "aprobado" o se debe "volver a hacer".
-                </p>           
-            </div>
-
-            <div class="div5">
-                <h3 class="title-general">Perfil del Egresado</h3>
-                <div class="flex-egresado">
-                    <p>Al terminar este curso tendrá una base sólida de las herramientas fundamentales de programación como Tipos de Datos, Operadores, Sentencias de Control, Ciclos, Arreglos, Funciones y mucho más.</p>                    
-                    <br />
-                    <ul class="list-egresado-js">
-                        <li>Además, estará capacitado para:</li>
-                        <li>● Manejar JavaScript y su sintaxis.</li>
-                        <li>● Uso de importaciones y sintaxis moderna de JavaScript.</li>
-                        <li>● Pasar de un nivel cero a intermedio.</li>
-                        <li>● Tener la base sólida, para entrar a frameworks como AngularJS, React JS o Node JS.</li>
-                    </ul>
-                    <img
-                        width="350vw"
-                        height="250vw"
-                        src="assets/images/concepto-ceremonia-graduacion-virtual_23-2148573423.jpeg"
-                        alt="" />
-                </div>
-
-                <div class="div6">
-                    <section id="proximas-fechas">
-                    </section>
-                </div>
-
-
             </div>
         </div>
 
+        <div class="container card-desc" id ="curso">        
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card shadow" >
+                      <div class="card-body">
 
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <h6 class="card-subtitle mb-2 text-muted title-card-new">JAVASCRIPT</h6>
+                                <p class="card-text">Programación básica</p>
+                                <p class="card-text promocion-card">No necesitas conocimientos previos en programación</p>
+                                <a href="#proximos"><button type="button" class="btn btn-primary promocion-button-card">Inscribirme</button></a>                   
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <p class="card-text">Grupos reducidos</p>
+                                <p class="card-text pt-4">Clases Personalizadas</p>
+                                <p class="card-text pt-4">Capacidad de 30 alumnos</p>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <p class="card-text">Certificado al aprobar el proyecto final</p>
+                                <p class="card-text pt-4">Mentor profesional experto en desarrollo de software en Javascript</p>                        
+                            </div>
+                        </div>
 
+                      </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    
+        <div class="container pt-5 pb-5">        
+            <div class="row m-4">
+                <div class="col-sm-7">
+                     <h3>¿Que vas a aprender?</h3>
+                    <p class="">Aprender JavaScript hoy en día es una necesidad de cualquier desarrollador Front End que inclusive puede expandirse al Back End y desarrollo móvil. JavaScript es uno de los lenguajes más demandados en la industria y saberlo utilizar es fundamental para ser competitivo en el mercado laboral.
+
+El objetivo principal del curso es introducirte al mundo de la programación JavaScript, empezando de cero hasta llevarte a un nivel intermedio, necesario para que puedas ingresar sin problemas a capacitaciones en lenguajes más avanzados. Si querés ser un programador con bases sólidas para continuar aumentando tus conocimientos, este curso es para vos!</p>
+                </div>
+                <div class="col-sm-5">
+                    <image src="assets/images/front1.png" width="100%" ></image>
+                </div>
+            </div>
+            <div class="row pt-5  m-4">
+                <div class="col-sm-5">
+                   <image src="assets/images/front2.png" width="100%" ></image> 
+                </div>
+                <div class="col-sm-6">
+                    <h3>¿A quién va dirigido?</h3>
+                    <p>El curso está dirigido a personas con experiencia mínima o nula en programación.</p>
+                    <div class="row pt-5">
+                        <div class="col-sm-12">
+                            <h3>Requisitos</h3>
+                            <p>
+                                <i class="fas fa-check"></i> Conocimiento básico de HTML (recomendable, pero no requerido).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+              <div class="row pt-5  m-4">
+                <div class="col-sm-7">
+                    <h3>Proyecto final</h3>
+                    <p>El proyecto final e integrador que se realiza durante la cursada, será aquel que en caso de estar aprobado, la institución (DEV PLACE) emitirá un certificado de aprobación del curso. En todas las clases, el mentor dispondrá de los primeros 10 minutos en concepto de "daily" para que los alumnos puedan mostrar avances y evacuar dudas. Al terminar el curso se hará una clase extra donde los alumnos tendrán que exponer el proyecto y defenderlo. Finalizada la exposición, el alumno tendrá que entregar el proyecto para que el mentor lo corrija según las rúbricas de evaluación dispuestas por DEV PLACE. Posteriormente el mentor le alcanzará una devolución al alumno donde se considerará si el proyecto está "aprobado" o se debe "volver a hacer".</p>
+                    <h3 class="pt-5">Perfil de egresado</h4>
+                    <p>El egresado será capaz de :<br /><br />
+                        Al terminar este curso tendrá una base sólida de las herramientas fundamentales de programación como Tipos de Datos, Operadores, Sentencias de Control, Ciclos, Arreglos, Funciones y mucho más.
+                        <br /><br />
+Además, estará capacitado para:<br />
+● Manejar JavaScript y su sintaxis.<br />
+● Uso de importaciones y sintaxis moderna de JavaScript.<br />
+● Pasar de un nivel cero a intermedio.<br />
+● Tener la base sólida, para entrar a frameworks como AngularJS, React JS o Node JS.</p>
+
+                </div>
+                <div class="col-sm-5">
+                    <image src="assets/images/front3.png" width="100%" ></image>
+                </div>
+            </div>          
+
+        </div>
+
+        <div class="container card-desc pt-5" id="proximos">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card-body" id="proximas-fechas">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <!--************** MODAL - POP UP - FORM CORTO  ****************** -->
-        <div style="margin-top: 10rem;" id="open-modal-aplica" class="modal-window-fechas">
+        <!-- Modal-->
+        <div class="modal fade " id="popup_cursos" tabindex="-1" role="dialog" aria-labelledby="popup_cursosLabel" aria-hidden="true">
+          <div class="modal-dialog popup_cursos" role="document">
+            <div class="modal-content">
+              <div class="modal-body" id="contactModal">
+             
+              </div>
+              <div class="modal-footer">
+                
+              </div>
+            </div>
+          </div>
         </div>
 
 
@@ -232,6 +265,7 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/aos.js"></script>
+    <script src="assets/js/sweetalert.min.js" type="text/javascript"></script>
 
     <script src="assets/js/main.js"></script>
 
@@ -279,7 +313,8 @@
                                 $('#header').html(data.Menu);
                                 $('#footer').html(data.Footer);
                                 $("#proximas-fechas").html(data.CursesItems);
-                                $("#precios").html(data.CurseFees);
+                                $("#contactModal").html(data.ContactModal);
+                                $("#btnContact").on('click', function () { $("#popup_cursos").modal('show'); });
 
                                 //initialice menu
                                 $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function (event) {
@@ -302,6 +337,51 @@
                 alert(err);
             }
         }
+
+        function enviarEmailContacto() {
+            try {
+
+                var name = $('#ContactModalName').val();
+                var email = $('#ContactModalEmail').val();
+                var tel = $('#ContactModalCel').val();
+                var termCond = $('#chkContactModalTermyCond').prop('checked');
+
+                if (name.length < 1) {
+                    swal("Ingrese tu nombre", "", "info");
+                    return;
+                }
+
+                if (email.length < 1) {
+                    swal("Ingrese su correo electrónico", "", "info");
+                    return;
+                }
+
+                if (tel.length < 1) {
+                    swal("Ingrese su correo teléfono", "", "info");
+                    return;
+                }
+
+                if (!termCond) {
+                    swal("Por favor acepte los términos y condiciones", "", "info");
+                    return;
+                }
+
+                PageMethods.SendContactEmail
+                    (name, email, tel,
+                        function () {
+                            swal("¡Tus datos fueron enviados!", "Solo te queda esperar a que te contactemos.", "success");
+                            $('#ContactModalName').val('');
+                            $('#ContactModalEmail').val('');
+                            $('#ContactModalCel').val('');
+                            $("#popup_cursos").modal('hide'); 
+                        },
+                        fnLlamadaError
+                    );
+            } catch (err) {
+                alert(err);
+            }
+        }
+
 
         function fnLlamadaError(excepcion) {
             swal(excepcion.get_message(), "", "error");

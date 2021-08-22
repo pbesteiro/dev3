@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/fonts//flaticon/font/flaticon.css" />
     <link rel="stylesheet" href="assets/css/fl-bigmug-line.css" />
+    <link rel="stylesheet" href="assets/css/sweetalert.css" type="text/css" />
+
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="assets/css/aos.css" />
@@ -88,7 +90,7 @@
             <i class="fa fa-whatsapp whatsapp-icon"></i>
         </a>
 
-        <header id="header">
+        <header id="header" style="height: 60px">
         </header>
 
         <!--******++++++++++++TEXT BANNER++++++++++*********-->
@@ -97,116 +99,150 @@
                 <div class="carousel-item active carousel">
                     <div class="carousel-title">
                         <div class="container-grid-developer-btn">
-                            <button class="btn-aplica-slide" type="button">
-                                <a href="#proximas-fechas" class="btn-aplica-scroll">Aplica</a>
-                            </button>
+
+                            <div class="container colorwhite">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 pd-120">
+                                        <h4><u>CURSOS</u> > <u>DEVELOPERS ESENCIALES</u> > SQL</h4>
+                                        <h4 class="pt-3">MODALIDAD ONLINE <b>EN VIVO</b></h4>
+                                        <h1 class="pt-1">SQL</h1>
+                                        <h4 class="pt-5"><i class="fas fa-check"></i> Duracíon 9 semanas</h4>
+                                        <h4><i class="fas fa-check"></i>2 sesiones por semana</h4>
+                                        <h4><i class="fas fa-check"></i>2 horas por sesión</h4>
+
+                                        <div class="row pt-3">
+                                            <div class="col-sm-12 col-md-12 col-xl-5">                                               
+                                                    <button type="button" id="btnContact" class="btn btn-primary head-button-card head-button-card-white">Consultar</button>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 col-xl-6">
+                                                <a href="assets/programas/sql.pdf" target="_blank">
+                                                    <button type="button" class="btn btn-primary head-button-card head-button-card-tans">Descargar Programa</button>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container card-desc" id="curso">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card shadow">
+                        <div class="card-body">
+
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4">
+                                    <h6 class="card-subtitle mb-2 text-muted title-card-new">SQL</h6>
+                                    <p class="card-text"></p>
+                                    <p class="card-text promocion-card">No necesitás concimientos previos en programación</p>
+                                    <a href="#proximos">
+                                        <button type="button" class="btn btn-primary promocion-button-card">Inscribirme</button></a>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <p class="card-text">Grupos reducidos</p>
+                                    <p class="card-text pt-4">Clases Personalizadas</p>
+                                    <p class="card-text pt-4">Capacidad de 15 alumnos</p>
+                                </div>
+                                <div class="col-sm-12 col-md-4">
+                                    <p class="card-text">Certificado al aprobar el proyecto final</p>
+                                    <p class="card-text pt-4">Mentor profesional experto en desarrollo de software en SQL</p>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--******++++++++++++ FIN TEXT BANNER++++++++++*********-->
-        <div class="parent">
-            <div class="div1">
-                <h3 class="title-general">¿Qué vas a aprender?</h3>
-                <div class="text-analytics">
-                    <div>
-                        <p class="div1-text1-sql">
-                            El objetivo del curso es darte todos los conocimientos fundamentales para que entiendas que es una base de datos y cómo funciona. 
-                            En este curso aprenderás a crear una base de datos SQL, pensar su estructura, crear las tablas y relaciones, y generar 
-                            los procedimientos necesarios para insertar, modificar, eliminar y obtener información de la misma. 
-                            También te enseñaremos a generar reportes de datos customizados con gráficos, títulos, colores y todo lo necesario para generar 
-                            informes. Si sos un profesional con poco o nulo conocimiento de bases de datos, y querés aprender a manejarlas, 
-                            entonces este curso es para vos!
-                   
-                        </p>
-                    </div>
-                    <div>
-                        <img width="250vw" height="250vw" src="assets/images/sql.jpg" alt="" />
+
+        <div class="container pt-5 pb-5">
+            <div class="row m-4">
+                <div class="col-sm-7">
+                     <h3>¿Que vas a aprender?</h3>
+                    <p class="">El objetivo del curso es darte todos los conocimientos fundamentales para que entiendas que es una base de datos y cómo funciona. En este curso aprenderás a crear una base de datos SQL, pensar su estructura, crear las tablas y relaciones, y generar los procedimientos necesarios para insertar, modificar, eliminar y obtener información de la misma. También te enseñaremos a generar reportes de datos customizados con gráficos, títulos, colores y todo lo necesario para generar informes. Si sos un profesional con poco o nulo conocimiento de bases de datos, y querés aprender a manejarlas, entonces este curso es para vos!</p>
+                </div>
+                <div class="col-sm-5">
+                    <image src="assets/images/front1.png" width="100%"></image>
+                </div>
+            </div>
+            <div class="row pt-5  m-4">
+                <div class="col-sm-5">
+                    <image src="assets/images/front2.png" width="100%"></image>
+                </div>
+                <div class="col-sm-6">
+                    <h3>¿A quién va dirigido?</h3>
+                    <p>El curso está dirigido a profesionales de cualquier área que necesiten realizar manejos y reportes de datos.</p>
+                    <div class="row pt-5">
+                        <div class="col-sm-12">
+                            <h3>Requisitos</h3>
+                            <p>
+                                <i class="fas fa-check"></i> Conocimientos básicos de paquete office.<br />
+                                <i class="fas fa-check"></i> Computadora con Windows 8 o superior, Memoria RAM de 4gb o superior y 1GB de espacio libre en disco.<br />
+                               
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="div2">
-                <div class="card-cursos">
-                    <div class="contenido-card" id="precios">
-                    </div>
-
+            <div class="row pt-5  m-4">
+                <div class="col-sm-7">
+                    <h3>Proyecto final</h3>
+                    <p>El proyecto final e integrador que se realiza durante la cursada, será aquel que en caso de estar aprobado, la institución (DEV PLACE) emitirá un certificado de aprobación del curso. En todas las clases, el mentor dispondrá de los primeros 10 minutos en concepto de "daily" para que los alumnos puedan mostrar avances y evacuar dudas. Al terminar el curso se hará una clase extra donde los alumnos tendrán que exponer el proyecto y defenderlo. Finalizada la exposición, el alumno tendrá que entregar el proyecto para que el mentor lo corrija según las rúbricas de evaluación dispuestas por DEV PLACE. Posteriormente el mentor le alcanzará una devolución al alumno donde se considerará si el proyecto está "aprobado" o se debe "volver a hacer".</p>
+                    <h3 class="pt-5">Perfil de egresado</h3>
+                    <p>
+                        El egresado será capaz de :<br />
+                        <br />
+                        ● Entender el funcionamiento de una base de datos SQL.<br />
+                        ● Implementar el lenguaje DDL para la creación de una base de datos y todos sus componentes: tablas, índices, relaciones, disparadores (triggers), procedimientos almacenados.<br />
+                        ● Implementar el lenguaje DML para insertar, borrar, modificar y consultar los datos de una base de datos.<br />
+                        ● Realizar reportes de datos con herramientas actuales del mercado.
+                    </p>
 
                 </div>
+                <div class="col-sm-5">
+                    <image src="assets/images/front3.png" width="100%"></image>
+                </div>
             </div>
-            <div class="div3">
-                <h3 class="title-general">¿A quién va dirigido?</h3>
-                <p>
-                    El curso está dirigido a profesionales de cualquier área que necesiten realizar manejos y reportes de
-                datos.
-                </p>
-
-
-                <h3 class="title-general">Requisitos</h3>
-                <ul>
-                    <li>Conocimientos básicos de paquete office.</li>
-                    <li>Deben de tener una computadora con los siguientes requerimientos:
-                   
-                        <ul>
-                            <li>● Tener conocimientos básicos de paquete office.</li>
-                            <li>● Windows 8 o superior.</li>
-                            <li>● Memoria RAM de 4gb o superior.</li>
-                            <li>● 1GB de espacio libre en disco.</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h4 class="title-general">Herramientas de desarrollo</h4>
-
-                <ul>
-                    <li>● SQL Server Management Studio (SSMS) - Express Edition (<a href="https://www.microsoft.com/es-ar/download/details.aspx?id=101064">Descarga</a>).</li>
-                    <li>● SQL Server Reporting Services (SSRS) (<a href="https://www.microsoft.com/en-us/download/details.aspx?id=100122">Descarga</a>).</li>
-                </ul>
-
-            </div>
-            <div class="div4">
-                <h3 class="title-general">Proyecto Final</h3>
-
-                <p>
-                    El proyecto final e integrador que se realiza durante la cursada, será aquel que en caso de estar aprobado, 
-                    la institución (DEV PLACE) emitirá un certificado de aprobación del curso. En todas las clases, 
-                    el mentor dispondrá de los primeros 10 minutos en concepto de "daily" para que los alumnos puedan mostrar avances 
-                    y evacuar dudas. Al terminar el curso se hará una clase extra donde los alumnos tendrán que exponer el proyecto y defenderlo. 
-                    Finalizada la exposición, el alumno tendrá que entregar el proyecto para que el mentor lo corrija según las 
-                    rúbricas de evaluación dispuestas por DEV PLACE. 
-                    Posteriormente el mentor le alcanzará una devolución al alumno donde se considerará si el proyecto está 
-                    "aprobado" o se debe "volver a hacer".
-                </p>
-            </div>
-
-            <div class="div5">
-                <h3 class="title-general">Perfil del Egresado</h3>
-
-                <ul class="div4-ul-sql">
-                    <li>El egresado será capaz de :</li>
-                    <li>● Entender el funcionamiento de una base de datos SQL.</li>
-
-                    <li>● Implementar el lenguaje DDL para la creación de una base de datos y todos sus componentes: tablas, índices, relaciones, disparadores (triggers), procedimientos almacenados. </li>
-
-                    <li>● Implementar el lenguaje DML para insertar, borrar, modificar y consultar los datos de una base de datos. </li>
-
-                    <li>● Realizar reportes de datos con herramientas actuales del mercado. </li>
-                </ul>
-                <img width="350vw" height="250vw" src="assets/images/egresados.jpg" alt="">
-            </div>
-            <div class="div6">
-                <section id="proximas-fechas">
-                </section>
-            </div>
-
 
         </div>
 
+        <div class="container card-desc pt-5" id="proximos">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card-body" id="proximas-fechas">
 
-        <!--************** MODAL - POP UP - FORM CORTO  ****************** -->
-        <div style="margin-top: 10rem;" id="open-modal-aplica" class="modal-window-fechas">
+
+
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+        <!-- Modal-->
+        <div class="modal fade " id="popup_cursos" tabindex="-1" role="dialog" aria-labelledby="popup_cursosLabel" aria-hidden="true">
+          <div class="modal-dialog popup_cursos" role="document">
+            <div class="modal-content">
+              <div class="modal-body" id="contactModal">
+             
+              </div>
+              <div class="modal-footer">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
 
     </form>
     <!-- FOOTER -->
@@ -228,6 +264,7 @@
     <script src="assets/js/aos.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/sweetalert.min.js" type="text/javascript"></script>
 
     <script>
 
@@ -272,7 +309,8 @@
                                 $('#header').html(data.Menu);
                                 $('#footer').html(data.Footer);
                                 $("#proximas-fechas").html(data.CursesItems);
-                                $("#precios").html(data.CurseFees);
+                                $("#contactModal").html(data.ContactModal);
+                                $("#btnContact").on('click', function () { $("#popup_cursos").modal('show');  });
 
                                 //initialice menu
                                 $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function (event) {
@@ -288,6 +326,49 @@
 
                                 addScrollEfect();
                             }
+                        },
+                        fnLlamadaError
+                    );
+            } catch (err) {
+                alert(err);
+            }
+        }
+
+        function enviarEmailContacto() {
+            try {
+                var name = $('#ContactModalName').val();
+                var email = $('#ContactModalEmail').val();
+                var tel = $('#ContactModalCel').val();
+                var termCond = $('#chkContactModalTermyCond').prop('checked');
+
+                if (name.length < 1) {
+                    swal("Ingrese tu nombre", "", "info");
+                    return;
+                }
+
+                if (email.length < 1) {
+                    swal("Ingrese su correo electrónico", "", "info");
+                    return;
+                }
+
+                if (tel.length < 1) {
+                    swal("Ingrese su correo teléfono", "", "info");
+                    return;
+                }
+
+                if (!termCond) {
+                    swal("Por favor acepte los términos y condiciones", "", "info");
+                    return;
+                }
+
+                PageMethods.SendContactEmail
+                    (name, email, tel,
+                        function () {
+                            swal("¡Tus datos fueron enviados!", "Solo te queda esperar a que te contactemos.", "success");
+                            $('#ContactModalName').val('');
+                            $('#ContactModalEmail').val('');
+                            $('#ContactModalCel').val('');
+                            $("#popup_cursos").modal('hide'); 
                         },
                         fnLlamadaError
                     );

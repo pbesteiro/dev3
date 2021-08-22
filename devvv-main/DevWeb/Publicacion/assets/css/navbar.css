@@ -1,3 +1,113 @@
+/* PopUP */
+.popup_cursos {
+    max-width: 65% !important;
+}
+.popup_cursos h2 {
+    color: #5d009b;
+}
+.popup_cursos h6{
+    font-size: 0.75rem;
+    margin-top: 10px;
+}
+.popup_cursos input{
+    margin-top: 16px;
+}
+.popup_cursos span{
+    margin-top: 10px;
+    display:block;
+}
+
+.popup_cursos span{
+    margin-top: 10px;
+    display:block;
+    font-weight:100;
+}
+.popup-cursos-send {
+    width: 50% !important;
+}
+.popup_promo {
+    color: #5d009b;
+}
+.popup_oldprice {
+    text-decoration: line-through;
+}
+#chkContactModalTermyCond {
+    display: inline;
+}
+
+
+/* End PopUP */
+.sticky-top {
+    background-color: white;
+}
+
+.container-grid-developer-btn h4 {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.pd-120 {
+    padding-left: 120px
+}
+
+.head-button-card {
+    padding: 14px 50px !important;
+    border-radius: 0.3rem !important;
+}
+
+.head-button-card-white {
+    color: blueviolet;
+    background-color: white;
+}
+
+    .head-button-card-white:hover {
+        color: white;
+        background-color: #5d009b;
+        border-color: #5d009b;
+    }
+
+.head-button-card-tans {
+    background-color: Transparent;
+}
+.head-button-card-tans:hover {
+    background-color: #5d009b;
+    border-color: #5d009b;
+}
+
+.color-card {
+    background-color: #F5F5F5;
+    border-radius: 0.5rem;
+}
+.title-card-new {
+    color: black !important;
+    font-size: 1.5rem;
+}
+.promocion-card {
+    color: green;
+    font-size: 0.8rem !important;
+}
+
+.promocion-button-card {
+    border-radius: 0.3rem !important;
+    padding: 17px 85px !important;
+    margin: 10px -4px !important;
+    background-color: #5d009b;
+    border-color: #5d009b;
+}
+
+    .promocion-button-card:hover {
+        background-color: Transparent;
+        color: #5d009b;
+        border-color: #5d009b;
+    }
+
+.card-desc {
+    margin: -88px auto auto auto;
+    padding-bottom: 46px;
+}
+
+.colorwhite {
+    color:white;
+}
 /******SHARED*/
 .title-general {
     margin-top: 8vw;
@@ -785,10 +895,19 @@ position: relative;
 
 
 @media (max-width:767px) {
+    .subtit {
+        padding: 8px 0px;
+    }
+    /* PopUP */
+    .popup_cursos {
+        max-width: 97% !important;
+    }
 
-.subtit {
-    padding: 8px 0px;
-}
+    .close {
+        position: absolute;
+        top: -91%;
+        right: 10%;
+    }
 
 }
 

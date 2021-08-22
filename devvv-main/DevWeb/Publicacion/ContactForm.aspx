@@ -58,13 +58,13 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
 
-    
+
     <!-- Facebook Pixel Code -->
     <script>
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -96,9 +96,6 @@
         <!--******++++++++++++HEADER FIN++++++++++*********-->
         <section class="section-form">
             <h4 class="banner-form">Formulario de Inscripción</h4>
-
-
-
             <form action="" method="get">
                 <!-- ----------- DATOS PERSONALES ----------- -->
                 <div class="datos-personales-form">
@@ -106,7 +103,7 @@
                     <div class="line-form"></div>
                 </div>
                 <div class="div-form">
-                    <p>Nombre y Apellido <em class="asterisk">*</em></p>
+                    <p>Nombre y apellido<em class="asterisk">*</em></p>
                     <input type="text" id="nombre" name="nombre" size="30" placeholder="Nombre" />
                     <input
                         type="text"
@@ -117,10 +114,10 @@
                         class="input-apellido" />
                 </div>
                 <div class="div-form-calendar">
-                    <p>Fecha de nacimiento <em class="asterisk">*</em></p>
+                    <p>Fecha de nacimiento<em class="asterisk">*</em></p>
                     <input
                         name="fecNac"
-                        id="fecNac"                       
+                        id="fecNac"
                         size="30"
                         placeholder="DD/MM/AA" />
                 </div>
@@ -143,128 +140,135 @@
                     <select class="select-form" name="countryCode" id="slProvinces">
                     </select>
                 </div>
+                <div id="DivAcademicInfo" style="display: none;">
+                    <!-- ----------- INFORMACION ACADEMICA ----------- -->
+                    <div class="info-academica-form">
+                        <h3 class="title-general">Informacion académica</h3>
+                        <div class="line-form-academica"></div>
+                    </div>
 
-                <!-- ----------- INFORMACION ACADEMICA ----------- -->
-                <div class="info-academica-form">
-                    <h3 class="title-general">Informacion Académica</h3>
-                    <div class="line-form-academica"></div>
-                </div>
-
-                <div class="div-form">
-                    <p>¿Actualmente estás trabajando? <em class="asterisk">*</em></p>
-                    <select class="select-form"name="slWorking" id="slWorking" onchange="JavaScript:showWorkInfo();">
-                        <option value="-1">Seleccionar</option>
-                        <option value="1">Si</option>
-                        <option value="0">No</option>
-                    </select>
-                </div>
-                <!-- ----------- SI ELIJE *SI* estar trabajando----------- -->
-                <div id="workInfo">
                     <div class="div-form">
-                        <p>Puesto </p>
-                        <input type="text" name="puesto" id="puesto" size="30" placeholder="Ingresa el puesto que ocupas" />
+                        <p>¿Actualmente estás trabajando? <em class="asterisk">*</em></p>
+                        <select class="select-form" name="slWorking" id="slWorking" onchange="JavaScript:showWorkInfo();">
+                            <option value="-1">Seleccionar</option>
+                            <option value="1">Si</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
 
+                    <!-- ----------- SI ELIJE *SI* estar trabajando----------- -->
+                    <div id="workInfo">
+                        <div class="div-form">
+                            <p>Puesto </p>
+                            <input type="text" name="puesto" id="puesto" size="30" placeholder="Ingresa el puesto que ocupas" />
+
+                        </div>
+                        <div class="div-form">
+                            <p>Area </p>
+                            <input type="text" name="area" id="area" size="30" placeholder="Ingresa el area en la que trabajas" />
+                        </div>
+                        <div class="div-form">
+                            <p>Empresa </p>
+                            <input type="text" name="empresa" id="empresa" size="30" placeholder="Ingresa la empresa en la que trabajas" />
+
+                        </div>
                     </div>
                     <div class="div-form">
-                        <p>Area </p>
-                        <input type="text" name="area" id="area" size="30" placeholder="Ingresa el area en la que trabajas"  />
+                        <p>¿Estás buscando trabajo? <em class="asterisk">*</em></p>
+                        <select class="select-form" name="" id="slLookingWork">
+                            <option value="-1">Seleccionar</option>
+                            <option value="1">Sí</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+
+                    <!------------- SI ELIJE *SI* estar trabajando------------->
+                    <div class="div-form">
+                        <p>
+                            Nivel de estudio alcanzado
+   
+                    <em class="asterisk">*</em>
+                        </p>
+                        <select class="select-form" name="" id="slEducationLevel">
+                            <option value="-1">Seleccionar</option>
+                            <option value="1">Secundario incompleto</option>
+                            <option value="2">Secundario en curso</option>
+                            <option value="3">Secundario completo</option>
+                            <option value="4">Terciario en curso</option>
+                            <option value="5">Terciario completo</option>
+                            <option value="6">Universitario en curso</option>
+                            <option value="7">Universitario completo</option>
+                            <option value="8">Posgrado en curso</option>
+                            <option value="9">Posgrado completo</option>
+                        </select>
                     </div>
                     <div class="div-form">
-                        <p>Empresa </p>
-                        <input type="text" name="empresa" id="empresa" size="30" placeholder="Ingresa la empresa en la que trabajas"  />
+                        <p>
+                            ¿Hiciste cursos?
+   
+                    <em class="asterisk">*</em>
+                        </p>
+                        <select class="select-form" name="" id="slMadeCurses" onchange="JavaScript:showMadeCurseInfo();">
+                            <option value="-1">Seleccionar</option>
+                            <option value="1">Si</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <div class="div-form" id="curseInfo">
+                        <p>
+                            Contanos que cursos hiciste<em class="asterisk">*</em>
+                        </p>
+                        <input type="text" name="cursoRealizado" id="cursoRealizado" size="30" />
+                    </div>
 
+
+
+                    <!------------- Acerca del curso ----------- -->
+                    <div class="info-academica-form">
+                        <h3 class="title-general">Sobre el curso</h3>
+                        <div class="line-form-academica"></div>
                     </div>
                 </div>
-                <div class="div-form">
-                    <p>¿Estás buscando trabajo? <em class="asterisk">*</em></p>
-                    <select class="select-form"name="" id="slLookingWork">
-                        <option value="-1">Seleccionar</option>
-                        <option value="1" >Sí</option>
-                        <option value="0" >No</option>
-                    </select>
-                </div>
-                <!-- ----------- SI ELIJE *SI* estar trabajando----------- -->
-
-                <div class="div-form">
-                    <p>
-                        Nivel de estudio alcanzado
-   
-                    <em class="asterisk">*</em>
-                    </p>
-                    <select class="select-form"name="" id="slEducationLevel">
-                        <option value="-1">Seleccionar</option>
-                        <option value="1" >Secundario incompleto</option>
-                        <option value="2" >Secundario en curso</option>
-                        <option value="3" >Secundario completo</option>
-                        <option value="4" >Terciario en curso</option>
-                        <option value="5" >Terciario completo</option>
-                        <option value="6" >Universitario en curso</option>
-                        <option value="7" >Universitario completo</option>
-                        <option value="8" >Posgrado en curso</option>
-                        <option value="9" >Posgrado completo</option>
-                    </select>
-                </div>
-                <div class="div-form">
-                    <p>
-                        ¿Hiciste cursos?
-   
-                    <em class="asterisk">*</em>
-                    </p>
-                    <select class="select-form"name="" id="slMadeCurses" onchange="JavaScript:showMadeCurseInfo();">
-                        <option value="-1">Seleccionar</option>
-                        <option value="1">Si</option>
-                        <option value="0">No</option>
-                    </select>
-                </div>
-                <div class="div-form"id="curseInfo">
-                    <p>
-                        Contanos que cursos hiciste
-   
-                    <em class="asterisk">*</em>
-                    </p>
-                    <input type="text" name="cursoRealizado" id="cursoRealizado" size="30" />
-                </div>
-
-
-                <!-- ----------- Acerca del curso ----------- -->
-                <div class="info-academica-form">
-                    <h3 class="title-general">Sobre el curso</h3>
-                    <div class="line-form-academica"></div>
-                </div>
-
 
 
                 <div class="div-form">
                     <p>Curso - Programa a inscribirme<em class="asterisk">*</em></p>
 
-                    <select class="select-form"name="" id="slCurse" disabled="disabled">
-
+                    <select class="select-form" name="" id="slCurse" disabled="disabled">
                     </select>
                 </div>
 
                 <div class="div-form">
                     <p>¿Como nos conocistes?<em class="asterisk">*</em></p>
 
-                    <select class="select-form"name="" id="slKnowUsBy">
-                       
+                    <select class="select-form" name="" id="slKnowUsBy">
                     </select>
                 </div>
 
                 <!-- ----------- Formas de Pago ----------- -->
                 <div class="info-academica-form">
-                    <h3 class="title-general">Forma de Pago</h3>
+                    <h3 class="title-general">Forma de pago</h3>
                     <div class="line-form-academica"></div>
                 </div>
 
                 <div class="div-form">
                     <p>¿Como vas a pagar?<em class="asterisk">*</em></p>
 
-                    <select class="select-form"name="" id="slPaymentMode">
+                    <select class="select-form" name="" id="slPaymentMode">
                         <option value="-1">Seleccionar</option>
-                        <option value="1" >Pago online con tarjeta de debito/credito<em class="asterisk">*</em> </option>
-                        <option value="2" >Transferencia Bancaria</option>
-                        <option value="3" >Rapipago</option>
-                        <option value="4" >Deposito en cuenta</option>
+                        <option value="1">Pago online con tarjeta de debito </option>
+                        <option value="2">Pago online con tarjeta de credito</option>
+                        <option value="3">Transferencia Bancaria</option>
+                        <option value="4">Rapipago</option>
+                        <option value="5">Deposito en cuenta</option>
+                    </select>
+                    <p class="text-aclaracion-form"><em class="asterisk">*</em>    Recorda que si queres unirte al debito automático, credito o cbu de todas formas tenes que hacer el primer pago como las formas aclaradas en el campo superior</p>
+                </div>
+
+                <div class="div-form">
+                    <p>Cantidad de pagos<em class="asterisk">*</em></p>
+
+                    <select class="select-form" name="" id="slPaymentsCount">
                     </select>
                     <p class="text-aclaracion-form"><em class="asterisk">*</em>    Recorda que si queres unirte al debito automático, credito o cbu de todas formas tenes que hacer el primer pago como las formas aclaradas en el campo superior</p>
                 </div>
@@ -274,7 +278,7 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="chkTermyCond">
                         <label class="form-check-label" for="flexCheckDefault">
-                            Acepto <a href="Legales.aspx" target="_blank">T&eacute;rminos y condiciones</a>   
+                            Acepto <a href="Legales.aspx" target="_blank">T&eacute;rminos y condiciones</a>
                         </label>
                     </div>
                 </div>
@@ -365,11 +369,12 @@
                         function (data) {
 
                             if (data != "") {
-                                $('#slProvinces').html(data.Provinces); 
+                                $('#slProvinces').html(data.Provinces);
                                 $('#slKnowUsBy').html(data.knowUsBy);
                                 $('#slCurse').html(data.Curse);
-                                
-                            } 
+                                $("#slPaymentsCount").html(data.Fee);
+
+                            }
                         },
                         fnLlamadaError
                     );
@@ -400,7 +405,7 @@
         function validarFomularioContacto() {
 
             try {
-                
+
                 var nombre = $('#nombre').val();
                 var apellido = $('#apellido').val();
                 var email = $('#email').val();
@@ -429,6 +434,8 @@
                 var termCond = $('#chkTermyCond').prop('checked');
                 var formaConocernosId = $('#slKnowUsBy').val();
                 var formaConocernos = $('#slKnowUsBy option:selected').text();
+                var cantPagos = $('#slPaymentsCount option:selected').text();
+                var cantPagosId = $('#slPaymentsCount').val();
 
                 if (nombre.length < 1) {
                     swal("Ingrese su nombre", "", "info");
@@ -465,10 +472,17 @@
                     return;
                 }
 
-                if (trabajoId < 0) {
-                    swal("Por favor, seleccioná si estas trabajando o no", "", "info");
+                /*   if (trabajoId < 0) {
+                       swal("Por favor, seleccioná si estas trabajando o no", "", "info");
+                       return;
+                   }*/
+
+                if (cantPagosId < 1) {
+                    swal("Por favor, seleccioná la cantidad de pagos que vas a realizar", "", "info");
                     return;
                 }
+
+
 
                 //if (trabajoId == 1) {
                 //    if (puesto.length < 1) {
@@ -487,20 +501,20 @@
                 //    }
                 //}
 
-                if (buscaTrabajoId < 0) {
-                    swal("Por favor, seleccioná si estas buscando trabajo o no", "", "info");
-                    return;
-                }
-
-                if (nivelEducativoId < 0) {
-                    swal("Por favor, seleccioná tu nivel educativo", "", "info");
-                    return;
-                }
-
-                if (realizoCursosId < 0) {
-                    swal("Por favor, seleccioná si realizaste algun curso IT", "", "info");
-                    return;
-                }
+                /*   if (buscaTrabajoId < 0) {
+                       swal("Por favor, seleccioná si estas buscando trabajo o no", "", "info");
+                       return;
+                   }
+   
+                   if (nivelEducativoId < 0) {
+                       swal("Por favor, seleccioná tu nivel educativo", "", "info");
+                       return;
+                   }
+   
+                   if (realizoCursosId < 0) {
+                       swal("Por favor, seleccioná si realizaste algun curso IT", "", "info");
+                       return;
+                   }*/
 
                 if (formaConocernosId < 0) {
                     swal("Por favor, seleccioná como nos conociste", "", "info");
@@ -521,7 +535,7 @@
                 }
 
 
-                
+
 
                 if (!termCond) {
                     swal("Por favor acepte los términos y condiciones", "", "info");
@@ -530,7 +544,7 @@
 
                 enviarEmail(nombre, apellido, email, dni, telefono, fecNac, curso, cursoId, province, provinceId,
                     formaPagoId, formaPago, trabajoId, trabajo, puesto, area, empresa, nivelEducativoId, nivelEducativo,
-                    buscaTrabajoId, buscaTrabajo, realizoCursosId, realizoCursos, cursoRealizado, formaConocernosId, formaConocernos);
+                    buscaTrabajoId, buscaTrabajo, realizoCursosId, realizoCursos, cursoRealizado, formaConocernosId, formaConocernos, cantPagos);
 
 
 
@@ -541,7 +555,7 @@
 
         function enviarEmail(nombre, apellido, email, dni, telefono, fecNac, curso, cursoId, province, provinceId,
             formaPagoId, formaPago, trabajoId, trabajo, puesto, area, empresa, nivelEducativoId, nivelEducativo,
-            buscaTrabajoId, buscaTrabajo, realizoCursosId, realizoCursos, cursoRealizado, formaConocernosId, formaConocernos) {
+            buscaTrabajoId, buscaTrabajo, realizoCursosId, realizoCursos, cursoRealizado, formaConocernosId, formaConocernos, cantPagos) {
 
             try {
 
@@ -571,10 +585,11 @@
                         realizoCursosId,
                         cursoRealizado,
                         formaConocernos,
-                        formaConocernosId
+                        formaConocernosId,
+                        cantPagos
 
                         , function (data) {
-                            swal("¡Tus datos fueron eviados!", "Solo te queda esperar a que te contactemos.", "success");
+                            swal("¡Tus datos fueron enviados!", "Solo te queda esperar a que te contactemos.", "success");
 
                             $('#nombre').val('');
                             $('#apellido').val('');
@@ -592,9 +607,10 @@
                             $('#slEducationLevel').val(-1);
                             $('#slLookingWork').val(-1);
                             $('#slMadeCurses').val(-1);
-                            $('#cursoRealizado').val('');                            
+                            $('#cursoRealizado').val('');
                             $('#slKnowUsBy').val(-1);
-                            
+                            $('#slPaymentsCount').val(-1);
+
 
                             return;
 

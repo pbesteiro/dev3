@@ -13,7 +13,6 @@ namespace CruceroDelNorte.Negocio
         {
             try
             {
-                DevPlaceFormApply formDate = new DevPlaceFormApply();
                 ConnectionStringSettings connSettings = ConfigurationManager.ConnectionStrings["sql"];
 
                 SqlConnection conn = new SqlConnection(connSettings.ConnectionString);
@@ -52,7 +51,6 @@ namespace CruceroDelNorte.Negocio
             }
         }
 
-
         public void InertLog(string message, string title)
         {
 
@@ -61,13 +59,15 @@ namespace CruceroDelNorte.Negocio
             SqlConnection connEx = new SqlConnection(connSettings.ConnectionString);
             connEx.Open();
 
+            message = message.Replace("'", "");
+
             using (SqlCommand command = new SqlCommand())
             {
                 command.CommandType = CommandType.Text;
                 command.Connection = connEx;
 
                 string sql = "insert into applicantErrorLog ( Description,Exception,Datetime) ";
-                sql = sql + " values (" + title + "," + message + ",getdate());";
+                sql = sql + " values ('" + title + "','" + message + "',getdate());";
 
                 command.CommandText = sql;
                 command.ExecuteNonQuery();
@@ -102,12 +102,10 @@ namespace CruceroDelNorte.Negocio
             }
         }
 
-
         public List<CurseItem> GetCursesItems(int techId)
         {
             try
             {
-                DevPlaceFormApply formDate = new DevPlaceFormApply();
                 ConnectionStringSettings connSettings = ConfigurationManager.ConnectionStrings["sql"];
 
                 SqlConnection conn = new SqlConnection(connSettings.ConnectionString);
@@ -149,7 +147,6 @@ namespace CruceroDelNorte.Negocio
                 return new List<CurseItem>();
             }
         }
-
 
         public CurseItem GetCurseItem(int curseItemId)
         {
@@ -193,12 +190,10 @@ namespace CruceroDelNorte.Negocio
             }
         }
 
-
         public string GetProvinces()
         {
             try
             {
-                DevPlaceFormApply formApply = new DevPlaceFormApply();
                 ConnectionStringSettings connSettings = ConfigurationManager.ConnectionStrings["sql"];
 
                 SqlConnection conn = new SqlConnection(connSettings.ConnectionString);
@@ -230,8 +225,7 @@ namespace CruceroDelNorte.Negocio
         public string GetContactedBy()
         {
             try
-            {
-                DevPlaceFormApply formApply = new DevPlaceFormApply();
+            {         
                 ConnectionStringSettings connSettings = ConfigurationManager.ConnectionStrings["sql"];
 
                 SqlConnection conn = new SqlConnection(connSettings.ConnectionString);
@@ -257,6 +251,50 @@ namespace CruceroDelNorte.Negocio
             catch (Exception ex)
             {
                 return "<option value='0' >Sin Opciones</option>";
+            }
+        }
+
+        public DevPlaceModalData GetContactFormData(int techId)
+        {
+            try
+            {
+                ConnectionStringSettings connSettings = ConfigurationManager.ConnectionStrings["sql"];
+
+                SqlConnection conn = new SqlConnection(connSettings.ConnectionString);
+                conn.Open();
+
+                SqlParameter param = new SqlParameter();
+                param.Value = techId;
+                param.ParameterName = "@technologyId";
+                param.SqlDbType = System.Data.SqlDbType.Int;
+
+                SqlCommand command = new SqlCommand();
+                command.CommandText = "sp_get_curse_contact_form";
+                command.Connection = conn;
+                command.CommandType = System.Data.CommandType.StoredProcedure;
+                command.Parameters.Add(param);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                DevPlaceModalData data = new DevPlaceModalData();
+
+                while (reader.Read())
+                {
+                    data.Id= reader.GetInt32(reader.GetOrdinal("Id"));
+                    data.Amount = reader.GetDecimal(reader.GetOrdinal("Amount"));
+                    data.ReserveAmount = reader.GetDecimal(reader.GetOrdinal("ReserveAmount"));
+                    data.Discount1Text = reader.GetString(reader.GetOrdinal("txtDiscount1"));
+                    data.Discount2Text = reader.GetString(reader.GetOrdinal("txtDiscount2"));
+                    data.FeeText = reader.GetString(reader.GetOrdinal("TxtPromo"));
+                    data.Name = reader.GetString(reader.GetOrdinal("Name"));
+                }
+
+                return data;
+
+            }
+            catch (Exception ex)
+            {
+                return new DevPlaceModalData();
             }
         }
 

@@ -94,7 +94,7 @@ namespace CruceroDelNorte
 
 
 
-                    Cartero cartero = new Cartero("aplicantes@devplace.com.ar", body, "Contacto desde Pagina Dev Place", "info@devplace.com.ar", "", "", "aplicantes@devplace.com.ar", "4pl1c4nt3s!");
+                    Cartero cartero = new Cartero("aplicantes@devplace.com.ar", body, "Inscripcion de Aplicante Dev Place", "info@devplace.com.ar", "", "", "aplicantes@devplace.com.ar", "4pl1c4nt3s!");
                     cartero.sendMailExterno();
                 }
                 catch (Exception emailEx)

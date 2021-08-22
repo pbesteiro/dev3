@@ -35,6 +35,7 @@ namespace CruceroDelNorte
             DataManagment dm = new DataManagment();
             sections.CursesItems = dm.GetItemCursesTemplate((int)EnumTechnology.C);
             sections.CurseFees = dm.GetItemCurseFeesTemplate((int)EnumTechnology.C);
+            sections.ContactModal = dm.GetContactTemplate((int)EnumTechnology.C);
 
             return sections;
         }
@@ -42,16 +43,60 @@ namespace CruceroDelNorte
 
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public static string GetFormAplica(int curseItemId)
+        public static bool SendContactEmail(string name, string email, string tel)
         {
 
+            Persistor per = new Persistor();
+            try
+            {
+                try
+                {
+                    string body = "<br /><b>Contacto desde el formulario de contacto Dev Place </b> <br /><br />";
+                    body = body + "<b>Se contacta por:</b>  C# <br /> ";
+                    body = body + "<b>Mail:</b> " + email + "<br /> ";
+                    body = body + "<b>telefono:</b> " + tel + "<br /> ";
+                    body = body + "<b>Nombre:</b> " + name + "<br /> ";
 
-            string formApply = string.Empty;
-            DataManagment dm = new DataManagment();
-            formApply = dm.GetItemFormApplyTemplate(curseItemId);
+                    Cartero cartero = new Cartero("aplicantes@devplace.com.ar", body, "Consulta desde Formulario Contacto Dev Place", "info@devplace.com.ar", "", "", "aplicantes@devplace.com.ar", "4pl1c4nt3s!");
+                    cartero.sendMailExterno();
+                }
+                catch (Exception emailEx)
+                {
+                    per.InertLog(emailEx.Message, "Error al mandar el email");
 
-            return formApply;
+                }
+
+                try
+                {
+                    Applicant applicant = new Applicant();
+                    applicant.Email = email;
+                    applicant.FirstName = name;
+                    applicant.Telephone = tel;
+                    per.SaveApplicant(applicant);
+                }
+                catch (Exception bdEx)
+                {
+                    per.InertLog(bdEx.Message, "Error al persistir el aplicante");
+
+                }
+
+                return true;
+
+            }
+            catch (Exception ex)
+            {
+                per.InertLog(ex.Message, "Error en el metodo");
+                throw new Exception("Error al persistir el aplicante");
+            }
+            finally
+            {
+                per = null;
+            }
+
         }
+
+
+
 
     }
 }

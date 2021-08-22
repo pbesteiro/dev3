@@ -284,9 +284,20 @@
      
 
         <!--************** MODAL - POP UP - FORM CORTO  ****************** -->
-
-        <div id="open-modal" class="modal-window">
+        <!-- Modal-->
+        <div class="modal fade " id="popup_cursos" tabindex="-1" role="dialog" aria-labelledby="popup_cursosLabel" aria-hidden="true">
+          <div class="modal-dialog popup_cursos" role="document">
+            <div class="modal-content">
+              <div class="modal-body" id="contactModal">
+             
+              </div>
+              <div class="modal-footer">
+                
+              </div>
+            </div>
+          </div>
         </div>
+
 
     </form>
     <!-- FOOTER -->
@@ -349,6 +360,7 @@
                                     $('#header').html(data.Menu);
                                     $('#footer').html(data.Footer);
                                     $("#proximas-fechas").html(data.CursesItems);
+                                    $("#contactModal").html(data.ContactModal);
 
                                     //initialice menu
                                     $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function (event) {
@@ -371,16 +383,42 @@
                 }
             }
 
-            function getFormAplica(curseItemId) {
+            function enviarEmailContacto() {
                 try {
-                    PageMethods.GetFormAplica
-                        (curseItemId,
-                            function (data) {
 
-                                if (data != "") {
-                                    $('#open-modal-aplica').html(data);
-                                    // alert(data);
-                                }
+                    var name = $('#ContactModalName').val();
+                    var email = $('#ContactModalEmail').val();
+                    var tel = $('#ContactModalCel').val();
+                    var termCond = $('#chkContactModalTermyCond').prop('checked');
+
+                    if (name.length < 1) {
+                        swal("Ingrese tu nombre", "", "info");
+                        return;
+                    }
+
+                    if (email.length < 1) {
+                        swal("Ingrese su correo electrónico", "", "info");
+                        return;
+                    }
+
+                    if (tel.length < 1) {
+                        swal("Ingrese su correo teléfono", "", "info");
+                        return;
+                    }
+
+                    if (!termCond) {
+                        swal("Por favor acepte los términos y condiciones", "", "info");
+                        return;
+                    }
+
+                    PageMethods.SendContactEmail
+                        (name, email, tel,
+                            function () {
+                                swal("¡Tus datos fueron enviados!", "Solo te queda esperar a que te contactemos.", "success");
+                                $('#ContactModalName').val('');
+                                $('#ContactModalEmail').val('');
+                                $('#ContactModalCel').val('');
+                                $("#popup_cursos").modal('hide'); 
                             },
                             fnLlamadaError
                         );
@@ -388,6 +426,7 @@
                     alert(err);
                 }
             }
+
 
             function fnLlamadaError(excepcion) {
                 swal(excepcion.get_message(), "", "error");

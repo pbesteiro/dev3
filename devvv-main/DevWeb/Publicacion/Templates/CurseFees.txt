@@ -4,7 +4,7 @@
     @@CUOTAS_A_REEMPLAZAR@@
                       
 <div class="container-button-card">
-    <button class="button-card">
+    <button class="button-card" >
         <a href="#proximas-fechas" class="btn-aplica-scroll">Quiero Inscribirme</a>
     </button>
 </div>

@@ -1,0 +1,32 @@
+﻿<div class="row">
+    <div class="col-sm-5">
+        <div class="fecha"><img width="200px" src="assets/images/logo.svg" alt=""></div>
+        <hr />
+        <span>Precio</span>
+        <span><b>@@PRECIO@@ ARS</b></span>
+        <span class="popup_promo">RESERVA CON:</span>
+        <span>@@PRECIO_RESERVA@@ ARS</span>
+        <span class="popup_promo">@@TEXTO_CUOTAS@@</span>                       
+        <span class="popup_oldprice">@@PRECIO@@ ARS</span>
+        <span>@@PRIMER_DESCUENTO@@</span>
+        <span>@@SEGUNDO_DESCUENTO@@</span>
+    </div>
+    <div class="col-sm-7">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+        <h2>@@NOMBRE_CURSO@@</h2>
+        <hr />
+        <h6>* Por favor, dejanos tus datos y te contactaremos a la brevedad</h6>
+        <input type="text" id="ContactModalName" class="form-control" placeholder="Nombre Completo" />
+        <input type="email" id="ContactModalEmail" class="form-control" placeholder="E-mail" />
+        <div class="input-group">
+            <input type="number" id="ContactModalCel" class="form-control" placeholder="Celular"/>
+        </div>
+        <h6>* Todos los campos son obligatorios</h6>
+        <label><input type="checkbox" name="terminos" id="chkContactModalTermyCond" value="si"> Acepto terminos y condiciones</label><br>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary promocion-button-card popup-cursos-send" onclick="JavaScript:enviarEmailContacto();">ENVIAR</button>
+        </div>
+    </div>
+</div>

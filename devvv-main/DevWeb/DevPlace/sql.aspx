@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/fonts//flaticon/font/flaticon.css" />
     <link rel="stylesheet" href="assets/css/fl-bigmug-line.css" />
+    <link rel="stylesheet" href="assets/css/sweetalert.css" type="text/css" />
+
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
 
     <link rel="stylesheet" href="assets/css/aos.css" />
@@ -109,9 +111,8 @@
                                         <h4><i class="fas fa-check"></i>2 horas por sesión</h4>
 
                                         <div class="row pt-3">
-                                            <div class="col-sm-12 col-md-12 col-xl-5">
-                                                <a href="#proximos">
-                                                    <button type="button" class="btn btn-primary head-button-card head-button-card-white">Inscribirme</button></a>
+                                            <div class="col-sm-12 col-md-12 col-xl-5">                                               
+                                                    <button type="button" id="btnContact" class="btn btn-primary head-button-card head-button-card-white">Consultar</button>
                                             </div>
                                             <div class="col-sm-12 col-md-12 col-xl-6">
                                                 <a href="assets/programas/sql.pdf" target="_blank">
@@ -228,57 +229,13 @@
         </div>
 
 
-        <!--************** MODAL - POP UP - FORM CORTO  ****************** -->
-        <div style="margin-top: 10rem;" id="open-modal-aplica" class="modal-window-fechas">
-        </div>
-
-        <!-- BOTON NUEVO -->
-        <button type="button" class="btn btn-primary promocion-button-card" data-toggle="modal" data-target="#popup_cursos">
-          INSCRIBIRME
-        </button>
-
         <!-- Modal-->
         <div class="modal fade " id="popup_cursos" tabindex="-1" role="dialog" aria-labelledby="popup_cursosLabel" aria-hidden="true">
           <div class="modal-dialog popup_cursos" role="document">
             <div class="modal-content">
-              <div class="modal-body">
-               <div class="row">
-                   <div class="col-sm-5">
-                       <div class="fecha"><img width="200px" src="assets/images/logo.svg" alt=""></div>
-                       <hr />
-                       <span>Precio</span>
-                       <span><b>$50000 ARS</b></span>
-                       <span class="popup_promo">RESERVA CON:</span>
-                       <span>$15.900 ARS</span>
-                       <span class="popup_promo">Hasta 12 cuotas sin interes con nuestros metodos de pago</span>                       
-                       <span class="popup_oldprice">$ 23.500</span>
-                       <span>50% OFF en un pago</span>
-                       <span>50% OFF en dos pago</span>
-                   </div>
-                   <div class="col-sm-7">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                       <h2>SQL</h2>
-                       <hr />
-                       <h6>* Por favor, dejanos tus datos y te contactaremos a la brevedad</h6>
-                       <input type="text" class="form-control" placeholder="Nombre Completo" />
-                       <input type="email" class="form-control" placeholder="E-mail" />
-
-                       <div class="input-group">
-                            <input type="number" class="form-control" placeholder="Ej:011"/>
-                            <span class="input-group-addon"></span>
-                            <input type="number" class="form-control" placeholder="Celular:150000000"/>
-                       </div>
-                       <h6>* Todos los campos son obligatorios</h6>
-                       <label><input type="checkbox" name="terminos" id="terminos" value="si"> Acepto terminos y condiciones</label><br>
-                       <div class="text-center">
-                           <button type="button" class="btn btn-primary promocion-button-card popup-cursos-send">ENVIAR</button>
-                       </div>
-                   </div>
-               </div>
+              <div class="modal-body" id="contactModal">
+             
               </div>
-
               <div class="modal-footer">
                 
               </div>
@@ -307,6 +264,7 @@
     <script src="assets/js/aos.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/sweetalert.min.js" type="text/javascript"></script>
 
     <script>
 
@@ -351,7 +309,8 @@
                                 $('#header').html(data.Menu);
                                 $('#footer').html(data.Footer);
                                 $("#proximas-fechas").html(data.CursesItems);
-                                $("#precios").html(data.CurseFees);
+                                $("#contactModal").html(data.ContactModal);
+                                $("#btnContact").on('click', function () { $("#popup_cursos").modal('show');  });
 
                                 //initialice menu
                                 $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function (event) {
@@ -367,6 +326,49 @@
 
                                 addScrollEfect();
                             }
+                        },
+                        fnLlamadaError
+                    );
+            } catch (err) {
+                alert(err);
+            }
+        }
+
+        function enviarEmailContacto() {
+            try {
+                var name = $('#ContactModalName').val();
+                var email = $('#ContactModalEmail').val();
+                var tel = $('#ContactModalCel').val();
+                var termCond = $('#chkContactModalTermyCond').prop('checked');
+
+                if (name.length < 1) {
+                    swal("Ingrese tu nombre", "", "info");
+                    return;
+                }
+
+                if (email.length < 1) {
+                    swal("Ingrese su correo electrónico", "", "info");
+                    return;
+                }
+
+                if (tel.length < 1) {
+                    swal("Ingrese su correo teléfono", "", "info");
+                    return;
+                }
+
+                if (!termCond) {
+                    swal("Por favor acepte los términos y condiciones", "", "info");
+                    return;
+                }
+
+                PageMethods.SendContactEmail
+                    (name, email, tel,
+                        function () {
+                            swal("¡Tus datos fueron enviados!", "Solo te queda esperar a que te contactemos.", "success");
+                            $('#ContactModalName').val('');
+                            $('#ContactModalEmail').val('');
+                            $('#ContactModalCel').val('');
+                            $("#popup_cursos").modal('hide'); 
                         },
                         fnLlamadaError
                     );

@@ -17,6 +17,8 @@ a {
 
 /* CURSO PROGRAMA INDEX */
 
+
+
 .parent-index {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="assets/fonts//flaticon/font/flaticon.css" />
     <link rel="stylesheet" href="assets/css/fl-bigmug-line.css" />
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/sweetalert.css" type="text/css" />
 
     <link rel="stylesheet" href="assets/css/aos.css" />
 
@@ -90,125 +91,154 @@
         <header id="header">
         </header>
 
-        <!--******++++++++++++HEADER FIN++++++++++*********-->
-        <!--******++++++++++++TEXT BANNER++++++++++*********-->
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active carousel">
                     <div class="carousel-title">
                         <div class="container-grid-developer-btn">
-                            <button class="btn-aplica-slide" type="button">
-                                <a href="#proximas-fechas" class="btn-aplica-scroll">Aplica</a>
-                            </button>
+
+                            <div class="container colorwhite">        
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 pd-120" >
+                                        <h4><u>CURSOS</u> > <u>PARA DEVELOPERS </u> > FRONT END > REACT</h4>
+                                        <h4 class="pt-3">MODALIDAD ONLINE <b>EN VIVO</b></h4>
+                                        <h1 class="pt-1">REACT JS</h1>
+                                        <h4 class="pt-5"><i class="fas fa-check"></i> Duracíon 9 semanas</h4>
+                                        <h4><i class="fas fa-check"></i> 2 sesiones por semana</h4>
+                                        <h4><i class="fas fa-check"></i> 2 horas por sesión</h4>
+                            
+                                         <div class="row pt-3">
+                                            <div class="col-sm-12 col-md-12 col-xl-5">                                               
+                                                    <button type="button" id="btnContact" class="btn btn-primary head-button-card head-button-card-white">Consultar</button>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <a href="assets/programas/reactjs.pdf" target="_blank"><button type="button" class="btn btn-primary head-button-card head-button-card-tans">Descargar Programa</button> </a>
+                                            </div>
+                                         </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                    </div>
+                                </div>
+
 
                         </div>
                     </div>
                 </div>
             </div>
+            </div>
         </div>
-        <div class="parent">
-            <div class="div1">
-                <h3 class="title-general">¿Qué vas a aprender?</h3>
-                <div class="text-analytics">
-                    <div>
-                        <p class="div1-text1-sql">
-                            El objetivo principal del curso es enseñarte ReactJS, empezando de cero hasta llevarte a un nivel avanzado 
-                            y competitivo. Este curso te ayudará a introducirte fácilmente al framework de JavaScript más usado en el mercado 
-                            laboral. ReactJS te abrirá un mundo de posibilidades en la creación de interfaces dinámicas y escalables, 
-                            ya que este fue diseñado específicamente para el desarrollo de potentes interfaces de usuario. 
-                            El curso tiene como meta lograr que te interiorices con las buenas prácticas en desarrollo de Front End. 
-                            ReactJS es una de las librerías de JavaScript más potentes y populares que existe. 
-                            Dentro de las aplicaciones más destacadas creadas con ReactJS, se encuentra Instagram, una de las redes sociales 
-                            más populares del mundo.
-                        </p>
-                    </div>
-                    <div>
-                        <img width="250vw" height="250vw" src="assets/images/dw1.jpg" alt="" />
+
+        <div class="container card-desc" id ="curso">        
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card shadow" >
+                      <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <h6 class="card-subtitle mb-2 text-muted title-card-new">REACT JS</h6>
+                                <p class="card-text">Para developers</p>
+                                <p class="card-text promocion-card">Tecnología con alta demanda en el mercado laboral IT </p>
+                                <a href="#proximos"><button type="button" class="btn btn-primary promocion-button-card">Inscribirme</button></a>                   
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <p class="card-text">Grupos Reducidos</p>
+                                <p class="card-text pt-4">Clases Personalizadas</p>
+                                <p class="card-text pt-4">Capacidad de 15 alumnos</p>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <p class="card-text">Certificado al aprobar el proyecto final</p>
+                                <p class="card-text pt-4">Mentor profesional experto en desarrollo de software en React JS</p>                        
+                            </div>
+                        </div>
+
+                      </div>
                     </div>
                 </div>
+            </div>        
+        </div>
+    
+        <div class="container pt-5 pb-5">        
+            <div class="row m-4">
+                <div class="col-sm-7">
+                    <h3>¿Que vas a aprender?</h3>
+                    <p class="">
+                        El objetivo principal del curso es enseñarte ReactJS, empezando de cero hasta llevarte a un nivel avanzado y competitivo. Este curso te ayudará a introducirte fácilmente al framework de JavaScript más usado en el mercado laboral. ReactJS te abrirá un mundo de posibilidades en la creación de interfaces dinámicas y escalables, ya que este fue diseñado específicamente para el desarrollo de potentes interfaces de usuario. El curso tiene como meta lograr que te interiorices con las buenas prácticas en desarrollo de Front End. ReactJS es una de las librerías de JavaScript más potentes y populares que existe. Dentro de las aplicaciones más destacadas creadas con ReactJS, se encuentra Instagram, una de las redes sociales más populares del mundo.
+                    </p>
+                </div>
+                <div class="col-sm-5">
+                    <image src="assets/images/front1.png" width="100%" ></image>
+                </div>
             </div>
-            <div class="div2">
-                <div class="card-cursos">
-                    <div class="contenido-card" id="precios">
+            <div class="row pt-5  m-4">
+                <div class="col-sm-5">
+                   <image src="assets/images/front2.png" width="100%" ></image> 
+                </div>
+                <div class="col-sm-6">
+                    <h3>¿A quién va dirigido?</h3>
+                    <p>El curso está dirigido a estudiantes de la carrera de sistemas o afines (siendo en universidad o tecnicaturas) o profesionales de la industria que tengan experiencia mínima de 8 meses desarrollando JavaScript. </p>
+                    <p>En caso de no contar con esta experiencia, te recomendamos realizar nuestro curso de JavaScript.</p>
+                    <div class="row pt-5">
+                        <div class="col-sm-12">
+                            <h3>Requisitos</h3>
+                            <p>
+                                <i class="fas fa-check"></i> Sólidos conocimientos de programación. <br />
+                                <i class="fas fa-check"></i> Sólidos conocimientos en Javascript, ES6. <br />
+                                <i class="fas fa-check"></i> Nociones de CSS.<br />
+                            </p>
+                        </div>
                     </div>
-
+                </div>
+            </div>   
+              <div class="row pt-5  m-4">
+                <div class="col-sm-7">
+                    <h3>Proyecto final</h3>
+                    <p>El proyecto final e integrador que se realiza durante la cursada, será aquel que en caso de estar aprobado, la institución (DEV PLACE) emitirá un certificado de aprobación del curso. En todas las clases, el mentor dispondrá de los primeros 10 minutos en concepto de "daily" para que los alumnos puedan mostrar avances y evacuar dudas. Al terminar el curso se hará una clase extra donde los alumnos tendrán que exponer el proyecto y defenderlo. Finalizada la exposición, el alumno tendrá que entregar el proyecto para que el mentor lo corrija según las rúbricas de evaluación dispuestas por DEV PLACE. Posteriormente el mentor le alcanzará una devolución al alumno donde se considerará si el proyecto está "aprobado" o se debe "volver a hacer".</p>
+                    
+                    <h3 class="pt-5">Perfil de egresado</h3>
+                    <p>El egresado será capaz de :<br /><br />
+                        ● Crear aplicaciones en React JS siguiendo las mejores prácticas.<br />
+                        ● Dominar JSX para crear aplicaciones en React Js.<br />
+                        ● Crear componentes reutilizables.<br />
+                        ● Crear una aplicación cliente que consuma una API externa con autenticación y rutas protegidas.<br />
+                        ● Usar librerías de terceros.<br />
+                        ● Publicar tu aplicación en internet.</p>
 
                 </div>
-            </div>
-            <div class="div3">
-                <h3 class="title-general">¿A quién va dirigido?</h3>
-                <p>
-                    El curso está dirigido a estudiantes de la carrera de sistemas o afines (siendo en universidad o tecnicaturas) 
-                    o profesionales de la industria que tengan experiencia mínima de 8 meses desarrollando JavaScript. 
-                    En caso de no contar con esta experiencia, te recomendamos realizar nuestro curso de JavaScript.
-                </p>
-
-                <img width="250vw" height="250vw" src=" assets/images/data-analytics-programa.jpg" alt="">
-
-                <h3 class="title-general">Requisitos</h3>
-                <ul>
-                    <li>● Sólidos conocimientos de programación </li>
-                    <li>● Sólidos conocimientos en Javascript, ES6</li>
-                    <li>● Nociones de CSS</li>
-                </ul>
-
-                <h3 class="title-general">Herramientas de Desarrollo</h3>
-                <ul>
-                    <li>● Visual Studio Code (<a href="https://code.visualstudio.com/download" >Descarga</a>). </li>
-                    <li>● Google Chrome (<a href="https://www.google.com/intl/es/chrome/?brand=UUXU&gclid=EAIaIQobChMI7tGaleiP8gIV9Al9Ch1o3Q5cEAAYASAAEgJeCvD_BwE&gclsrc=aw.ds">Descarga</a>).</li>
-                    <li>● Github (<a href="https://github.com/">https://github.com/</a>).</li>
-                </ul>
-
-            </div>
-            <div class="div4">
-                <h3 class="title-general">Proyecto Final</h3>
-
-
-                <p>
-                    El proyecto final e integrador que se realiza durante la cursada, será aquel que en caso de estar aprobado, 
-                    la institución (DEV PLACE) emitirá un certificado de aprobación del curso. En todas las clases, 
-                    el mentor dispondrá de los primeros 10 minutos en concepto de "daily" para que los alumnos puedan mostrar avances 
-                    y evacuar dudas. Al terminar el curso se hará una clase extra donde los alumnos tendrán que exponer el proyecto y defenderlo. 
-                    Finalizada la exposición, el alumno tendrá que entregar el proyecto para que el mentor lo corrija según las 
-                    rúbricas de evaluación dispuestas por DEV PLACE. 
-                    Posteriormente el mentor le alcanzará una devolución al alumno donde se considerará si el proyecto está 
-                    "aprobado" o se debe "volver a hacer".
-                </p>
-            </div>
-
-            <div class="div5">
-                <h3 class="title-general">Perfil del Egresado</h3>
-                <div class="flex-egresado">
-                    <p>Al finalizar este programa estará capacitado para: </p>
-                    <ul>
-                        <li>● Crear aplicaciones en React JS siguiendo las mejores prácticas.</li>
-                        <li>● Dominar JSX para crear aplicaciones en React Js. </li>
-                        <li>● Crear componentes reutilizables.</li>
-                        <li>● Crear una aplicación cliente que consuma una API externa con autenticación y rutas protegidas.</li>
-                        <li>● Usar librerías de terceros.</li>
-                        <li>● Publicar tu aplicación en internet.</li>
-                    </ul>
-                    <img width="390vw" height="250vw" src="assets/images/concepto-ceremonia-graduacion-virtual_23-2148573423.jpeg" alt="">
+                <div class="col-sm-5">
+                    <image src="assets/images/front3.png" width="100%" ></image>
                 </div>
-            </div>
-
-            <div class="div6">
-                <section id="proximas-fechas">
-                </section>
-            </div>
-
+            </div>          
 
         </div>
+
+        <div class="container card-desc pt-5" id="proximos">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card-body" id="proximas-fechas">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--************** MODAL - POP UP - FORM CORTO  ****************** -->
+        <!-- Modal-->
+        <div class="modal fade " id="popup_cursos" tabindex="-1" role="dialog" aria-labelledby="popup_cursosLabel" aria-hidden="true">
+          <div class="modal-dialog popup_cursos" role="document">
+            <div class="modal-content">
+              <div class="modal-body" id="contactModal">
+             
+              </div>
+              <div class="modal-footer">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
 
     </form>
-
-
-    <!--************** MODAL - POP UP - FORM CORTO  ****************** -->
-    <div id="open-modal-aplica" class="modal-window-fechas">
-    </div>
-
-
-
 
     <!-- FOOTER -->
     <footer class="site-footer" id="footer">
@@ -234,6 +264,7 @@
     <script src="assets/js/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/sweetalert.min.js" type="text/javascript"></script>
 
 
     <script>
@@ -279,7 +310,8 @@
                                 $('#header').html(data.Menu);
                                 $('#footer').html(data.Footer);
                                 $("#proximas-fechas").html(data.CursesItems);
-                                $("#precios").html(data.CurseFees);
+                                $("#contactModal").html(data.ContactModal);
+                                $("#btnContact").on('click', function () { $("#popup_cursos").modal('show'); });
 
                                 //initialice menu
                                 $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function (event) {
@@ -302,6 +334,51 @@
                 alert(err);
             }
         }
+
+        function enviarEmailContacto() {
+            try {
+
+                var name = $('#ContactModalName').val();
+                var email = $('#ContactModalEmail').val();
+                var tel = $('#ContactModalCel').val();
+                var termCond = $('#chkContactModalTermyCond').prop('checked');
+
+                if (name.length < 1) {
+                    swal("Ingrese tu nombre", "", "info");
+                    return;
+                }
+
+                if (email.length < 1) {
+                    swal("Ingrese su correo electrónico", "", "info");
+                    return;
+                }
+
+                if (tel.length < 1) {
+                    swal("Ingrese su correo teléfono", "", "info");
+                    return;
+                }
+
+                if (!termCond) {
+                    swal("Por favor acepte los términos y condiciones", "", "info");
+                    return;
+                }
+
+                PageMethods.SendContactEmail
+                    (name, email, tel,
+                        function () {
+                            swal("¡Tus datos fueron enviados!", "Solo te queda esperar a que te contactemos.", "success");
+                            $('#ContactModalName').val('');
+                            $('#ContactModalEmail').val('');
+                            $('#ContactModalCel').val('');
+                            $("#popup_cursos").modal('hide'); 
+                        },
+                        fnLlamadaError
+                    );
+            } catch (err) {
+                alert(err);
+            }
+        }
+
 
         function fnLlamadaError(excepcion) {
             swal(excepcion.get_message(), "", "error");

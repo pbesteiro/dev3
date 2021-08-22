@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="assets/fonts//flaticon/font/flaticon.css" />
     <link rel="stylesheet" href="assets/css/fl-bigmug-line.css" />
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/sweetalert.css" type="text/css" />
 
     <link rel="stylesheet" href="assets/css/aos.css" />
 
@@ -109,8 +110,8 @@
                                         <h4><i class="fas fa-check"></i> 3 horas por sesión</h4>
                             
                                          <div class="row pt-3">
-                                            <div class="col-sm-12 col-md-5">
-                                                <a href="#proximos"><button type="button" class="btn btn-primary head-button-card head-button-card-white">Inscribirme</button></a>
+                                            <div class="col-sm-12 col-md-12 col-xl-5">                                               
+                                                <button type="button" id="btnContact" class="btn btn-primary head-button-card head-button-card-white">Consultar</button>
                                             </div>
                                             <div class="col-sm-12 col-md-6">
                                                 <a href="assets/programas/programa-data-analytics.pdf" target="_blank"><button type="button" class="btn btn-primary head-button-card head-button-card-tans">Descargar Programa</button> </a>
@@ -246,60 +247,22 @@ Recomendamos como requisitos deseables y no limitantes:<br />
 
 
         <!--************** MODAL - POP UP - FORM CORTO  ****************** -->
-
-        <div id="open-modal" class="modal-window">
-        </div>
-
-        
-    <!-- CONTACTO -->
-    <div class="modal fade" id="formularioContacto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header justify-content-center">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-              <i class="tim-icons icon-simple-remove"><img src="assets/images/cancel.png" alt="" width="17" height="17" /></i>
-            </button>
-            <h4 class="title title-up"><b>FORMULARIO DE CONTACTO</b></h4>
-          </div>
-          <div class="modal-body" style="text-align: -webkit-center; margin-bottom: 4rem;">
-            <div class="row">
-              <hr class="line-primary" style="margin-top: 0.5em;" />
-              <br />
-              <ul class="popUp-list" style=" list-style: none;">
-                  <div style="background-color: #5d009b; width: auto; height: 2rem; text-align: center;">
-                  <li style="text-align: center; color: #ffffff; font-size: 1.2rem; margin-bottom: 1rem;">
-                    <strong>
-                      <font color="#ffffff">Dejanos tus datos para que te contactemos</font>
-                    </strong>
-
-                  </li>
-                </div>             
+        <!-- Modal-->
+        <div class="modal fade " id="popup_cursos" tabindex="-1" role="dialog" aria-labelledby="popup_cursosLabel" aria-hidden="true">
+          <div class="modal-dialog popup_cursos" role="document">
+            <div class="modal-content">
+              <div class="modal-body" id="contactModal">
+             
+              </div>
+              <div class="modal-footer">
                 
-                <div class="container-popUp">
-                  <div>
-                    <label>Nombre</label>
-                      <input type="text" name="name" id="name" class="form-control" />
-                  </div>
-                 <div>
-                    <label>Telefono</label>
-                      <input type="text" name="telefono" id="telefono" class="form-control" />
-                  </div>
-                    <div>
-                    <label>Email</label>
-                      <input type="text" name="email" id="email" class="form-control" />
-                  </div>
-
-                </div>
-                <button type="button" class="btn btn-violeta" onclick="Inscripcion(3)">Enviar
-                  aqu&iacute;</button> &nbsp;
-
-
-              </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+
+
+
 
     </form>
     <!-- FOOTER -->
@@ -320,6 +283,7 @@ Recomendamos como requisitos deseables y no limitantes:<br />
     <script src="assets/js/aos.js"></script>
 
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/sweetalert.min.js" type="text/javascript"></script>
 
     <script>
 
@@ -368,7 +332,8 @@ Recomendamos como requisitos deseables y no limitantes:<br />
                                 $('#header').html(data.Menu);
                                 $('#footer').html(data.Footer);
                                 $("#proximas-fechas").html(data.CursesItems);
-                                $("#precios").html(data.CurseFees);
+                                $("#contactModal").html(data.ContactModal);
+                                $("#btnContact").on('click', function () { $("#popup_cursos").modal('show'); });
 
                                 //initialice menu
                                 $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function (event) {
@@ -390,6 +355,51 @@ Recomendamos como requisitos deseables y no limitantes:<br />
                 alert(err);
             }
         }
+
+        function enviarEmailContacto() {
+            try {
+
+                var name = $('#ContactModalName').val();
+                var email = $('#ContactModalEmail').val();
+                var tel = $('#ContactModalCel').val();
+                var termCond = $('#chkContactModalTermyCond').prop('checked');
+
+                if (name.length < 1) {
+                    swal("Ingrese tu nombre", "", "info");
+                    return;
+                }
+
+                if (email.length < 1) {
+                    swal("Ingrese su correo electrónico", "", "info");
+                    return;
+                }
+
+                if (tel.length < 1) {
+                    swal("Ingrese su correo teléfono", "", "info");
+                    return;
+                }
+
+                if (!termCond) {
+                    swal("Por favor acepte los términos y condiciones", "", "info");
+                    return;
+                }
+
+                PageMethods.SendContactEmail
+                    (name, email, tel,
+                        function () {
+                            swal("¡Tus datos fueron enviados!", "Solo te queda esperar a que te contactemos.", "success");
+                            $('#ContactModalName').val('');
+                            $('#ContactModalEmail').val('');
+                            $('#ContactModalCel').val('');
+                            $("#popup_cursos").modal('hide'); 
+                        },
+                        fnLlamadaError
+                    );
+            } catch (err) {
+                alert(err);
+            }
+        }
+
              
         function fnLlamadaError(excepcion) {
             swal(excepcion.get_message(), "", "error");

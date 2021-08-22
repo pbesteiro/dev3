@@ -48,17 +48,19 @@ font-weight: 600;
 }
 
 
-
-
 .carousel {
-    background-image: url(../images/banner/banner-desarrolloweb.png);
+    background-image: url(../images/banner/1920-developers-basico.png), linear-gradient(#5d009b, #7b6ebe);
     background-repeat: no-repeat;
-  }
-  .carousel-title {
+    background-attachment: fixed;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.carousel-title {
     height: 0vw;
-    margin: 19rem auto 10rem 1rem;
+    margin: 1rem auto 23rem 1rem;
     width: 100vw;
-  }
+}
   .btn-aplica-slide {
     margin-left: 8vw;
     border: white solid 2px;
@@ -222,7 +224,7 @@ font-weight: 600;
   #proximas-fechas {
    
     margin-bottom: 30px;
-    width: max-content;
+    /*width: max-content;*/
   }
   
   
@@ -738,95 +740,164 @@ small {
   margin-left: 3px;
 }
 /* MEDIA */
-@media only screen 
-   and (min-width : 320px) {
+@media only screen and (min-width:320px) {
+
+    .pd-120 {
+        padding-left: 15px;
+    }
+
+    .head-button-card {
+        /*padding: 4px 17px !important;*/
+        border-radius: 0.3rem !important;
+        width: 90%;
+        margin-bottom: 12px;
+    }
+
     .parent {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, auto);
+        grid-template-rows: repeat(6, auto);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         margin-left: 2vw;
     }
 
-        
-        .div1 { grid-area: 2 / 1 / 3 / 2; 
-           }
-            .container-text p{
-                width: 95vw;
-            }
-.div2 { grid-area: 1 / 1 / 2 / 2;
-    justify-self:center; }
-.div3 { grid-area: 3 / 1 / 4 / 2; 
-}
-.div4 { grid-area: 4 / 1 / 5 / 2;
-   }
-    .metodologia-text{
+    .div1 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .container-text p {
         width: 95vw;
     }
-.div5 { grid-area: 5 / 1 / 6 / 2;
-   
-}
 
- 
-.div6 { grid-area: 6 / 1 / 7 / 2;
-   }
-.div7 { grid-area: 7 / 1 / 8 / 2;
+    .div2 {
+        grid-area: 1 / 1 / 2 / 2;
+        justify-self: center;
     }
 
-.container-grid-proximas-fechas {
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(4, 23vw);
-    margin-bottom: 20px;
-    margin-top: 20px;
-    -webkit-box-align: center;
-    margin-left: 4vw;
-}
-.container-grid-proximas-fechas p{
-    font-size: 2.5vw;
-}
-.container-grid-proximas-fechas h4{
-    font-size: 1.0em;
-}
-.button-fechas{
-    font-size: 3.5vw;
-}
-.container-text{display: flex;
-    flex-direction: column;
-    width: 45vw;
-    margin-top: 3vw;}
-     
-      .objetivos-programa-img{
+    .div3 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .div4 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .metodologia-text {
+        width: 95vw;
+    }
+
+    .div5 {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+
+    .div6 {
+        grid-area: 6 / 1 / 7 / 2;
+    }
+
+    .div7 {
+        grid-area: 7 / 1 / 8 / 2;
+    }
+
+    .container-grid-proximas-fechas {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(4, 23vw);
+        margin-bottom: 20px;
+        margin-top: 20px;
+        -webkit-box-align: center;
+        margin-left: 4vw;
+    }
+
+        .container-grid-proximas-fechas p {
+            font-size: 2.5vw;
+        }
+
+        .container-grid-proximas-fechas h4 {
+            font-size: 1.0em;
+        }
+
+    .button-fechas {
+        font-size: 3.5vw;
+    }
+
+    .container-text {
+        display: flex;
+        flex-direction: column;
+        width: 45vw;
+        margin-top: 3vw;
+    }
+
+    .objetivos-programa-img {
         width: 72vw;
         height: 35vw;
     }
+
     .flex-egresado {
         display: flex;
         flex-direction: column;
     }
 
     .btn-aplica-slide {
-      width: 150px;
-      height: 54px;
-      margin-left: 22px;
-      margin-top: 305px;
-  }
-  
-     .btn-aplica-slide a {
-      color: white;
-      vertical-align: middle;
-      font-size: 20px;
-      text-transform: uppercase;
-  }
+        width: 150px;
+        height: 54px;
+        margin-left: 22px;
+        margin-top: 305px;
+    }
 
-.carousel {
-  background-image: url(../images/banner/banner-desarrolloweb-responsive.png);
-  background-repeat: no-repeat;
+        .btn-aplica-slide a {
+            color: white;
+            vertical-align: middle;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+
+    .carousel {
+        background-image: url(../images/banner/380-developers-basico.png), linear-gradient(#5d009b, #7b6ebe);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .container {
+        max-width: 100% !important;
+    }
+
+    .btn-aplica-slide a {
+        color: white;
+        vertical-align: middle;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .card-desc {
+        margin: -25px auto auto auto;
+        padding-bottom: 46px;
+    }
 }
-     }
-@media only screen 
-   and (min-width : 768px) {
+
+@media only screen and (min-width:768px) {
+    .promocion-button-card {
+        border-radius: 0.3rem !important;
+        padding: 17px !important;
+        background-color: #5d009b;
+        border-color: #5d009b;
+        width: 100%;
+    }
+
+    .pd-120 {
+        padding-left: 120px;
+    }
+
+    .head-button-card {
+        padding: 14px 1px !important;
+        width: 120%;
+        border-radius: 0.3rem !important;
+    }
+
     .parent {
         display: grid;
         grid-template-columns: repeat(2, 47vw);
@@ -835,21 +906,36 @@ small {
         grid-row-gap: 0px;
         margin-left: 7vw;
     }
-       .div1 { grid-area: 1 / 1 / 2 / 2; 
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
     }
-    .div2 { grid-area: 1 / 2 / 2 / 3;
-    width: max-content; 
-    justify-self:center;}
-    .div3 { grid-area: 2 / 1 / 3 / 2;
-     }
-    .div4 { grid-area: 3 / 1 / 4 / 2; 
-         }
-    .div5 { grid-area: 4 / 1 / 5 / 2;
-         }
-    .div6 { grid-area: 5 / 1 / 6 / 2;
-         }
-    .div7 { grid-area: 6 / 1 / 7 / 2;
-          }
+
+    .div2 {
+        grid-area: 1 / 2 / 2 / 3;
+        width: max-content;
+        justify-self: center;
+    }
+
+    .div3 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .div4 {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .div5 {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .div6 {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+
+    .div7 {
+        grid-area: 6 / 1 / 7 / 2;
+    }
 
     .container-grid-proximas-fechas {
         display: grid;
@@ -862,49 +948,73 @@ small {
         column-gap: 6vw;
         row-gap: 3vw;
     }
-.container-grid-proximas-fechas p{
-    font-size: 1.5vw;
-}
-.flex-egresado{
-   
+
+        .container-grid-proximas-fechas p {
+            font-size: 1.5vw;
+        }
+
+    .flex-egresado {
         display: flex;
         flex-direction: column;
-      
-    
-}
-.container-text p {
-    width: 48vw;
-}
-.metodologia-text {
-    width: 83vw;
-}
-.objetivos-programa-img {
-    width: 40vw;
-    height: 28vw;
-}
-.button-fechas {
-  font-size:19px;
-}
-.btn-aplica-slide {
-  width: 150px;
-  height: 54px;
-  margin-left: 117px;
-  margin-top: 320px;
-}
+    }
 
- .btn-aplica-slide a {
-  color: white;
-  vertical-align: middle;
-  font-size: 20px;
-  text-transform: uppercase;
+    .container-text p {
+        width: 48vw;
+    }
+
+    .metodologia-text {
+        width: 83vw;
+    }
+
+    .objetivos-programa-img {
+        width: 40vw;
+        height: 28vw;
+    }
+
+    .button-fechas {
+        font-size: 19px;
+    }
+
+    .btn-aplica-slide {
+        width: 150px;
+        height: 54px;
+        margin-left: 117px;
+        margin-top: 320px;
+    }
+
+        .btn-aplica-slide a {
+            color: white;
+            vertical-align: middle;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+    .carousel {
+        background-image: url(../images/banner/768-developers-basico.png),linear-gradient(#5d009b, #7b6ebe);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /*background-size: 100% auto;*/
+        background-position: center 13%;
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
 }
-.carousel {
-  background-image: url(../images/banner/banner-desarrolloweb.png);
-  background-repeat: no-repeat;
-}
- }
 @media only screen 
    and (min-width : 1200px) {
+    .head-button-card {
+        border-radius: 0.3rem !important;
+        width: 100%;
+    }
+
+    .carousel {
+        background-image: url(../images/banner/1920-developers-basico.png),linear-gradient(#5d009b, #7b6ebe);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% auto;
+        background-position: center 60px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
     .parent {
         display: grid;
         grid-template-columns: repeat(2, 49vw);
@@ -983,10 +1093,12 @@ and (min-width:1600px) {
      column-gap: 6vw;
      row-gap: 3vw;
  }
- .carousel {
-   background-image: url(../images/banner/banner-desarrolloweb-xl.png);
-   background-repeat: no-repeat;
- }
+    .carousel {
+        background-image: url(../images/banner/1920-developers-basico.png),linear-gradient(#5d009b, #7b6ebe);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% auto;
+    }
  .btn-aplica-slide {
   width: 150px;
   height: 54px;
@@ -1043,10 +1155,12 @@ body{
    column-gap: 6vw;
    row-gap: 3vw;
 }
-.carousel {
- background-image: url(../images/banner/banner-desarrolloweb-xxl.png) ;
- background-repeat: no-repeat;
-}
+    .carousel {
+        background-image: url(../images/banner/1920-developers-basico.png),linear-gradient(#5d009b, #7b6ebe);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% auto;
+    }
 .btn-aplica-slide {
   width: 150px;
   height: 54px;

@@ -1,26 +1,21 @@
-﻿
-   <div class="container-grid-proximas-fechas">
-    <div>
-        <h4 style="color: #5c00b99c;">@@MESES_A_REEMPLAZAR@@</h4>
-        <p>@@DIAS_A_REEMPLAZAR@@</p>
+﻿<div class="row pt-1 color-card mb-2">
+    <div class="col-sm-11 col-md-2 mt-3 mb-4 text-center">
+        <h6>@@DIAS_A_REEMPLAZAR@@</h6>
+        <p>@@MESES_A_REEMPLAZAR@@</p>
     </div>
-    <div>
-        <h4> Horario</h4>
-        <p>@@HORA_A_REEMPLAZAR@@ </p>
+    <div class="col-sm-11 col-md-2 mt-3 mb-4 text-center">
+        <h6>Horario</h6>
+        <p>@@HORA_A_REEMPLAZAR@@.</p>
     </div>
-    <div>
-        <h4>Modalidad</h4>
-        <p>Online - En vivo</p>
+    <div class="col-sm-11 col-md-2 mt-3 mb-4 text-center">
+        <h6>Modalidad</h6>
+        <p>Online en vivo</p>
     </div>
-    <div>
-        <h4>Profesor</h4>
+    <div class="col-sm-11 col-md-2 mt-3 mb-4 text-center">
+        <h6>Profesor</h6>
         <p>@@MENTOR_A_REEMPLAZAR@@</p>
     </div>
-    <div> <button type='button'
-                  style="text-transform: uppercase; border-radius: 5px"
-                  class="button-fechas" onclick="location.href='ContactForm.aspx?curseItem=@@CURSE_ITEM_ID@@';">
-         Aplica
-    </button>
+    <div class="col-sm-11 col-md-3 mt-3 mb-4 text-center">
+        <button type="button"class="btn btn-primary promocion-button-card" onclick="location.href='ContactForm.aspx?curseItem=@@CURSE_ITEM_ID@@';">Inscribirme</button>
+    </div>
 </div>
-</div>
-<div class="line-fechas-data"></div>

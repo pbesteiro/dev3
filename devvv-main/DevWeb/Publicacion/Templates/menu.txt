@@ -36,14 +36,14 @@
             <li class="dropdown-submenu">
               <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Para Developers</a>
               <ul class="dropdown-menu">
-                <li class="dropdown-submenu">
+                <!--li class="dropdown-submenu">
                   <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Esenciales</a>
                   <ul class="dropdown-menu">
                     <li class="dropdown-item">
                       <a href="js.aspx" class="dropdown-item">JavaScript</a>
                     </li>               
                   </ul>
-                </li>
+                </li-->
 
                 <li class="dropdown-submenu">
                   <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Front End</a>
@@ -79,7 +79,7 @@
                       <a href="html-css.aspx" class="dropdown-item">HTML y CSS</a>
                     </li>
                      <li class="dropdown-item">
-                      <a href="js-basico.aspx" class="dropdown-item">JavaScript Básico</a>
+                      <a href="js-basico.aspx" class="dropdown-item">JavaScript</a>
                     </li>              
                   </ul>
                 </li>

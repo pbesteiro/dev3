@@ -7,4 +7,5 @@
     public string Footer;
     public string CursesItems;
     public string CurseFees;
+    public string ContactModal;
 }

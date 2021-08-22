@@ -141,51 +141,6 @@ namespace CruceroDelNorte.Negocio
 
         }
 
-        private string getPrices(int techId)
-        {
-
-            try
-            {
-                string optionPagos18Clases = "<option value='1'>1 Pago de $26.000 ARS </option><option value='2'>2 Pagos de $15.000 ARS</option><option value='3'>3 Pagos de $ 13.333 ARS</option><option value='4'>4 Pagos de $ 7.500 ARS</option><option value='5'>5 Pagos de $ 8.000 ARS</option><option value='6'>6 Pagos de $ 6.666 ARS</option>";
-                string optionPagos8Clases = "<option value='1'>1 Pago de $ 13.000 ARS </option><option value='2'>2 Pagos de $ 7.500 ARS</option><option value='3'>3 Pagos de $ 6.666 ARS</option><option value='4'>4 Pagos de $ 5.000 ARS</option>";
-
-                switch (techId)
-                {
-                    case 0:
-                        return "<option value='0' selected>Seleccion&aacute; la tecnolog&iacute;a que quer&eacute;s aprender</option>";
-                    case (int)EnumTechnology.C:
-                        return optionPagos18Clases;
-                    case (int)EnumTechnology.Node:
-                        return optionPagos18Clases;
-                    case (int)EnumTechnology.JAVASCRIPT:
-                        return optionPagos8Clases;
-                    case (int)EnumTechnology.React:
-                        return optionPagos18Clases;
-                    default:
-                        return "";
-                }
-
-            }
-            catch (Exception ex)
-            {
-                string mesg = ex.Message;
-                if (ex.InnerException != null)
-                {
-                    if (ex.InnerException.Message != null)
-                    {
-                        mesg = mesg + "--" + ex.InnerException.Message;
-                    }
-                }
-                throw new Exception(mesg);
-            }
-            finally
-            {
-
-            }
-
-        }
-
-
 
         public string getProvinces()
         {
@@ -245,40 +200,34 @@ namespace CruceroDelNorte.Negocio
         }
 
 
-        public string GetItemFormApplyTemplate(int curseItemId)
+        public string GetContactTemplate(int techId)
         {
             try
             {
                 Persistor per = new Persistor();
-                CurseItem item = per.GetCurseItem(curseItemId);
-                string provinces = per.GetProvinces();
-                string contactedBy = per.GetContactedBy();
+                DevPlaceModalData form = per.GetContactFormData(techId);
 
-
-                StreamReader file = new StreamReader(HttpContext.Current.Server.MapPath("Templates/form-aplica.txt"));
+                StreamReader file = new StreamReader(HttpContext.Current.Server.MapPath("Templates/ContactModal.txt"));
                 string fomtApplyTemplate = file.ReadToEnd();
                 file.Close();
                 file.Dispose();
 
-                if (item.Id > 0)
+                if (form.Id > 0)
                 {
-                    fomtApplyTemplate = fomtApplyTemplate.Replace("@@MESES_A_REEMPLAZAR@@", item.Months);
-                    fomtApplyTemplate = fomtApplyTemplate.Replace("@@HORA_A_REEMPLAZAR@@", item.Hours);
-                    fomtApplyTemplate = fomtApplyTemplate.Replace("@@CURSE_ITEM_ID@@", item.Id.ToString());
-                    fomtApplyTemplate = fomtApplyTemplate.Replace("@@PROVINCIAS_A_REEMPLAZAR@@", provinces);
-                    fomtApplyTemplate = fomtApplyTemplate.Replace("@@LLEGADA_A_REEMPLAZAR@@", contactedBy);
-                    fomtApplyTemplate = fomtApplyTemplate.Replace("@@IMPORTES_A_REEMPLAZAR@@", getPrices(item.TechnologyId));
-
-
+                    
+                    fomtApplyTemplate = fomtApplyTemplate.Replace("@@NOMBRE_CURSO@@", form.Name);
+                    fomtApplyTemplate = fomtApplyTemplate.Replace("@@PRECIO@@", form.Amount.ToString("C", new CultureInfo("es-AR")));
+                    fomtApplyTemplate = fomtApplyTemplate.Replace("@@PRECIO_RESERVA@@", form.ReserveAmount.ToString("C", new CultureInfo("es-AR")));
+                    fomtApplyTemplate = fomtApplyTemplate.Replace("@@TEXTO_CUOTAS@@", form.FeeText);
+                    fomtApplyTemplate = fomtApplyTemplate.Replace("@@PRIMER_DESCUENTO@@", form.Discount1Text);
+                    fomtApplyTemplate = fomtApplyTemplate.Replace("@@SEGUNDO_DESCUENTO@@", form.Discount2Text);
                 }
-
 
                 return fomtApplyTemplate;
             }
             catch (Exception ex)
             {
                 return "";
-
             }
 
         }

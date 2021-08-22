@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/fonts//flaticon/font/flaticon.css" />
     <link rel="stylesheet" href="assets/css/fl-bigmug-line.css" />
+    <link rel="stylesheet" href="assets/css/sweetalert.css" type="text/css" />
     <link
         rel="shortcut icon"
         href="assets/images/favicon.ico"
@@ -100,145 +101,164 @@
 
         <header id="header">
         </header>
-        <div
-            id="carouselExampleSlidesOnly"
-            class="carousel slide"
-            data-ride="carousel">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active carousel">
                     <div class="carousel-title">
                         <div class="container-grid-developer-btn">
-                            <br />
-                            <button class="btn-aplica-slide" type="button">
-                                <a href="#proximas-fechas" class="btn-aplica-scroll">Aplica</a>
-                            </button>
+
+                            <div class="container colorwhite">        
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-6 pd-120" >
+                                        <h4><u>PROGRAMAS</u> > <u>Para Developers</u> > Desarrollo Full Stack Javascript</h4>
+                                        <h4 class="pt-3">MODALIDAD ONLINE <b>EN VIVO</b></h4>
+                                        <h2 class="pt-1">Programa Desarrollo Full Stack en Javascript</h2>
+                                        <h4 class="pt-5"><i class="fas fa-check"></i> Duracíon 6 meses</h4>
+                                        <h4><i class="fas fa-check"></i> 2 sesiones por semana</h4>
+                                        <h4><i class="fas fa-check"></i> 2 horas por sesión</h4>
+                            
+                            
+                                         <div class="row pt-3">
+                                            <div class="col-sm-12 col-md-12 col-xl-5">                                               
+                                                 <button type="button" id="btnContact" class="btn btn-primary head-button-card head-button-card-white">Consultar</button>
+                                            </div>
+                                            <div class="col-sm-12 col-md-12 col-xl-6">
+                                                <a href="assets/programas/fullstack.pdf" target="_blank"><button type="button" class="btn btn-primary head-button-card head-button-card-tans">Descargar Programa</button></a> 
+                                            </div>
+                                         </div>
+
+                                    </div>
+                                    <div class="col-sm-6">
+                                    </div>
+                                </div>
+
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="parent">
-            <div class="div1">
-                <div class="text-analytics">
-                    <h3 class="title-general">¿Qué vas a aprender?</h3>
-                    <div>
-                        <p>
-                           El objetivo de este programa es darte todos los conocimientos necesarios para que te conviertas en un desarrollador
-                            JavaScript que pueda realizar proyectos tanto en Back End como en Front End. Para esto nuestro, dividimos nuestro 
-                            programa en tres etapas:           
-                        </p>
-                        <br />
-                        <div>
-                            <ul>
-                                <li>● <strong>Introducción a Javascript:</strong> en esta etapa realizaremos un repaso sobre el desarrollo en javascript y sus principales características. </li>              
-                                <li>● <strong>Proyecto Node JS Backend:</strong> haremos una API Rest de una pequeña red social con funciones básicas, implementando la separación de responsabilidades en capas, inyección de dependencias, y dividiendo nuestra lógica de acceso a datos, modelos y lógica de negocio. Trabajaremos con Programación Orientada a Objetos, Principios Solid y Patrones de Diseño e implementaremos la seguridad con Json Web Tokens.</li>
-                                <li>● <strong>Proyecto React Js Frontend:</strong> realizaremos el Front End de la red social, consumiendo los servicios de nuestra API Rest y realizando los componentes necesarios para realizar las distintas pantallas de nuestra aplicación.</li>
-                            </ul>
+      </div>
+
+        <div class="container card-desc" id ="curso">        
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card shadow" >
+                      <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4">
+                                <h6 class="card-subtitle mb-2 text-muted title-card-new">Desarrollo Full Stack JS</h6>
+                                <p class="card-text">Para desarrolladores</p>
+                                <p class="card-text promocion-card">Tecnologías con alta demanda en el mercado IT</p>
+                                <a href="#proximos"><button type="button" class="btn btn-primary promocion-button-card">Inscribirme</button></a>                   
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <p class="card-text">Grupos reducidos</p>
+                                <p class="card-text pt-4">Clases Personalizadas</p>
+                                <p class="card-text pt-4">Capacidad de 20 alumnos</p>
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+                                <p class="card-text">Certificado al aprobar el proyecto final</p>
+                                <p class="card-text pt-4">Mentor profesional experto en desarrollo de software Full Stack</p>                        
+                            </div>
                         </div>
-                        <div>
-                            <img
-                                width=" 250vw"
-                                height="250vw"
-                                src="assets/images/js.jpg"
-                                alt="" />
+
+                      </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    
+        <div class="container pt-5 pb-5">        
+            <div class="row m-4">
+                <div class="col-sm-7">
+                     <h3>¿Que vas a aprender?</h3>
+                    <p class="">El objetivo de este programa es darte todos los conocimientos necesarios para que te conviertas en un desarrollador JavaScript que pueda realizar proyectos tanto en Back End como en Front End. Para esto nuestro, dividimos nuestro programa en tres etapas:<br />
+
+
+● <b>Introducción a Javascript:</b> En esta etapa realizaremos un repaso sobre el desarrollo en javascript y sus principales características.<br />
+● <b>Proyecto Node JS Backend:</b> Haremos una API Rest de una pequeña red social con funciones básicas, implementando la separación de responsabilidades en capas, inyección de dependencias, y dividiendo nuestra lógica de acceso a datos, modelos y lógica de negocio. Trabajaremos con Programación Orientada a Objetos, Principios Solid y Patrones de Diseño e implementaremos la seguridad con Json Web Tokens.<br />
+● <b>Proyecto React Js Frontend:</b> Realizaremos el Front End de la red social, consumiendo los servicios de nuestra API Rest y realizando los componentes necesarios para realizar las distintas pantallas de nuestra aplicación.</p>
+                </div>
+                <div class="col-sm-5">
+                    <image src="assets/images/front1.png" width="100%" ></image>
+                </div>
+            </div>
+            <div class="row pt-5  m-4">
+                <div class="col-sm-5">
+                   <image src="assets/images/front2.png" width="100%" ></image> 
+                </div>
+                <div class="col-sm-6">
+                    <h3>¿A quién va dirigido?</h3>
+                    <p>El programa está dirigido a estudiantes de los primeros años de la carrera de sistemas (siendo en universidad o tecnicaturas) o profesionales de la industria que tengan experiencia mínima de 6 meses programando en JavaScript y TypeScript.</p>
+                    <div class="row pt-5">
+                        <div class="col-sm-12">
+                            <h3>Requisitos</h3>
+                            <p>
+                                <i class="fas fa-check"></i> Conocimientos básicos de programación.<br />
+                                <i class="fas fa-check"></i> Conocimientos en Javascript, ES6.<br />
+                                <i class="fas fa-check"></i> Nociones de HTML y CSS.
+                            </p>
                         </div>
                     </div>
                 </div>
-            </div>            
-            <div class="div2">
-                <div class="card-cursos">
-                    <div class="contenido-card" id="precios">
-                        
-                    </div>
-
+            </div>   
+              <div class="row pt-5  m-4">
+                <div class="col-sm-7">
+                    <h3>Proyecto final</h3>
+                    <p>El proyecto final e integrador que se realiza durante la cursada, será aquel que en caso de estar aprobado, la institución (DEV PLACE) emitirá un certificado de aprobación del programa. En todas las clases, el mentor dispondrá de los primeros 10 minutos en concepto de "daily" para que los alumnos puedan mostrar avances y evacuar dudas. Al terminar el programa se hará una clase extra donde los alumnos tendrán que exponer el proyecto y defenderlo. Finalizada la exposición, el alumno tendrá que entregar el proyecto para que el mentor lo corrija según las rúbricas de evaluación dispuestas por DEV PLACE. Posteriormente el mentor le alcanzará una devolución al alumno donde se considerará si el proyecto está "aprobado" o se debe "volver a hacer".</p>
+                    <h3 class="pt-5">Perfil de egresado</h4>
+                    <p>El egresado será capaz de :<br /><br />
+                        Al finalizar este programa estará capacitado para:<br />
+                        ● Realizar Web APIs con NodeJS y TypeScript.<br />
+                        ● Utilizar el framework Nest JS.<br />
+                        ● Trabajar con las últimas herramientas de desarrollo como npm y Git.<br />
+                        ● Instalar, configurar y trabajar con Docker.<br />
+                        ● Crear Servicios Rest.<br />
+                        ● Acceder a la Base de Datos utilizando Mongoose.<br />
+                        ● Separar la Lógica de Negocios del acceso a datos, así como la separación de Responsabilidades implementando los principios SOLID de desarrollo.<br />
+                        ● Utilizarán el Servicio Integrado de Inyección de Dependencias.<br />
+                        ● Implementarán Json Web Tokens (JWT) para control de autenticación y administración de roles.<br />
+                        ● Deployar la API en los servidores Heroku y la base de datos en MongoDB Atlas.<br />
+                        ● Crear aplicaciones en React JS siguiendo las mejores prácticas.<br />
+                        ● Dominar JSX para crear aplicaciones en React JS.<br />
+                        ● Crear componentes reutilizables.<br />
+                        ● Crear una aplicación cliente que consuma una API externa con autenticación y rutas protegidas.<br />
+                        ● Usar librerías de terceros.<br />
+                        ● Publicar su aplicación Front End en internet.</p>
 
                 </div>
-            </div>
-            <div class="div3">
-                <h3 class="title-general">¿A quién va dirigido?</h3>
-                <p>
-                    El curso está dirigido a estudiantes de los primeros años de la carrera de sistemas (siendo en universidad o tecnicaturas)
-                    o profesionales de la industria que tengan experiencia mínima de 6 meses programando en JavaScript y TypeScript.
-     
-                </p>
-
-                <h3 class="title-general">Requisitos</h3>
-                <ul>
-                    <li>● Conocimientos básicos de programación.</li>
-                    <li>● Conocimientos en Javascript, ES6.</li>
-                    <li>● Nociones de HTML y CSS.</li>
-                </ul>
-                <h3 class="title-general">Herramientas de desarrollo</h3>
-                <ul>
-                    <li>● Visual Studio Code (<a href="https://code.visualstudio.com/download" >Descarga</a>). </li>
-                    <li>● Google Chrome (<a href="https://www.google.com/intl/es/chrome/?brand=UUXU&gclid=EAIaIQobChMI7tGaleiP8gIV9Al9Ch1o3Q5cEAAYASAAEgJeCvD_BwE&gclsrc=aw.ds">Descarga</a>).</li>
-                    <li>● Github (<a href="https://github.com/">https://github.com/</a>).</li>
-                </ul>
-            </div>
-
-            <div class="div4">               
-                <img
-                    width="250vw"
-                    height="250vw"
-                    src=" assets/images/data-analytics-programa.jpg"
-                    alt="" />
-                
-
-                <h3 class="title-general">Proyecto final</h3>
-                <p>
-                    El proyecto final e integrador que se realiza durante la cursada, será aquel que en caso de estar aprobado, 
-                   la institución (DEV PLACE) emitirá un certificado de aprobación del programa. En todas las clases, 
-                   el mentor dispondrá de los primeros 10 minutos en concepto de "daily" para que los alumnos puedan mostrar avances y 
-                   evacuar dudas. Al terminar el programa se hará una clase extra donde los alumnos tendrán que exponer el proyecto y 
-                   defenderlo. Finalizada la exposición, el alumno tendrá que entregar el proyecto para que el mentor lo corrija según 
-                   las rúbricas de evaluación dispuestas por DEV PLACE. Posteriormente el mentor le alcanzará una devolución al alumno 
-                   donde se considerará si el proyecto está "aprobado" o se debe "volver a hacer".
-                </p>
-            </div>
-
-            <div class="div5">
-                <h3 class="title-general">Perfil del Egresado</h3>
-                <div class="flex-egresado">
-                    <ul>
-                        <li>Al finalizar este curso estará capacitado para:</li>
-                        <li>● Realizar Web APIs con NodeJS y TypeScript.</li>
-                        <li>● Utilizar el framework Nest JS.</li>
-                        <li>● Trabajar con las últimas herramientas de desarrollo como npm y Git.</li>
-                        <li>● Instalar, configurar y trabajar con Docker.</li>
-                        <li>● Crear Servicios Rest.</li>
-                        <li>● Acceder a la Base de Datos utilizando Mongoose.</li>
-                        <li>● Separar la Lógica de Negocios del acceso a datos, así como la separación de Responsabilidades implementando los principios SOLID de desarrollo.</li>
-                        <li>● Utilizarán el Servicio Integrado de Inyección de Dependencias.</li>
-                        <li>● Implementarán Json Web Tokens (JWT) para control de autenticación y administración de roles.</li>
-                        <li>● Deployar la API en los servidores Heroku y la base de datos en MongoDB Atlas.</li>
-                        <li>● Crear aplicaciones en React JS siguiendo las mejores prácticas.</li>
-                        <li>● Dominar JSX para crear aplicaciones en React JS.</li>
-                        <li>● Crear componentes reutilizables.</li>
-                        <li>● Crear una aplicación cliente que consuma una API externa con autenticación y rutas protegidas.</li>
-                        <li>● Usar librerías de terceros.</li>
-                        <li>● Publicar su aplicación Front End en internet.</li>
-                    </ul>
-                    <img
-                        width="350vw"
-                        height="250vw"
-                        src="assets/images/egresado-csharp.jpg"
-                        alt="" />
+                <div class="col-sm-5">
+                    <image src="assets/images/front3.png" width="100%" ></image>
                 </div>
-            </div>
-
-            <div class="div6">
-                <section id="proximas-fechas">
-                </section>
-            </div>
-
+            </div>          
 
         </div>
 
 
-
+    <div class="container card-desc pt-5" id="proximos">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card-body" id="proximas-fechas">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <!--************** MODAL - POP UP - FORM CORTO  ****************** -->
-
-        <div id="open-modal" class="modal-window">
+        <!-- Modal-->
+        <div class="modal fade " id="popup_cursos" tabindex="-1" role="dialog" aria-labelledby="popup_cursosLabel" aria-hidden="true">
+          <div class="modal-dialog popup_cursos" role="document">
+            <div class="modal-content">
+              <div class="modal-body" id="contactModal">
+             
+              </div>
+              <div class="modal-footer">
+                
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- FOOTER -->
@@ -257,6 +277,7 @@
         <script src="assets/js/jquery.magnific-popup.min.js"></script>
         <script src="assets/js/bootstrap-datepicker.min.js"></script>
         <script src="assets/js/aos.js"></script>
+    <script src="assets/js/sweetalert.min.js" type="text/javascript"></script>
 
         <script src="assets/js/main.js"></script>
 
@@ -304,7 +325,8 @@
                                     $('#header').html(data.Menu);
                                     $('#footer').html(data.Footer);
                                     $("#proximas-fechas").html(data.CursesItems);
-                                    $("#precios").html(data.CurseFees);
+                                    $("#contactModal").html(data.ContactModal);
+                                    $("#btnContact").on('click', function () { $("#popup_cursos").modal('show'); });
 
                                     //initialice menu
                                     $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function (event) {
@@ -327,6 +349,51 @@
                     alert(err);
                 }
             }
+
+            function enviarEmailContacto() {
+                try {
+
+                    var name = $('#ContactModalName').val();
+                    var email = $('#ContactModalEmail').val();
+                    var tel = $('#ContactModalCel').val();
+                    var termCond = $('#chkContactModalTermyCond').prop('checked');
+
+                    if (name.length < 1) {
+                        swal("Ingrese tu nombre", "", "info");
+                        return;
+                    }
+
+                    if (email.length < 1) {
+                        swal("Ingrese su correo electrónico", "", "info");
+                        return;
+                    }
+
+                    if (tel.length < 1) {
+                        swal("Ingrese su correo teléfono", "", "info");
+                        return;
+                    }
+
+                    if (!termCond) {
+                        swal("Por favor acepte los términos y condiciones", "", "info");
+                        return;
+                    }
+
+                    PageMethods.SendContactEmail
+                        (name, email, tel,
+                            function () {
+                                swal("¡Tus datos fueron enviados!", "Solo te queda esperar a que te contactemos.", "success");
+                                $('#ContactModalName').val('');
+                                $('#ContactModalEmail').val('');
+                                $('#ContactModalCel').val('');
+                                $("#popup_cursos").modal('hide'); 
+                            },
+                            fnLlamadaError
+                        );
+                } catch (err) {
+                    alert(err);
+                }
+            }
+
 
             function fnLlamadaError(excepcion) {
                 swal(excepcion.get_message(), "", "error");
