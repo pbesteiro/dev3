@@ -356,6 +356,7 @@
     <Content Include="assets\js\bootstrap-datepicker.min.js" />
     <Content Include="assets\js\bootstrap.min.js" />
     <Content Include="assets\js\circleaudioplayer.js" />
+    <Content Include="assets\js\ControllerBase.js" />
     <Content Include="assets\js\jquery-3.3.1.min.js" />
     <Content Include="assets\js\jquery-migrate-3.0.1.min.js" />
     <Content Include="assets\js\jquery-ui.js" />

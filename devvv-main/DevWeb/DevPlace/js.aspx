@@ -262,6 +262,9 @@ El egresado será capaz de:<br />
     <script src="assets/js/main.js"></script>
 
     <script>
+        var _redirectToInscript = false;
+        var _curseItem = 0;
+
 
         $(document).ready(function () {
 
@@ -305,8 +308,9 @@ El egresado será capaz de:<br />
                                 $('#footer').html(data.Footer);
                                 $("#proximas-fechas").html(data.CursesItems);
                                 $("#contactModal").html(data.ContactModal);
-                                $("#btnContact").on('click', function () { $("#popup_cursos").modal('show'); });
-
+                                $("#btnContact").on('click', function () {
+                                    openContactModal(0);
+                                });
                                 //initialice menu
                                 $("ul.dropdown-menu [data-toggle='dropdown']").on("click", function (event) {
                                     event.preventDefault();
@@ -354,11 +358,20 @@ El egresado será capaz de:<br />
                 PageMethods.SendContactEmail
                     (name, email, tel,
                         function () {
-                            swal("¡Tus datos fueron enviados!", "Solo te queda esperar a que te contactemos.", "success");
                             $('#ContactModalName').val('');
                             $('#ContactModalEmail').val('');
                             $('#ContactModalCel').val('');
-                            $("#popup_cursos").modal('hide'); 
+                            $("#popup_cursos").modal('hide');
+                            swal({
+                                title: "¡Tus datos fueron enviados!",
+                                text: "Solo te queda esperar a que te contactemos.",
+                                showConfirmButton: true,
+                                confirmButtonText: 'Entendido!',
+                                dangerMode: false,
+                            }, function () {
+                                if (_redirectToInscript)
+                                    window.location = 'ContactForm.aspx?curseItem=' + _curseItem;
+                            });
                         },
                         fnLlamadaError
                     );
@@ -367,6 +380,16 @@ El egresado será capaz de:<br />
             }
         }
 
+        function openContactModal(curse_item) {
+            if (parseInt(curse_item) < 1 || curse_item == undefined) {
+                _curseItem = 0;
+                _redirectToInscript = false;
+            } else {
+                _curseItem = curse_item;
+                _redirectToInscript = true;
+            }
+            $("#popup_cursos").modal('show');
+        }
 
         function fnLlamadaError(excepcion) {
             swal(excepcion.get_message(), "", "error");
