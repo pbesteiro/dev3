@@ -97,9 +97,9 @@
                             <div class="container colorwhite">        
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6 pd-120" >
-                                        <h4><u>CURSOS</u> > <u>PROGRAMACION BASICA</u> > HTML - CSS</h4>
+                                        <h4><u>CURSOS</u> > <u>PROGRAMACION BASICA</u> > DESARROLLO WEB</h4>
                                         <h4 class="pt-3">MODALIDAD ONLINE <b>EN VIVO</b></h4>
-                                        <h1 class="pt-1">HTML - CSS</h1>
+                                        <h1 class="pt-1">DESARROLLO WEB</h1>
                                         <h4 class="pt-5"><i class="fas fa-check"></i> Duracíon 9 semanas</h4>
                                         <h4><i class="fas fa-check"></i> 2 sesiones por semana</h4>
                                         <h4><i class="fas fa-check"></i> 2 horas por sesión</h4>
@@ -134,7 +134,7 @@
 
                         <div class="row">
                             <div class="col-sm-12 col-md-4">
-                                <h6 class="card-subtitle mb-2 text-muted title-card-new">HTML - CSS</h6>
+                                <h6 class="card-subtitle mb-2 text-muted title-card-new">DESARROLLO WEB</h6>
                                 <p class="card-text">Programación básica</p>
                                 <p class="card-text promocion-card">No necesitas conocimientos previos en programación</p>
                                 <a href="#proximos"><button type="button" class="btn btn-primary promocion-button-card">Inscribirme</button></a>                   
@@ -146,7 +146,7 @@
                             </div>
                             <div class="col-sm-12 col-md-4">
                                 <p class="card-text">Certificado al aprobar el proyecto final</p>
-                                <p class="card-text pt-4">Mentor profesional experto en desarrollo de software con HTML-CSS</p>                        
+                                <p class="card-text pt-4">Mentor profesional experto en desarrollo web</p>                        
                             </div>
                         </div>
 
@@ -190,7 +190,7 @@
                     <h3 class="pt-5">Perfil de egresado</h4>
                     <p>Al finalizar este curso estará capacitado para :<br /><br />
                         ● Desarrollar páginas web siguiendo las mejores prácticas.<br />
-                        ● Utilizar HTML y CSS.<br />
+                        ● Utilizar HTML, CSS y JavasScript.<br />
                         ● Crear sitios web responsive.</p><br />
 
                 </div>

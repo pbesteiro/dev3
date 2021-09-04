@@ -76,7 +76,7 @@
                   <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Programación Básica</a>
                   <ul class="dropdown-menu">
                     <li class="dropdown-item">
-                      <a href="html-css.aspx" class="dropdown-item">HTML y CSS</a>
+                      <a href="html-css.aspx" class="dropdown-item">Desarrollo Web</a>
                     </li>
                      <li class="dropdown-item">
                       <a href="js-basico.aspx" class="dropdown-item">JavaScript</a>
@@ -117,14 +117,14 @@
               </ul>
             </li>
 
-            <li class="dropdown-submenu">
+            <!--li class="dropdown-submenu">
               <a href="#" role="button" data-toggle="dropdown" class="dropdown-item dropdown-toggle">Programación Básica</a>
               <ul class="dropdown-menu">
                 <li class="dropdown-item">
                   <a href="programadesarrolloweb.aspx" class="dropdown-item">Desarrollo Web</a>
                 </li>              
               </ul>
-            </li>
+            </li--!>
 
           </ul>
         </li>

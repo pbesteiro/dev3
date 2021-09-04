@@ -111,7 +111,7 @@
                                     <div class="col-sm-12 col-md-6 pd-120" >
                                         <h4><u>CURSOS</u> > <u>PROGRAMACION BASICA</u> > JAVASCRIPT</h4>
                                         <h4 class="pt-3">MODALIDAD ONLINE <b>EN VIVO</b></h4>
-                                        <h1 class="pt-1">JAVASCRIPT BASICO</h1>
+                                        <h1 class="pt-1">JAVASCRIPT</h1>
                                         <h4 class="pt-5"><i class="fas fa-check"></i> Duración 9 semanas</h4>
                                         <h4><i class="fas fa-check"></i> 2 sesiones por semana</h4>
                                         <h4><i class="fas fa-check"></i> 2 horas por sesión</h4>

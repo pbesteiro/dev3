@@ -1,20 +1,17 @@
 ﻿using System;
 using System.IO;
-using System.Web.Services;
-using System.Web.Script.Services;
 using System.Web;
-using CruceroDelNorte.Negocio;
+using System.Web.Script.Services;
+using System.Web.Services;
+
 
 namespace CruceroDelNorte
 {
-    public partial class _Default : System.Web.UI.Page
+    public partial class Thanks : System.Web.UI.Page
     {
-        
         protected void Page_Load(object sender, EventArgs e)
         {
-            ///GoogleSheetManage manage = new GoogleSheetManage();
-            //manage.AddRowToConsultFormSheet("nombre", "tel", "email");
-           
+
         }
 
         [WebMethod]
@@ -23,7 +20,7 @@ namespace CruceroDelNorte
         {
             DevPlaceSection sections = new DevPlaceSection();
             StreamReader file = new StreamReader(HttpContext.Current.Server.MapPath("templates/menu.txt"));
-            sections.Menu= file.ReadToEnd();
+            sections.Menu = file.ReadToEnd();
             file.Close();
             file.Dispose();
 
@@ -34,7 +31,6 @@ namespace CruceroDelNorte
 
             return sections;
         }
-
 
     }
 }

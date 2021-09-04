@@ -140,7 +140,7 @@
             <div class="contenedor">
                 <div>
                     <p class="about-text" style="font-size: 1.5rem; margin-top: 2rem; margin-left: 8rem">
-                        Enfocate en tu negocio mientras nosotros capacitamos a tu equipo en una o más tecnologías, no sálo realizaremos una capacitación profunda en habilidades duras, sino que también nos ocuparemos de que potencien sus habilidades blancas como trabajo en equipo, comunicación y pensamiento crítico con nuestro equipo de especialistas en RRHH y analistas en aprendisaje.
+                        Enfocate en tu negocio mientras nosotros capacitamos a tu equipo en una o más tecnologías, no solo realizaremos una capacitación profunda en habilidades duras, sino que también nos ocuparemos de que potencien sus habilidades blandas como trabajo en equipo, comunicación y pensamiento crítico con nuestro equipo de especialistas en RRHH y analistas en aprendisaje.
                     </p>
                 </div>
                 <div>
@@ -182,7 +182,7 @@
         </section>
 
         <section>
-            <h3 class="title-about" style="text-align: left; margin-left: 8rem; margin-top: 5rem;"><strong>Perfiles Job Ready </strong></h3>
+            <h3 class="title-about" style="text-align: left; margin-left: 8rem; margin-top: 5rem;"><strong>Perfiles listos para trabajar </strong></h3>
 
             <div class="contenedor">
                 <div>

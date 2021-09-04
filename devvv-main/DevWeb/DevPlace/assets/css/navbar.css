@@ -35,6 +35,13 @@
     display: inline;
 }
 
+#btnThanks {
+    border-radius: 0.3rem !important;
+    padding: 17px 85px !important;
+    margin: 10px -4px !important;
+    background-color: #5d009b;
+    border-color: #5d009b;
+}
 
 /* End PopUP */
 .sticky-top {

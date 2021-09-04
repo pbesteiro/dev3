@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ContactForm.aspx.cs" Inherits="CruceroDelNorte.ContactForm" %>
+﻿ <%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ContactForm.aspx.cs" Inherits="CruceroDelNorte.ContactForm" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,6 +58,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet" />
 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=276831160"></script>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -312,6 +313,8 @@
     <script src="assets/js/sweetalert.min.js" type="text/javascript"></script>
 
     <script src="assets/js/main.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=276831160"></script>
+
     <script>
         $(document).ready(function () {
             $('#fecNac').datepicker({
@@ -323,6 +326,28 @@
             getMenu();
             getAdicionalData();
         });
+
+
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag()
+        {
+            window.dataLayer.push(arguments);
+        }
+
+        
+
+        function createFunctionWithTimeout(callback, opt_timeout) {
+            var called = false;
+            function fn() {
+                if (!called) {
+                    called = true;
+                    callback();
+                }
+            }
+            setTimeout(fn, opt_timeout || 1000);
+            return fn;
+        }
 
 
 
@@ -610,6 +635,14 @@
                             $('#cursoRealizado').val('');
                             $('#slKnowUsBy').val(-1);
                             $('#slPaymentsCount').val(-1);
+
+                            gtag('js', new Date());
+                            gtag('config', '276831160');
+                            gtag('send', 'Devplace', {
+                                'event_category': 'Cursos y Pogramas',
+                                'event_label': 'Formulario Inscripcion',
+                                'value': curso
+                            });
 
 
                             return;
